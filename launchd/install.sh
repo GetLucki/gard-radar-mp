@@ -8,4 +8,4 @@ launchctl bootout "gui/$(id -u)/com.lukizhao.gard-radar-mp" 2>/dev/null || true
 cp "$SRC" "$DST"
 launchctl bootstrap "gui/$(id -u)" "$DST"
 launchctl print "gui/$(id -u)/com.lukizhao.gard-radar-mp" | grep -E 'state|program|runs' | head -5
-echo "installed: runs daily 07:40, log at ~/.claude/gard-radar-mp.log"
+echo "installed: runs weekly (Sat 09:00), log at ~/.claude/gard-radar-mp.log"

@@ -295,6 +295,12 @@ def passes(l):
     l["region"] = CFG["kommuner"][k]["region"]
     if l.get("price") is None or not (CFG["price_min"] <= l["price"] <= CFG["price_max"]):
         return False
+    m2 = l.get("living_m2")
+    if m2 is None:
+        if not CFG.get("keep_unknown_living", True):
+            return False
+    elif m2 < CFG.get("living_min_m2", 0):
+        return False
     ha = l.get("land_ha")
     if ha is None:
         return bool(CFG.get("keep_unknown_land", True))
@@ -416,11 +422,12 @@ KW = {
     "water": r"sjötomt|egen strand|strandlinje|sjöutsikt|badplats|sjönära|vid sjön|\bsjö\b|bäck|vattendrag|\bdamm\b|fiskerätt|\bå\b|älv",
     "forest": r"produktiv skog|skogsmark|\bskog\b|m3sk|m³sk|skogsbruksplan|virkesförråd|\bved\b",
     "arable": r"åker|åkermark|odlingsbar|köksträdgård|odling|trädgårdsland|växthus|fruktträd|bärbuskar|inägomark|jordbruksmark",
-    "animals": r"hönshus|höns|\bhage\b|hagar|\bbete\b|betesmark|\bstall\b|ladugård|lösdrift|djurhållning|får\b|getter|hästgård|paddock|ridbana",
+    "animal_buildings": r"hönshus|\bstall\b|ladugård|lösdrift|djurstall|fårhus|lagård|ekonomibyggnad",
+    "animals": r"höns|\bhage\b|hagar|\bbete\b|betesmark|djurhållning|\bfår\b|lamm|getter|hästgård|paddock|ridbana|stängsel|staket",
     "second_dwelling": r"gäststuga|gästhus|flygel|generationsboende|två bostäder|två bostadshus|ytterligare bostad|extra bostad|uthyrningsdel|attefallshus|lillstuga|drängstuga|separat lägenhet|egen ingång",
     "big_house": r"\b([5-9]|1\d) rum|\b(1[5-9]\d|[2-9]\d\d) ?(m²|m2|kvm)",
     "heat_pump": r"bergvärme|jordvärme|luft-?vatten|luft/vatten|frånluftsvärmepump|värmepump",
-    "wood_heat": r"vedspis|kakelugn|vedpanna|braskamin|\bkamin\b|vedeldad|öppen spis|järnspis|vedeldning|pelletspanna",
+    "wood_heat": r"eldstad|vedspis|kakelugn|vedpanna|braskamin|\bkamin\b|vedeldad|öppen spis|järnspis|vedeldning|pelletspanna|braskassett",
     "single_storey": r"enplan|1-plan|ett plan|entréplan|sovrum på bottenvåning|sovrum på nedre|badrum på entréplan|allt på ett plan",
     "renovated_wet": r"renoverat (kök|badrum)|nytt kök|nytt badrum|kök från 20|badrum från 20|kök och badrum (är )?(renoverade|nya)|helrenoverat|totalrenoverat|nyrenoverat",
     "fiber": r"\bfiber\b|fiberanslut|bredband via fiber|fibernät",
@@ -443,41 +450,53 @@ def build_year(text):
 
 
 def score(l, text, median_price_per_ha):
-    """100 points, profile 'mp' (doc section 8, 2026-09-20): permanent home for
-    Mina and Parviz near Göteborg that also works as the family's safe house."""
+    """100 poäng, profil 'mp' (dokumentets avsnitt 8, reviderad 2026-09-20):
+    permanent hem för Mina och Parviz max en timme från Göteborg, stort hus,
+    befintliga möjligheter för djur och odling, som också bär familjen i kris."""
     t = ((text or "") + " " + (l.get("teaser") or "") + " " + (l.get("type") or "")).lower()
     hit = {k: bool(re.search(p, t)) for k, p in KW.items()}
     s = {}
     s["water"] = (10 if hit["well"] else 0) + (5 if hit["water"] else 0)
+
     ha = l.get("land_ha") or 0
-    s["land"] = (8 if hit["arable"] else 0) + (7 if hit["animals"] else 0) + (5 if (ha >= 2 and hit["forest"]) else 0)
+    land = 0
+    land += 7 if hit["arable"] else 0
+    land += 8 if hit["animal_buildings"] else (4 if hit["animals"] else 0)
+    land += 5 if (ha >= 4 and hit["forest"]) else (3 if hit["forest"] else 0)
+    s["land"] = min(20, land)
+
     y = build_year(text)
     l["build_year"] = y
-    comfort = 0
-    comfort += 6 if ((y and y >= 1970) or hit["lowmaint_renovated"]) else 0
-    comfort += 4 if hit["renovated_wet"] else 0
-    comfort += 6 if hit["single_storey"] else 0
-    comfort += 4 if hit["fiber"] else 0
-    comfort -= 8 if hit["highmaint_need"] else 0
-    comfort -= 4 if hit["defects"] else 0
-    s["comfort"] = max(0, min(20, comfort))
+    m2 = l.get("living_m2") or 0
+    house = 0
+    house += 6 if m2 >= 180 else (4 if m2 >= 170 else (2 if m2 >= 150 else 0))
+    house += 5 if ((y and y >= 1970) or hit["lowmaint_renovated"]) else 0
+    house += 4 if hit["renovated_wet"] else 0
+    house += 5 if hit["single_storey"] else 0
+    house -= 8 if hit["highmaint_need"] else 0
+    house -= 4 if hit["defects"] else 0
+    s["house"] = max(0, min(20, house))
+
     s["heating"] = 10 if (hit["heat_pump"] and hit["wood_heat"]) else (6 if (hit["heat_pump"] or hit["wood_heat"]) else 0)
+
     d = l.get("drive_h")
-    drive_pts = 0 if d is None else (10 if d <= 0.75 else 7 if d <= 1.0 else 4 if d <= 1.25 else 0)
+    drive_pts = 0 if d is None else (10 if d <= 0.5 else 8 if d <= 0.75 else 6 if d <= 1.0 else 0)
     services = CFG["kommuner"].get(l.get("kommun"), {}).get("services", 0)
     s["services"] = drive_pts + min(5, int(services))
-    m2 = l.get("living_m2") or 0
+
     rooms = 0
     mr = re.search(r"(\d+)", str(l.get("rooms") or ""))
     if mr:
         rooms = int(mr.group(1))
-    s["family"] = (6 if hit["second_dwelling"] else 0) + (4 if (rooms >= 5 or m2 >= 150 or hit["big_house"]) else 0)
+    s["family"] = (6 if hit["second_dwelling"] else 0) + (4 if (rooms >= 6 or m2 >= 220 or hit["fiber"]) else 0)
+
     pph = l.get("price_per_ha")
     if pph and median_price_per_ha:
         r = pph / median_price_per_ha
         s["price"] = 10 if r < 0.6 else 7 if r < 1.0 else 4 if r < 1.5 else 1
     else:
         s["price"] = 3
+
     l["signals"] = [k for k, v in hit.items() if v and not k.startswith(("lowmaint", "highmaint_log", "barn", "income"))]
     l["score_parts"] = s
     l["score"] = sum(s.values())
@@ -502,7 +521,7 @@ def rescore_only():
     dig = load_json(DATA / "digest_input.json", {})
     changes = dig.get("changes", {})
     top = matched[:15]
-    lowmaint = [l for l in matched if l["score_parts"].get("comfort", 0) >= 10 or l["score_parts"].get("family", 0) >= 6][:20]
+    lowmaint = [l for l in matched if l["score_parts"].get("house", 0) >= 12 or l["score_parts"].get("land", 0) >= 12][:20]
     pick_ids = {l["id"] for l in top} | {l["id"] for l in lowmaint} | {c["id"] for c in changes.get("price_changes", [])} | {n["id"] for n in changes.get("new", [])}
     digest = []
     for l in matched:
@@ -747,7 +766,7 @@ def main():
     top = matched[:15]
     # the keyword pre-score is weak on maintenance, so always show Claude the
     # modern or renovated houses too (build year 1965+ or maintenance >= 8)
-    lowmaint = [l for l in matched if l["score_parts"].get("comfort", 0) >= 10 or l["score_parts"].get("family", 0) >= 6][:20]
+    lowmaint = [l for l in matched if l["score_parts"].get("house", 0) >= 12 or l["score_parts"].get("land", 0) >= 12][:20]
     pick_ids = {l["id"] for l in top} | {l["id"] for l in lowmaint} | {n["id"] for n in new} | {c["id"] for c in price_changes}
     digest = []
     for l in matched:

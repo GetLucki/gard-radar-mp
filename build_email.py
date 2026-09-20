@@ -50,7 +50,7 @@ criteria_surv = [
     "Hem för två: beboeligt hus utan renovering, helst enplan eller sovrum och badrum på entréplan, fiber, vårdcentral inom 25 min och mataffär inom 15",
     "Självförsörjning: egen brunn, odlingsbar mark, plats för höns och gärna får, ved från egen skog, vedeldning plus värmepump",
     "Plats för hela familjen: andra bostad, flygel eller minst fem rum",
-    "Under 75 minuter från Göteborg, grannar inom synhåll, levande bygd",
+    "Max 60 minuter från Göteborg, grannar inom synhåll, levande bygd",
 ]
 criteria_fin = [
     "Nära Göteborg håller huset värdet bäst i landet och går alltid att sälja",
@@ -100,7 +100,7 @@ for i, p in enumerate(picks, 1):
         f"{p.get('land_ha') or l.get('land_ha') or '?'} ha",
         f"{l.get('living_m2')} m²" if l.get("living_m2") else "",
         f"byggår {l.get('build_year')}" if l.get("build_year") else "",
-        f"{l.get('drive_h')} h from Göteborg" if l.get("drive_h") else "",
+        f"{l.get('drive_h')} h från Göteborg" if l.get("drive_h") else "",
         f"score {p.get('score') or l.get('score')}",
     ] if x)
     rows.append(f"""
@@ -127,11 +127,15 @@ else:
         items.append(f"<li><b>Pris {arrow}</b>: <a href=\"{e(x['url'])}\">{e(x['title'])}</a>, {kr(x['old'])} to {kr(x['new'])}</li>")
     for x in (C.get("gone") or [])[:10]:
         items.append(f"<li><b>Borta</b>: {e(x.get('title'))}, {e(x.get('kommun'))}, {kr(x.get('price'))}</li>")
-    changes_html = "<ul>" + "".join(items) + "</ul>" if items else "<p>Inga förändringar sedan i går.</p>"
+    changes_html = "<ul>" + "".join(items) + "</ul>" if items else "<p>Inga förändringar sedan förra veckan.</p>"
 
 dropped_html = ""
 if R.get("dropped"):
     dropped_html = "<p class=\"small\"><b>Lämnade listan:</b> " + "; ".join(f"{e(d.get('title'))} ({e(d.get('why'))})" for d in R["dropped"]) + "</p>"
+watch_html = ""
+if R.get("watch"):
+    watch_html = ("<p class=\"small\"><b>Bevakas:</b> " +
+                  "; ".join(f"{e(w.get('title'))} ({e(w.get('note'))})" for w in R["watch"]) + "</p>")
 crit_changes_html = ""
 if R.get("criteria_changes"):
     crit_changes_html = "<p class=\"small\"><b>Kriterier uppdaterade från plandokumentet:</b> " + "; ".join(e(x) for x in R["criteria_changes"]) + "</p>"
@@ -147,13 +151,14 @@ html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</st
 <h2>Läget i korthet</h2>
 <p>{e(R.get('market_summary') or 'Ingen bedömning skriven i dag.')}</p>
 
-<h2>Dagens förslag</h2>
+<h2>Veckans förslag</h2>
 <table class="t">
 <tr><th style="width:3%">#</th><th style="width:17%">Objekt</th><th style="width:20%">Hem för Mina och Parviz</th><th style="width:20%">Safe house för familjen</th><th style="width:15%">Ekonomi</th><th style="width:12%">Varför denna plats</th><th style="width:13%">Rekommendation</th></tr>
 {''.join(rows) if rows else '<tr><td colspan="7">Inget objekt klarade ribban i dag.</td></tr>'}
 </table>
 {dropped_html}
 {crit_changes_html}
+{watch_html}
 
 <h2>Vad förslagen bedöms på</h2>
 <div class="crit"><table width="100%"><tr>
@@ -165,16 +170,16 @@ html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</st
 <h2>Marknad per område</h2>
 <table class="t"><tr><th>Område</th><th>Träffar</th><th>Nya</th><th>Medianpris</th></tr>{region_rows}</table>
 
-<h2>Förändringar sedan i går</h2>
+<h2>Förändringar sedan förra veckan</h2>
 {changes_html}
 
 <p><a href="{e(site)}"><b>Öppna radarsajten</b></a> (alla {S.get('matched', '?')} träffar, filter, poäng) · <a href="{e(doc)}">Plandokumentet</a></p>
-<p class="small">Källor: Hemnet och Booli, skannat {e(L.get('generated', ''))}. Poängen är en nyckelordsbaserad förpoäng; urvalet och motiveringarna är Claudes dagliga bedömning. Kontrollera allt på visningen.</p>
+<p class="small">Källor: Hemnet och Booli, skannat {e(L.get('generated', ''))}. Poängen är en nyckelordsbaserad förpoäng; urvalet och motiveringarna är Claudes bedömning. Kontrollera allt på visningen.</p>
 </div></body></html>"""
 
 # ---------- plain text fallback ----------
 lines = [f"{CFG.get('profile_title', 'GÅRD-RADAR').upper()} {date}", subject.split(': ', 1)[1] if ': ' in subject else "", "",
-         "LÄGET I KORTHET", R.get("market_summary") or "Ingen bedömning skriven i dag.", "", "DAGENS FÖRSLAG"]
+         "LÄGET I KORTHET", R.get("market_summary") or "Ingen bedömning skriven i dag.", "", "VECKANS FÖRSLAG"]
 for i, p in enumerate(picks, 1):
     l = by_id.get(p.get("id"), {})
     lines += [f"{i}. {p.get('title') or l.get('title')}, {p.get('kommun') or l.get('kommun')}, {kr(p.get('price') or l.get('price'))}, {p.get('land_ha') or l.get('land_ha') or '?'} ha",
@@ -187,6 +192,8 @@ for i, p in enumerate(picks, 1):
               f"   {p.get('url') or l.get('url') or ''}", ""]
 if R.get("dropped"):
     lines += ["Lämnade listan: " + "; ".join(f"{d.get('title')} ({d.get('why')})" for d in R["dropped"]), ""]
+if R.get("watch"):
+    lines += ["BEVAKAS: " + "; ".join(f"{w.get('title')} ({w.get('note')})" for w in R["watch"]), ""]
 lines += ["BEDÖMS PÅ", "Hem och trygghet: " + "; ".join(criteria_surv), "Ekonomi: " + "; ".join(criteria_fin), "",
           "FÖRÄNDRINGAR", f"Nya {S.get('new', 0)}, borta {S.get('gone', 0)}, prissänkningar {n_cuts}.", "",
           f"Sajt: {site}", f"Plandokument: {doc}"]
