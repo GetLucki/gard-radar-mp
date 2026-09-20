@@ -171,8 +171,8 @@ if (TOP.length){
     ${r.maintenance?`<div class="m"><b>Underhåll:</b> ${esc(r.maintenance)}</div>`:''}
     ${r.recommendation?`<div class="rec">${esc(r.recommendation)}</div>`:''}
     </div></div>`}).join('') + `</div>`;
-  if (TOP.length>3) rh += `<p class="small" style="margin-top:8px"><b>Also judged worth a look:</b> ` + TOP.slice(3).map((r,i)=>`#${i+4} <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> (${esc(r.kommun)}, ${kr(r.price)})`).join(' · ') + `</p>`;
-  if (R.dropped && R.dropped.length) rh += `<p class="small"><b>Left the list:</b> ` + R.dropped.map(d=>`${esc(d.title)} (${esc(d.why)})`).join('; ') + `</p>`;
+  if (TOP.length>3) rh += `<p class="small" style="margin-top:8px"><b>Även värda en titt:</b> ` + TOP.slice(3).map((r,i)=>`#${i+4} <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> (${esc(r.kommun)}, ${kr(r.price)})`).join(' · ') + `</p>`;
+  if (R.dropped && R.dropped.length) rh += `<p class="small"><b>Lämnade listan:</b> ` + R.dropped.map(d=>`${esc(d.title)} (${esc(d.why)})`).join('; ') + `</p>`;
 } else rh = `<div class="note">Ingen bedömning än. Morgonkörningen skriver topp tre efter skanningen.</div>`;
 document.getElementById('recs').innerHTML = rh;
 
@@ -216,7 +216,7 @@ render();
 // collapsed market block
 let mh = R.market_summary ? `<div class="note">${esc(R.market_summary)}</div>` : '';
 const reg = S.by_region||{};
-mh += `<table style="min-width:0;margin-top:12px"><tr><th>Region</th><th class="num">Listings</th><th class="num">New</th><th class="num">Median asking</th></tr>` +
+mh += `<table style="min-width:0;margin-top:12px"><tr><th>Område</th><th class="num">Träffar</th><th class="num">Nya</th><th class="num">Medianpris</th></tr>` +
   Object.entries(reg).sort((a,b)=>b[1].count-a[1].count).map(([k,v])=>`<tr><td>${esc(k)}</td><td class="num">${v.count}</td><td class="num">${v.new}</td><td class="num">${kr(v.median_price)}</td></tr>`).join('') + `</table>`;
 const fmtTot = v => v==null ? '–' : (typeof v==='object' ? Object.entries(v).map(([k,n])=>`${n??'–'} ${k}`).join(', ') : v);
 if (S.national_in_band) mh += `<p class="small">I hela landet inom prisramen: Hemnet ${fmtTot(S.national_in_band.hemnet)}; Booli ${fmtTot(S.national_in_band.booli)}.</p>`;
@@ -227,7 +227,7 @@ let ch='';
 mh += ch ? `<ul style="margin-top:10px">${ch}</ul>` : `<p class="small" style="margin-top:10px">Inga förändringar sedan förra körningen.</p>`;
 if (D.history && D.history.length>1){
   const max = Math.max(...D.history.map(h=>h.matched||0),1);
-  mh += `<div class="small">Matching listings, last ${D.history.length} runs</div><div class="spark">` + D.history.map(h=>`<i title="${h.date}: ${h.matched}" style="height:${Math.max(3,Math.round(40*h.matched/max))}px"></i>`).join('') + `</div>`;
+  mh += `<div class="small">Träffar, senaste ${D.history.length} körningarna</div><div class="spark">` + D.history.map(h=>`<i title="${h.date}: ${h.matched}" style="height:${Math.max(3,Math.round(40*h.matched/max))}px"></i>`).join('') + `</div>`;
 }
 document.getElementById('market').innerHTML = mh;
 </script>
