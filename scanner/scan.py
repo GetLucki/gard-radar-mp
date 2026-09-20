@@ -271,10 +271,13 @@ def scrape_booli(browser, base=None):
                 "upcoming": bool(tr.get("upcoming_sale")),
                 "labels": [],
             })
-            # resolve image
+            # resolve image: Booli's Image objects carry only an id and the CDN
+            # url is built from it (verified 2026-09-20).
             if img and img in ap:
                 imgobj = ap[img]
-                out[-1]["image"] = imgobj.get("url") or imgobj.get("src")
+                url_direct = imgobj.get("url") or imgobj.get("src")
+                iid = imgobj.get("id") or (img.split(":")[-1] if ":" in img else None)
+                out[-1]["image"] = url_direct or (f"https://bcdn.se/images/cache/{iid}_1440x0.jpg" if iid else None)
             out[-1].pop("image_ref", None)
         log(f"booli page {n}: {len(props)} props (total {total})")
         if total is not None and n * 35 >= total:
@@ -387,7 +390,22 @@ def fetch_detail(browser, l):
     finally:
         if ctx:
             ctx.close()
-    text = re.sub(r"\n{3,}", "\n\n", text or "")
+    # Booli often has no photo on the search card but plenty on the listing page
+    # (verified 2026-09-20). Take the first one when the card gave us nothing.
+    if ap and not l.get("image"):
+        for k, v in ap.items():
+            if k.startswith("Image") and isinstance(v, dict):
+                iid = v.get("id") or k.split(":")[-1]
+                direct = v.get("url") or v.get("src")
+                if direct or iid:
+                    l["image"] = direct or f"https://bcdn.se/images/cache/{iid}_1440x0.jpg"
+                    break
+    try:
+        title = page.title() if page else ""
+    except Exception:
+        title = ""
+    text = (title + "\n" + (text or "")) if title else (text or "")
+    text = re.sub(r"\n{3,}", "\n\n", text)
     return text[:8000]
 
 
@@ -474,6 +492,8 @@ def rescore_only():
     pphs = [l["price_per_ha"] for l in matched if l.get("price_per_ha")]
     med_pph = statistics.median(pphs) if pphs else None
     for l in matched:
+        if not l.get("image") and details.get(l["id"], {}).get("image"):
+            l["image"] = details[l["id"]]["image"]
         score(l, details.get(l["id"], {}).get("text", ""), med_pph)
     matched.sort(key=lambda x: (-x["score"], x["price"]))
     cur["listings"] = matched
@@ -504,16 +524,22 @@ def refresh_details():
     maintenance criteria; the daily run only fetches never-seen listings."""
     cur = load_json(DATA / "listings.json", {"listings": []})
     details = load_json(DATA / "details.json", {})
-    todo = [l for l in cur.get("listings", []) if "FAKTA" not in details.get(l["id"], {}).get("text", "")]
+    force = "all" in sys.argv
+    todo = [l for l in cur.get("listings", [])
+            if force or "FAKTA" not in details.get(l["id"], {}).get("text", "")]
     log(f"refreshing {len(todo)} detail pages")
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         for i, l in enumerate(todo, 1):
             try:
                 txt = fetch_detail(browser, l)
-                if re.search(r"såld eller borttagen|annonsen är borttagen|objektet är sålt|är inte längre till salu", txt, re.I):
+                if re.search(r"såld eller borttagen|annonsen är borttagen|objektet är sålt|"
+                             r"är inte längre till salu|^slutpris|\bslutpris\b.{0,40}\bkr\b|"
+                             r"är såld|lagfart utfärdades", txt, re.I):
                     l["stale"] = True
                 details[l["id"]] = {"text": txt, "fetched": TODAY, "stale": bool(l.get("stale"))}
+                if l.get("image"):
+                    details[l["id"]]["image"] = l["image"]
             except Exception as e:
                 details[l["id"]] = {"text": details.get(l["id"], {}).get("text", ""), "fetched": TODAY, "error": str(e)[:200]}
             if i % 10 == 0:
@@ -585,14 +611,25 @@ def main():
         log(f"raw {len(raw)} (hemnet {len(hem)}, booli {len(boo)}), matched after filter+dedupe {len(matched)}")
 
         # detail pages for listings without a cached description
+        stale_before = (datetime.date.today() - datetime.timedelta(days=3)).isoformat()
         todo = [l for l in matched if l["id"] not in details][:DETAIL_LIMIT]
+        room = DETAIL_LIMIT - len(todo)
+        if room > 0:
+            old_cache = [l for l in matched
+                         if l["id"] in details and details[l["id"]].get("fetched", "") < stale_before]
+            old_cache.sort(key=lambda l: details[l["id"]].get("fetched", ""))
+            todo += old_cache[:room]
         log(f"fetching {len(todo)} detail pages")
         for i, l in enumerate(todo, 1):
             try:
                 txt = fetch_detail(browser, l)
-                if re.search(r"såld eller borttagen|annonsen är borttagen|objektet är sålt|är inte längre till salu", txt, re.I):
+                if re.search(r"såld eller borttagen|annonsen är borttagen|objektet är sålt|"
+                             r"är inte längre till salu|^slutpris|\bslutpris\b.{0,40}\bkr\b|"
+                             r"är såld|lagfart utfärdades", txt, re.I):
                     l["stale"] = True
                 details[l["id"]] = {"text": txt, "fetched": TODAY, "stale": bool(l.get("stale"))}
+                if l.get("image"):
+                    details[l["id"]]["image"] = l["image"]
             except Exception as e:  # keep going, the card teaser still scores
                 details[l["id"]] = {"text": "", "fetched": TODAY, "error": str(e)[:200]}
             if i % 10 == 0:
@@ -630,6 +667,8 @@ def main():
     pphs = [l["price_per_ha"] for l in matched if l.get("price_per_ha")]
     med_pph = statistics.median(pphs) if pphs else None
     for l in matched:
+        if not l.get("image") and details.get(l["id"], {}).get("image"):
+            l["image"] = details[l["id"]]["image"]
         score(l, details.get(l["id"], {}).get("text", ""), med_pph)
     matched.sort(key=lambda x: (-x["score"], x["price"]))
 
