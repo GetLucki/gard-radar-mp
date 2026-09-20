@@ -7,13 +7,13 @@
  },
  "stats": {
   "date": "2026-09-20",
-  "matched": 84,
+  "matched": 58,
   "new": 84,
   "gone": 0,
   "price_cuts": 0,
   "price_rises": 0,
-  "median_price": 5900000,
-  "median_price_per_ha": 562579,
+  "median_price": 5825000,
+  "median_price_per_ha": 295994,
   "national_in_band": {
    "hemnet": {
     "gard": 730,
@@ -27,19 +27,19 @@
   "hemnet_ok": true,
   "by_region": {
    "Runt en timme": {
-    "count": 21,
-    "new": 21,
+    "count": 17,
+    "new": 0,
     "median_price": 5995000
    },
    "Under 45 min": {
-    "count": 27,
-    "new": 27,
-    "median_price": 6500000
+    "count": 20,
+    "new": 0,
+    "median_price": 6237500
    },
    "45 till 60 min": {
-    "count": 36,
-    "new": 36,
-    "median_price": 5625000
+    "count": 21,
+    "new": 0,
+    "median_price": 5500000
    }
   }
  },

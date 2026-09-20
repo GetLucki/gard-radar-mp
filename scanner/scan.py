@@ -557,6 +557,23 @@ def rescore_only():
         score(l, details.get(l["id"], {}).get("text", ""), med_pph)
     matched.sort(key=lambda x: (-x["score"], x["price"]))
     cur["listings"] = matched
+    # statistiken måste följa med när filtren tagit bort objekt
+    st = cur.setdefault("stats", {})
+    st["matched"] = len(matched)
+    prices = [l["price"] for l in matched]
+    if prices:
+        st["median_price"] = int(statistics.median(prices))
+    if pphs:
+        st["median_price_per_ha"] = int(statistics.median(pphs))
+    by_region = {}
+    for l in matched:
+        r = by_region.setdefault(l["region"], {"count": 0, "prices": [], "new": 0})
+        r["count"] += 1
+        r["prices"].append(l["price"])
+    for r in by_region.values():
+        r["median_price"] = int(statistics.median(r["prices"]))
+        del r["prices"]
+    st["by_region"] = by_region
     cur["generated"] = datetime.datetime.now().isoformat(timespec="minutes")
     save_json(DATA / "listings.json", cur)
     dig = load_json(DATA / "digest_input.json", {})
