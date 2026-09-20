@@ -81,11 +81,13 @@ a{color:#2f6b3a}
 
 def rec_class(txt):
     t = (txt or "").lower()
-    if any(w in t for w in ("book", "viewing", "visning", "bid", "go")):
+    if t.startswith(("boka", "book")) or "boka visning" in t:
         return "go"
-    if any(w in t for w in ("watch", "wait", "ask", "hold")):
+    if t.startswith(("fråga", "bevaka", "ask", "watch", "wait")) or "vänta" in t:
         return "watch"
-    return "skip"
+    if t.startswith(("hoppa", "skip")):
+        return "skip"
+    return "watch"
 
 rows = []
 for i, p in enumerate(picks, 1):
@@ -105,7 +107,7 @@ for i, p in enumerate(picks, 1):
 <tr>
  <td class="rank">{i}</td>
  <td><a href="{e(url)}"><b>{e(title)}</b></a><br><span class="small">{facts}</span>
-     {('<br><span class="small"><b>Maintenance:</b> ' + e(p.get('maintenance')) + '</span>') if p.get('maintenance') else ''}</td>
+     {('<br><span class="small"><b>Underhåll:</b> ' + e(p.get('maintenance')) + '</span>') if p.get('maintenance') else ''}</td>
  <td>{e(p.get('home_why') or p.get('prepping_why') or p.get('why'))}</td>
  <td>{e(p.get('safehouse_why'))}</td>
  <td>{e(p.get('invest_why'))}</td>
@@ -115,24 +117,24 @@ for i, p in enumerate(picks, 1):
 
 changes_html = ""
 if C.get("first_run"):
-    changes_html = "<p>First run: everything counts as new.</p>"
+    changes_html = "<p>Första körningen: allt räknas som nytt.</p>"
 else:
     items = []
     for x in (C.get("new") or [])[:10]:
-        items.append(f"<li><b>New</b>: <a href=\"{e(x['url'])}\">{e(x['title'])}</a>, {e(x['kommun'])}, {kr(x['price'])}, score {x.get('score')}</li>")
+        items.append(f"<li><b>Nytt</b>: <a href=\"{e(x['url'])}\">{e(x['title'])}</a>, {e(x['kommun'])}, {kr(x['price'])}, score {x.get('score')}</li>")
     for x in (C.get("price_changes") or [])[:10]:
-        arrow = "cut" if x["new"] < x["old"] else "up"
-        items.append(f"<li><b>Price {arrow}</b>: <a href=\"{e(x['url'])}\">{e(x['title'])}</a>, {kr(x['old'])} to {kr(x['new'])}</li>")
+        arrow = "sänkt" if x["new"] < x["old"] else "höjt"
+        items.append(f"<li><b>Pris {arrow}</b>: <a href=\"{e(x['url'])}\">{e(x['title'])}</a>, {kr(x['old'])} to {kr(x['new'])}</li>")
     for x in (C.get("gone") or [])[:10]:
-        items.append(f"<li><b>Gone</b>: {e(x.get('title'))}, {e(x.get('kommun'))}, {kr(x.get('price'))}</li>")
-    changes_html = "<ul>" + "".join(items) + "</ul>" if items else "<p>No changes since yesterday.</p>"
+        items.append(f"<li><b>Borta</b>: {e(x.get('title'))}, {e(x.get('kommun'))}, {kr(x.get('price'))}</li>")
+    changes_html = "<ul>" + "".join(items) + "</ul>" if items else "<p>Inga förändringar sedan i går.</p>"
 
 dropped_html = ""
 if R.get("dropped"):
-    dropped_html = "<p class=\"small\"><b>Left the list:</b> " + "; ".join(f"{e(d.get('title'))} ({e(d.get('why'))})" for d in R["dropped"]) + "</p>"
+    dropped_html = "<p class=\"small\"><b>Lämnade listan:</b> " + "; ".join(f"{e(d.get('title'))} ({e(d.get('why'))})" for d in R["dropped"]) + "</p>"
 crit_changes_html = ""
 if R.get("criteria_changes"):
-    crit_changes_html = "<p class=\"small\"><b>Criteria updated from the plan doc:</b> " + "; ".join(e(x) for x in R["criteria_changes"]) + "</p>"
+    crit_changes_html = "<p class=\"small\"><b>Kriterier uppdaterade från plandokumentet:</b> " + "; ".join(e(x) for x in R["criteria_changes"]) + "</p>"
 
 region_rows = "".join(
     f"<tr><td>{e(k)}</td><td>{v['count']}</td><td>{v.get('new', 0)}</td><td>{kr(v.get('median_price'))}</td></tr>"
@@ -140,10 +142,10 @@ region_rows = "".join(
 
 html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="wrap">
 <h1>{e(CFG.get("profile_title", "Gård-radar"))} {e(date)}</h1>
-<div class="sub">{S.get('matched', '?')} matching listings · {S.get('new', 0)} new · {S.get('gone', 0)} gone · {n_cuts} price cuts · median asking {kr(S.get('median_price'))} · median {kr(S.get('median_price_per_ha'))} per ha</div>
+<div class="sub">{S.get('matched', '?')} träffar · {S.get('new', 0)} nya · {S.get('gone', 0)} borta · {n_cuts} prissänkningar · medianpris {kr(S.get('median_price'))} · median {kr(S.get('median_price_per_ha'))} per ha</div>
 
 <h2>Läget i korthet</h2>
-<p>{e(R.get('market_summary') or 'No judgement written today.')}</p>
+<p>{e(R.get('market_summary') or 'Ingen bedömning skriven i dag.')}</p>
 
 <h2>Dagens förslag</h2>
 <table class="t">
@@ -158,36 +160,36 @@ html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</st
 <td><b>Hem och trygghet</b><ul>{''.join(f'<li>{e(x)}</li>' for x in criteria_surv)}</ul></td>
 <td><b>Ekonomi</b><ul>{''.join(f'<li>{e(x)}</li>' for x in criteria_fin)}</ul></td>
 </tr></table></div>
-<p class="small">Full criteria and weights: <a href="{e(doc)}">plan document</a>, section 6 and 8. Edit the doc and tomorrow's run follows.</p>
+<p class="small">Fullständiga kriterier och vikter: <a href="{e(doc)}">plandokumentet</a>, avsnitt 5, 6 och 8. Ändra i dokumentet så följer morgondagens körning med.</p>
 
 <h2>Marknad per område</h2>
-<table class="t"><tr><th>Region</th><th>Listings</th><th>New</th><th>Median asking</th></tr>{region_rows}</table>
+<table class="t"><tr><th>Område</th><th>Träffar</th><th>Nya</th><th>Medianpris</th></tr>{region_rows}</table>
 
 <h2>Förändringar sedan i går</h2>
 {changes_html}
 
 <p><a href="{e(site)}"><b>Öppna radarsajten</b></a> (alla {S.get('matched', '?')} träffar, filter, poäng) · <a href="{e(doc)}">Plandokumentet</a></p>
-<p class="small">Sources: Hemnet and Booli, scanned {e(L.get('generated', ''))}. Scores are a keyword pre-score; the picks and reasons are Claude's daily judgement. Verify everything at a viewing.</p>
+<p class="small">Källor: Hemnet och Booli, skannat {e(L.get('generated', ''))}. Poängen är en nyckelordsbaserad förpoäng; urvalet och motiveringarna är Claudes dagliga bedömning. Kontrollera allt på visningen.</p>
 </div></body></html>"""
 
 # ---------- plain text fallback ----------
-lines = [f"GÅRD-RADAR {date}", subject.split(': ', 1)[1] if ': ' in subject else "", "",
-         "IN ONE PARAGRAPH", R.get("market_summary") or "No judgement written today.", "", "TODAY'S PICKS"]
+lines = [f"{CFG.get('profile_title', 'GÅRD-RADAR').upper()} {date}", subject.split(': ', 1)[1] if ': ' in subject else "", "",
+         "LÄGET I KORTHET", R.get("market_summary") or "Ingen bedömning skriven i dag.", "", "DAGENS FÖRSLAG"]
 for i, p in enumerate(picks, 1):
     l = by_id.get(p.get("id"), {})
     lines += [f"{i}. {p.get('title') or l.get('title')}, {p.get('kommun') or l.get('kommun')}, {kr(p.get('price') or l.get('price'))}, {p.get('land_ha') or l.get('land_ha') or '?'} ha",
               f"   Hem: {p.get('home_why') or p.get('prepping_why') or p.get('why') or ''}",
               f"   Safe house: {p.get('safehouse_why') or ''}",
-              f"   Investment: {p.get('invest_why') or ''}",
-              f"   Why this rank: {p.get('rank_why') or ''}",
-              f"   Maintenance: {p.get('maintenance') or ''}",
-              f"   Recommendation: {p.get('recommendation') or ''}",
+              f"   Ekonomi: {p.get('invest_why') or ''}",
+              f"   Varför denna plats: {p.get('rank_why') or ''}",
+              f"   Underhåll: {p.get('maintenance') or ''}",
+              f"   Rekommendation: {p.get('recommendation') or ''}",
               f"   {p.get('url') or l.get('url') or ''}", ""]
 if R.get("dropped"):
-    lines += ["Left the list: " + "; ".join(f"{d.get('title')} ({d.get('why')})" for d in R["dropped"]), ""]
-lines += ["JUDGED ON", "Survival: " + "; ".join(criteria_surv), "Financial: " + "; ".join(criteria_fin), "",
-          "CHANGES", f"New {S.get('new', 0)}, gone {S.get('gone', 0)}, price cuts {n_cuts}.", "",
-          f"Site: {site}", f"Plan doc: {doc}"]
+    lines += ["Lämnade listan: " + "; ".join(f"{d.get('title')} ({d.get('why')})" for d in R["dropped"]), ""]
+lines += ["BEDÖMS PÅ", "Hem och trygghet: " + "; ".join(criteria_surv), "Ekonomi: " + "; ".join(criteria_fin), "",
+          "FÖRÄNDRINGAR", f"Nya {S.get('new', 0)}, borta {S.get('gone', 0)}, prissänkningar {n_cuts}.", "",
+          f"Sajt: {site}", f"Plandokument: {doc}"]
 text_out = "\n".join(lines)
 
 (DATA / "email.html").write_text(html_out, encoding="utf-8")

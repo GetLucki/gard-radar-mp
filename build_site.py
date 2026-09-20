@@ -107,29 +107,29 @@ details{margin-top:24px}summary{cursor:pointer;font-weight:600;color:var(--muted
 
 <h2>Alla träffar, rankade</h2>
 <div class="ctrl">
-  <select id="fRegion"><option value="">All regions</option></select>
-  <input id="fText" placeholder="Filter: kommun, title, broker">
-  <label class="small"><input type="checkbox" id="fNew"> only new</label>
+  <select id="fRegion"><option value="">Alla områden</option></select>
+  <input id="fText" placeholder="Filtrera: kommun, objekt, mäklare">
+  <label class="small"><input type="checkbox" id="fNew"> bara nya</label>
   <span class="small" id="count"></span>
 </div>
 <div class="tw"><table id="tbl"><thead><tr>
   <th data-k="rank" class="num on">#</th>
   <th></th>
-  <th data-k="title">Property</th>
-  <th data-k="price" class="num">Price</th>
-  <th data-k="land_ha" class="num">Land</th>
+  <th data-k="title">Objekt</th>
+  <th data-k="price" class="num">Pris</th>
+  <th data-k="land_ha" class="num">Mark</th>
   <th data-k="price_per_ha" class="num">kr/ha</th>
   <th data-k="living_m2" class="num">m²</th>
-  <th data-k="build_year" class="num">Built</th>
-  <th data-k="drive_h" class="num">Drive</th>
-  <th data-k="score" class="num">Score</th>
-  <th data-k="days_tracked" class="num">Days</th>
+  <th data-k="build_year" class="num">Byggår</th>
+  <th data-k="drive_h" class="num">Restid</th>
+  <th data-k="score" class="num">Poäng</th>
+  <th data-k="days_tracked" class="num">Dagar</th>
   <th>Status</th>
 </tr></thead><tbody id="rows"></tbody></table></div>
 
-<details><summary>Market, regions and changes since the last run</summary><div id="market" style="margin-top:10px"></div></details>
+<details><summary>Marknad, områden och förändringar sedan förra körningen</summary><div id="market" style="margin-top:10px"></div></details>
 
-<p class="small" style="margin-top:30px">Källor: Hemnet och Booli (Gård/Skog samt Villa/Hus med minst 1 ha). Score is a deterministic pre-score from listing text and facts; the top three and their reasons are Claude's daily judgement. Criteria live in the shared plan document.</p>
+<p class="small" style="margin-top:30px">Källor: Hemnet och Booli (Gård/Skog samt Villa/Hus med minst 1 ha). Poängen är en förpoäng ur annonstext och fakta; topp tre och motiveringarna är Claudes dagliga bedömning. Kriterierna finns i det delade plandokumentet.</p>
 </div>
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -148,11 +148,11 @@ TOP.forEach((r,i)=>{ const l = findL(r); if (l) pickRank.set(l.id, i+1); });
 // rank = position by score (ties by price)
 const L = [...D.listings].sort((a,b)=> (b.score-a.score) || (a.price-b.price)).map((l,i)=>({...l, rank:i+1}));
 
-document.getElementById('sub').textContent = `Updated ${D.generated||'?'} · ${kr(D.config.price_min)} to ${kr(D.config.price_max)} · at least ${D.config.land_min_ha} ha · ${Object.keys(D.config.kommuner).length} kommuner within reach of ${D.config.base.name}`;
+document.getElementById('sub').textContent = `Uppdaterad ${D.generated||'?'} · ${kr(D.config.price_min)} till ${kr(D.config.price_max)} · minst ${D.config.land_min_ha} ha · ${Object.keys(D.config.kommuner).length} kommuner inom räckhåll från ${D.config.base.name}`;
 document.getElementById('chips').innerHTML = [
-  ['matching', S.matched], ['new today', S.new], ['gone', S.gone], ['price cuts', S.price_cuts],
-  ['median asking', kr(S.median_price)], ['median per ha', kr(S.median_price_per_ha)]
-].map(([l,v])=>`<span class="chip"><b>${v??'–'}</b> ${l}</span>`).join('') + (R.date?`<span class="chip">picks dated <b>${esc(R.date)}</b></span>`:'');
+  ['träffar', S.matched], ['nya i dag', S.new], ['borta', S.gone], ['prissänkningar', S.price_cuts],
+  ['medianpris', kr(S.median_price)], ['median per ha', kr(S.median_price_per_ha)]
+].map(([l,v])=>`<span class="chip"><b>${v??'–'}</b> ${l}</span>`).join('') + (R.date?`<span class="chip">förslag från <b>${esc(R.date)}</b></span>`:'');
 
 // top three cards
 let rh='';
@@ -160,20 +160,20 @@ if (TOP.length){
   rh = `<div class="grid">` + TOP.slice(0,3).map((r,i)=>{ const L0 = findL(r); const l = L0||{}; const gone = !L0;
     return `<div class="card">${l.image?`<img src="${esc(l.image)}" alt="">`:''}<div class="b">
     <div class="row"><span class="tag pick">#${i+1}</span><span class="score">${r.score??l.score??''}</span></div>
-    <div class="t"><a href="${esc(r.url||l.url)}" target="_blank" rel="noopener">${esc(r.title||l.title)}</a>${gone?' <span class="tag cut">no longer listed</span>':''}</div>
-    <div class="m">${esc(r.kommun||l.kommun)} · ${esc(r.region||l.region||'')} · ${(r.land_ha||l.land_ha)?(r.land_ha||l.land_ha)+' ha':''}${l.living_m2?' · '+l.living_m2+' m²':''}${l.build_year?' · built '+l.build_year:''}${l.drive_h?' · '+l.drive_h+' h':''}</div>
+    <div class="t"><a href="${esc(r.url||l.url)}" target="_blank" rel="noopener">${esc(r.title||l.title)}</a>${gone?' <span class="tag cut">inte längre till salu</span>':''}</div>
+    <div class="m">${esc(r.kommun||l.kommun)} · ${esc(r.region||l.region||'')} · ${(r.land_ha||l.land_ha)?(r.land_ha||l.land_ha)+' ha':''}${l.living_m2?' · '+l.living_m2+' m²':''}${l.build_year?' · byggår '+l.build_year:''}${l.drive_h?' · '+l.drive_h+' h':''}</div>
     <div class="price">${kr(r.price||l.price)}</div>
     ${r.home_why?`<div class="why"><b>Hem för Mina och Parviz:</b> ${esc(r.home_why)}</div>`:''}
     ${r.safehouse_why?`<div class="why"><b>Safe house för familjen:</b> ${esc(r.safehouse_why)}</div>`:''}
     ${(r.prepping_why||r.why)?`<div class="why"><b>Survival:</b> ${esc(r.prepping_why||r.why)}</div>`:''}
     ${r.invest_why?`<div class="why"><b>Ekonomi:</b> ${esc(r.invest_why)}</div>`:''}
     ${r.rank_why?`<div class="m"><b>Varför denna plats:</b> ${esc(r.rank_why)}</div>`:''}
-    ${r.maintenance?`<div class="m"><b>Maintenance:</b> ${esc(r.maintenance)}</div>`:''}
+    ${r.maintenance?`<div class="m"><b>Underhåll:</b> ${esc(r.maintenance)}</div>`:''}
     ${r.recommendation?`<div class="rec">${esc(r.recommendation)}</div>`:''}
     </div></div>`}).join('') + `</div>`;
   if (TOP.length>3) rh += `<p class="small" style="margin-top:8px"><b>Also judged worth a look:</b> ` + TOP.slice(3).map((r,i)=>`#${i+4} <a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> (${esc(r.kommun)}, ${kr(r.price)})`).join(' · ') + `</p>`;
   if (R.dropped && R.dropped.length) rh += `<p class="small"><b>Left the list:</b> ` + R.dropped.map(d=>`${esc(d.title)} (${esc(d.why)})`).join('; ') + `</p>`;
-} else rh = `<div class="note">No judgement yet. The daily step writes the top three after the scan.</div>`;
+} else rh = `<div class="note">Ingen bedömning än. Morgonkörningen skriver topp tre efter skanningen.</div>`;
 document.getElementById('recs').innerHTML = rh;
 
 // table
@@ -182,17 +182,17 @@ const fR = document.getElementById('fRegion'); regions.forEach(r=>{const o=docum
 let sortKey='rank', sortDir=1;
 function status(l){
   const out=[];
-  if (pickRank.has(l.id)) out.push(`<span class="tag pick">pick #${pickRank.get(l.id)}</span>`);
-  if (newIds.has(l.id)) out.push(`<span class="tag new">new</span>`);
-  const c=cutIds.get(l.id); if (c) out.push(`<span class="tag ${c.new<c.old?'cut':''}">${c.new<c.old?'price cut':'price up'}</span>`);
-  if (l.upcoming) out.push(`<span class="chip">upcoming</span>`);
+  if (pickRank.has(l.id)) out.push(`<span class="tag pick">förslag #${pickRank.get(l.id)}</span>`);
+  if (newIds.has(l.id)) out.push(`<span class="tag new">ny</span>`);
+  const c=cutIds.get(l.id); if (c) out.push(`<span class="tag ${c.new<c.old?'cut':''}">${c.new<c.old?'sänkt pris':'höjt pris'}</span>`);
+  if (l.upcoming) out.push(`<span class="chip">kommande</span>`);
   return out.join(' ');
 }
 function render(){
   const r=fR.value, q=document.getElementById('fText').value.toLowerCase(), onlyNew=document.getElementById('fNew').checked;
   let rows = L.filter(l => (!r || l.region===r) && (!onlyNew || newIds.has(l.id)) && (!q || (l.title+' '+l.kommun+' '+(l.location||'')+' '+(l.broker||'')).toLowerCase().includes(q)));
   rows.sort((a,b)=>{ let x=a[sortKey], y=b[sortKey]; if (typeof x==='string') return sortDir*x.localeCompare(y||'', 'sv'); x=(x==null?Infinity*sortDir:x); y=(y==null?Infinity*sortDir:y); return sortDir*(x-y); });
-  document.getElementById('count').textContent = `${rows.length} of ${L.length}`;
+  document.getElementById('count').textContent = `${rows.length} av ${L.length}`;
   document.getElementById('rows').innerHTML = rows.map(l=>`<tr>
     <td class="rank">${l.rank}</td>
     <td>${l.image?`<a href="${esc(l.url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(l.image)}" alt=""></a>`:''}</td>
@@ -206,7 +206,7 @@ function render(){
     <td class="num"><b>${l.score}</b></td>
     <td class="num">${l.days_tracked??'–'}</td>
     <td>${status(l)}</td>
-  </tr>`).join('') || `<tr><td colspan="12" class="small">Nothing matches these filters.</td></tr>`;
+  </tr>`).join('') || `<tr><td colspan="12" class="small">Inget matchar dessa filter.</td></tr>`;
   document.querySelectorAll('th[data-k]').forEach(th=>th.classList.toggle('on', th.dataset.k===sortKey));
 }
 document.querySelectorAll('th[data-k]').forEach(th=>th.addEventListener('click',()=>{ const k=th.dataset.k; if (sortKey===k) sortDir=-sortDir; else { sortKey=k; sortDir = (k==='rank'||k==='price'||k==='price_per_ha'||k==='drive_h'||k==='title') ? 1 : -1; } render(); }));
@@ -219,12 +219,12 @@ const reg = S.by_region||{};
 mh += `<table style="min-width:0;margin-top:12px"><tr><th>Region</th><th class="num">Listings</th><th class="num">New</th><th class="num">Median asking</th></tr>` +
   Object.entries(reg).sort((a,b)=>b[1].count-a[1].count).map(([k,v])=>`<tr><td>${esc(k)}</td><td class="num">${v.count}</td><td class="num">${v.new}</td><td class="num">${kr(v.median_price)}</td></tr>`).join('') + `</table>`;
 const fmtTot = v => v==null ? '–' : (typeof v==='object' ? Object.entries(v).map(([k,n])=>`${n??'–'} ${k}`).join(', ') : v);
-if (S.national_in_band) mh += `<p class="small">Nationally in the price band: Hemnet ${fmtTot(S.national_in_band.hemnet)}; Booli ${fmtTot(S.national_in_band.booli)}.</p>`;
+if (S.national_in_band) mh += `<p class="small">I hela landet inom prisramen: Hemnet ${fmtTot(S.national_in_band.hemnet)}; Booli ${fmtTot(S.national_in_band.booli)}.</p>`;
 let ch='';
-(C.new||[]).forEach(x=> ch += `<li><span class="tag new">new</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>, ${esc(x.kommun)}, ${kr(x.price)}, score ${x.score}</li>`);
-(C.price_changes||[]).forEach(x=> ch += `<li><span class="tag ${x.new<x.old?'cut':''}">${x.new<x.old?'price cut':'price up'}</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>, ${kr(x.old)} to ${kr(x.new)}</li>`);
-(C.gone||[]).forEach(x=> ch += `<li><span class="chip">gone</span> ${esc(x.title)}, ${esc(x.kommun)}, ${kr(x.price)}</li>`);
-mh += ch ? `<ul style="margin-top:10px">${ch}</ul>` : `<p class="small" style="margin-top:10px">No changes since the last run.</p>`;
+(C.new||[]).forEach(x=> ch += `<li><span class="tag new">ny</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>, ${esc(x.kommun)}, ${kr(x.price)}, score ${x.score}</li>`);
+(C.price_changes||[]).forEach(x=> ch += `<li><span class="tag ${x.new<x.old?'cut':''}">${x.new<x.old?'sänkt pris':'höjt pris'}</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>, ${kr(x.old)} to ${kr(x.new)}</li>`);
+(C.gone||[]).forEach(x=> ch += `<li><span class="chip">borta</span> ${esc(x.title)}, ${esc(x.kommun)}, ${kr(x.price)}</li>`);
+mh += ch ? `<ul style="margin-top:10px">${ch}</ul>` : `<p class="small" style="margin-top:10px">Inga förändringar sedan förra körningen.</p>`;
 if (D.history && D.history.length>1){
   const max = Math.max(...D.history.map(h=>h.matched||0),1);
   mh += `<div class="small">Matching listings, last ${D.history.length} runs</div><div class="spark">` + D.history.map(h=>`<i title="${h.date}: ${h.matched}" style="height:${Math.max(3,Math.round(40*h.matched/max))}px"></i>`).join('') + `</div>`;
