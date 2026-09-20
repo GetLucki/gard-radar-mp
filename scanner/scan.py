@@ -449,6 +449,46 @@ def build_year(text):
     return None
 
 
+AREA_PAT = re.compile(r"livingarea[:\s]*(\d{2,4})|boarea[:\s]*(?:ca\s*)?(\d{2,4})\s*(?:m|kvm)", re.I)
+LAND_PAT = re.compile(r"landarea[:\s]*(\d{3,9})|tomtarea[:\s]*(?:ca\s*)?([\d\s]{3,12})\s*m", re.I)
+
+
+def backfill(l, text):
+    """Boarea och tomtarea saknas ofta i sökkortet men finns i detaljsidans
+    faktablock. Boarean är ett skallkrav, så den fylls i före poängsättningen."""
+    if not l.get("living_m2"):
+        m = AREA_PAT.search(text or "")
+        if m:
+            v = int(m.group(1) or m.group(2))
+            if 20 <= v <= 2000:
+                l["living_m2"] = v
+                l["living_m2_source"] = "detalj"
+    if not l.get("land_ha"):
+        m = LAND_PAT.search(text or "")
+        if m:
+            raw = (m.group(1) or m.group(2) or "").replace(" ", "")
+            if raw.isdigit():
+                ha = round(int(raw) / 10000, 2)
+                if 0.1 <= ha <= 500:
+                    l["land_ha"] = ha
+                    l["land_ha_source"] = "detalj"
+    return l
+
+
+def prepare(matched, details, label=""):
+    """Komplettera ur detaljsidorna och tillämpa hårda filtren igen."""
+    for l in matched:
+        backfill(l, details.get(l["id"], {}).get("text", ""))
+        l["price_per_ha"] = round(l["price"] / l["land_ha"]) if l.get("land_ha") else None
+    before = len(matched)
+    out = [l for l in matched
+           if (l.get("living_m2") is None or l["living_m2"] >= CFG.get("living_min_m2", 0))
+           and (l.get("land_ha") is None or l["land_ha"] >= CFG["land_min_ha"])]
+    if before != len(out):
+        log(f"komplettering ur detaljsidorna: {before - len(out)} objekt föll på boarea eller mark {label}")
+    return out
+
+
 def score(l, text, median_price_per_ha):
     """100 poäng, profil 'mp' (dokumentets avsnitt 8, reviderad 2026-09-20):
     permanent hem för Mina och Parviz max en timme från Göteborg, stort hus,
@@ -508,6 +548,7 @@ def rescore_only():
     cur = load_json(DATA / "listings.json", {"listings": []})
     details = load_json(DATA / "details.json", {})
     matched = cur.get("listings", [])
+    matched = prepare(matched, details)
     pphs = [l["price_per_ha"] for l in matched if l.get("price_per_ha")]
     med_pph = statistics.median(pphs) if pphs else None
     for l in matched:
@@ -683,6 +724,7 @@ def main():
     for l in matched:
         l["last_seen"] = TODAY
 
+    matched = prepare(matched, details)
     pphs = [l["price_per_ha"] for l in matched if l.get("price_per_ha")]
     med_pph = statistics.median(pphs) if pphs else None
     for l in matched:
