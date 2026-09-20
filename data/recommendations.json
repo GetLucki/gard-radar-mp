@@ -1,0 +1,115 @@
+{
+  "date": "2026-09-20",
+  "market_summary": "Första skanningen gav 146 träffar i de 28 kommunerna, och alla räknas som nya i dag. Medianpriset är 4 297 500 kr och medianen per hektar 730 000 kr. Göteborgs omland har flest objekt med 62, Nära Göteborg har 34 med median 4 500 000 kr och Yttre ring 50. Ungefär en tredjedel av träffarna är obebyggd skog eller tomtmark utan hus och kan sorteras bort direkt, och många gårdar har legat ute i fyra till elva månader, så det finns förhandlingsläge. För en köpare den här veckan finns två objekt som är värda en visning redan nu, Gunnarsjö Bro i Varberg och Kareby kyrkväg i Kungälv, medan resten är frågor till mäklaren.",
+  "top": [
+    {
+      "id": "hemnet:21719773",
+      "title": "Gunnarsjö Bro 1",
+      "kommun": "Varberg",
+      "region": "Göteborgs omland",
+      "price": 3395000,
+      "land_ha": 15.5,
+      "url": "https://www.hemnet.se/bostad/gard-5rum-kungsater-varbergs-kommun-gunnarsjo-bro-1-21719773",
+      "score": 67,
+      "home_why": "Boningshus från 1964 på 123 kvm plus källare, med kök, vardagsrum, ett sovrum och gästtoalett på entréplan, så det går att bo på ett plan om ett duschrum ordnas där. Bergvärme, solceller och två fungerande vedspisar ger låga driftskostnader. Kungsäter har lanthandel, vårdcentral finns i Horred eller Veddige inom cirka 20 minuter och Varbergs sjukhus når man på 35 minuter. Restid från Göteborg drygt en timme.",
+      "safehouse_why": "15,5 hektar med åker, bete och skog ger både odling, djur och ved. Timmerhuset från 1850-talet är en andra byggnad som kan bli bostad för familjen, och ladugården rymmer verkstad, slaktrum och maskinhall. Äldre hönshus och matkällare finns redan. Vattenkällan framgår inte av annonsen och måste kontrolleras.",
+      "invest_why": "219 000 kr per hektar mot medianen 730 000 kr bland dagens träffar, och priset ligger under regionens median på 4 000 000 kr. Halland har landets starkaste prisutveckling de senaste fem åren. Fyra månader på marknaden ger förhandlingsläge. Skötseln är rimlig för två aktiva personer om skogen får sköta sig själv.",
+      "rank_why": "Det enda objektet i dag som klarar alla tre kraven på en gång: två värmesystem, egen mark för mat och ved, en andra byggnad och ett pris under 3 500 000 kr. Det som hindrar ett rent köpråd är avståndet till vård och att badrummet ligger en trappa upp.",
+      "maintenance": "Byggår 1964, badrum på övre plan med äldre standard. Inom fem år: duschrum på entréplan, badrumsrenovering, nytt hönshus, kontroll av brunn och avlopp.",
+      "recommendation": "Boka visning, eftersom kombinationen av pris, mark och två värmesystem sällan återkommer så nära Göteborg."
+    },
+    {
+      "id": "hemnet:21786760",
+      "title": "Kareby kyrkväg 130",
+      "kommun": "Kungälv",
+      "region": "Nära Göteborg",
+      "price": 3595000,
+      "land_ha": 4.0,
+      "url": "https://www.hemnet.se/bostad/gard-7rum-kareby-kungalvs-kommun-kareby-kyrkvag-130-21786760",
+      "score": 52,
+      "home_why": "Tvåplanshus från 1976 på 183 kvm med två separata lägenheter, så Mina och Parviz kan bo helt på entréplan med eget kök och badrum. Kareby har förskola, skola, buss och grannar inom synhåll. Kungälvs sjukhus och centrum ligger tio minuter bort och Göteborg en halvtimme. Uppvärmning och fiber nämns inte i annonsen.",
+      "safehouse_why": "Fyra hektar med skog och en stor trädgård med äppelträd. Den andra lägenheten är en färdig bostad för Luki, Parisa och barnen. Annonsen säger inget om brunn, odlingsmark eller uthus, så gårdens självförsörjning måste bedömas på plats.",
+      "invest_why": "3 595 000 kr för 183 kvm och fyra hektar i Kungälv är under regionens median på 4 500 000 kr. Nära Göteborg håller värdet bäst i landet, och ett hus med två lägenheter är lätt att sälja eller hyra ut. Nio dagar på marknaden, så budgivning är trolig.",
+      "rank_why": "Bästa objektet som hem och för familjen, men brunn, värme och markens skick är okända, och fyra hektar ger mindre mat och ved än nummer ett.",
+      "maintenance": "Byggår 1976, sannolikt originalstandard i delar. Inom fem år: kontroll av tak, fönster och el, eventuellt kök eller badrum, hönshus och staket.",
+      "recommendation": "Boka visning, eftersom läget och priset gör att objektet inte väntar, och ställ frågorna om brunn och värme på plats."
+    },
+    {
+      "id": "hemnet:21773856",
+      "title": "Forshallsvägen 10",
+      "kommun": "Mark",
+      "region": "Göteborgs omland",
+      "price": 3350000,
+      "land_ha": 7.94,
+      "url": "https://www.hemnet.se/bostad/villa-5rum-orby-marks-kommun-forshallsvagen-10-21773856",
+      "score": 51,
+      "home_why": "Välskött hus från 1930 på 100 kvm med kök, vardagsrum, ett sovrum och badrum på entréplan och tre sovrum en trappa upp. Vedspis i köket och groventré. Örby ligger fem minuter från Kinna med vårdcentral, apotek och handel, och Göteborg nås på 50 minuter. Huset ligger längst in på en grusväg, så grannarna är få.",
+      "safehouse_why": "Knappt åtta hektar med beteshagar, ängar, ung lövskog och en bäck genom marken, sjö i närheten. Odlingslådor, jordkällare och gäststuga finns. Gäststugan är liten, så familjen får tränga ihop sig i huset.",
+      "invest_why": "422 000 kr per hektar, klart under medianen, och totalpriset är under regionens median. Mark har stabil efterfrågan på hästgårdar nära Göteborg. Två månader på marknaden. Skötseln är lagom med hagar och ett mindre hus.",
+      "rank_why": "Lägre pris och bättre mark än nummer två, men huvudvärmen framgår inte och huset är litet för hela familjen.",
+      "maintenance": "Byggår 1930, tegeltak. Fråga om el, avlopp och huvudvärme. Inom fem år: eventuellt värmepump, hönshus, större gäststuga om familjen ska kunna bo där.",
+      "recommendation": "Fråga mäklaren om uppvärmning och vattenkälla först, och boka visning om det finns värmepump eller skorsten för mer än vedspisen."
+    },
+    {
+      "id": "hemnet:21708620",
+      "title": "Börsås 223",
+      "kommun": "Uddevalla",
+      "region": "Yttre ring",
+      "price": 6000000,
+      "land_ha": 29.1,
+      "url": "https://www.hemnet.se/bostad/villa-7rum-bokenas-uddevalla-kommun-borsas-223-21708620",
+      "score": 55,
+      "home_why": "Enplanshus byggt 2004 med 163 kvm boyta och full källare, fem till sex sovrum. Det är det enda objektet i dag som är både nytt och i ett plan. Bokenäset har handel och förskola nära, men vårdcentral ligger i Uddevalla cirka 25 minuter bort, och restiden från Göteborg är 70 minuter.",
+      "safehouse_why": "29 hektar, varav 9 hektar betesmark och 14 hektar skog, ladugård och maskingarage. Marken räcker för djur, odling och ved i decennier. Med källare och vind finns plats för hela familjen. Vatten och värme nämns inte i annonsen.",
+      "invest_why": "206 000 kr per hektar, och skogen har ett virkesförråd på cirka 2 750 kubikmeter som kan finansiera en del av köpet. Uddevalla har svagare värdeutveckling än Göteborgsområdet, men ett modernt hus behåller värdet. 6 000 000 kr ligger nära ramens tak.",
+      "rank_why": "Bäst hus av alla, men Yttre ring, 25 minuter till vård och ett pris nära taket placerar det under de tre närmare objekten.",
+      "maintenance": "Byggår 2004, lite att göra på huset. Inom fem år: hönshus och staket, kontroll av värmesystem, eventuellt inreda vinden.",
+      "recommendation": "Fråga mäklaren om uppvärmning, brunn och restid till vårdcentral först, eftersom de tre svaren avgör om Yttre ring är värt priset."
+    },
+    {
+      "id": "hemnet:21789788",
+      "title": "Kvarbo gård 2",
+      "kommun": "Borås",
+      "region": "Göteborgs omland",
+      "price": 5900000,
+      "land_ha": 22.2,
+      "url": "https://www.hemnet.se/bostad/gard-6rum-boras-kommun-kvarbo-gard-2-21789788",
+      "score": 46,
+      "home_why": "Välhållet hus från 1954 på 133 kvm med sex rum och låga driftskostnader. Tre kilometer till Fristad med vårdcentral, apotek och handel, busshållplats vid infarten och Borås sjukhus på 15 minuter. Restid från Göteborg en timme. Planlösning och värmesystem framgår inte.",
+      "safehouse_why": "22 hektar med 8 hektar åker och bete och 12 hektar skog, ladugård och förråd, gräns mot sjön Ärtingen. Ved, odling och djur är säkrade, och sjön ger reservvatten. Ingen andra bostad, men sex rum räcker för familjen.",
+      "invest_why": "266 000 kr per hektar. Stor andel slutavverkningsbar skog kan ge en miljon eller mer i intäkt kort efter köpet. Borås har sjukhus och en stabil marknad. Tre dagar på marknaden, så budgivning kan driva upp priset.",
+      "rank_why": "Starkast ekonomi av dagens fem tack vare skogen, men annonsen är knapphändig om huset och priset är högt innan skogen räknats in.",
+      "maintenance": "Byggår 1954. Fråga om tak, fönster, el, avlopp och värme. Inom fem år: eventuellt badrum på entréplan, hönshus, skogsvård med entreprenör.",
+      "recommendation": "Fråga mäklaren om planlösning, värme och vatten först, och be om skogsbruksplanen innan visning."
+    }
+  ],
+  "dropped": [],
+  "criteria_changes": [],
+  "watch": [
+    {
+      "id": "hemnet:21619825",
+      "title": "Tolleby 31",
+      "note": "Renoverat hus med luft-vattenvärmepump från 2025 och 22 hektar på Tjörn, men 6 495 000 kr och ett stall med tolv boxar är mer än två pensionärer behöver sköta. Elva månader på marknaden, värd en andra titt om priset sjunker under 5 500 000 kr."
+    },
+    {
+      "id": "hemnet:21639465",
+      "title": "Ljur Skogslund",
+      "note": "Bergvärme plus vedspis och gäststuga, men 4 300 000 kr för 2,3 hektar och ett hus från 1917 med okänd standard. Åtta månader på marknaden, värd en andra titt om priset sjunker."
+    },
+    {
+      "id": "hemnet:21780882",
+      "title": "Hallekullen 158",
+      "note": "Renoverad liten hästgård med växthus, damm och gäststuga i Stenungsund, men 70 kvm bostad för 5 600 000 kr är för litet och för dyrt. Bevaka om priset sjunker rejält."
+    },
+    {
+      "id": "hemnet:21769758",
+      "title": "Intagan 128",
+      "note": "12 hektar och 158 kvm nära Trollhättan för 3 500 000 kr, men huset ligger 250 meter från Göta älv i skredriskområde och är i souterräng. Kontrollera SGI:s skredkarta innan någon åker dit."
+    },
+    {
+      "id": "hemnet:21741956",
+      "title": "Gennevedsvägen 108",
+      "note": "Renoverat hus och 34,6 hektar i Alingsås för 2 975 000 kr låter för bra. Samma adress finns på Booli för 3 900 000 kr och 4 500 000 kr, så be mäklaren förklara vad som ingår i vilket pris."
+    }
+  ]
+}
