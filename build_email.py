@@ -48,7 +48,7 @@ subject = f"{CFG.get('profile_title', 'Gård-radar')} {date}: {S.get('matched', 
 
 # ---------- criteria box (what the judgement is based on) ----------
 criteria_surv = [
-    "Hem för två: beboeligt hus utan renovering, helst enplan eller sovrum och badrum på entréplan, fiber, vårdcentral inom 25 min och mataffär inom 15",
+    "Bebyggd gård med färdigt hus, minst 170 kvadratmeter, inflyttningsklart. Ingen ren tomt, inget renoveringsobjekt",
     "Självförsörjning: egen brunn, odlingsbar mark, plats för höns och gärna får, ved från egen skog, vedeldning plus värmepump",
     "Plats för hela familjen: andra bostad, flygel eller minst fem rum",
     "Max 40 minuter med bil från Sannegårdshamnen, buss eller tåg på gångavstånd eller några minuter med bil, grannar inom synhåll",

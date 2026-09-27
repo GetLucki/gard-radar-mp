@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T09:09",
+ "generated": "2026-09-27T09:47",
  "config": {
   "price_min": 2500000,
   "price_max": 15000000,
@@ -7,13 +7,13 @@
  },
  "stats": {
   "date": "2026-09-27",
-  "matched": 63,
+  "matched": 56,
   "new": 0,
   "gone": 0,
   "price_cuts": 0,
   "price_rises": 0,
-  "median_price": 5995000,
-  "median_price_per_ha": 898750,
+  "median_price": 6025000,
+  "median_price_per_ha": 900039,
   "national_in_band": {
    "hemnet": {
     "gard": 824,
@@ -27,14 +27,14 @@
   "hemnet_ok": true,
   "by_region": {
    "20 till 30 min": {
-    "count": 18,
+    "count": 17,
     "new": 0,
-    "median_price": 7497500
+    "median_price": 7495000
    },
    "30 till 40 min": {
-    "count": 40,
+    "count": 34,
     "new": 0,
-    "median_price": 4937500
+    "median_price": 5587500
    },
    "Under 20 min": {
     "count": 5,
@@ -101,9 +101,9 @@
     "heating": 0,
     "services": 20,
     "family": 10,
-    "price": 4
+    "price": 7
    },
-   "score": 59
+   "score": 62
   },
   {
    "id": "hemnet:21768667",
@@ -223,58 +223,6 @@
     "price": 1
    },
    "score": 42
-  },
-  {
-   "id": "hemnet:21773420",
-   "source": "hemnet",
-   "title": "Frillesås",
-   "location": "Frillesås, Kungsbacka kommun",
-   "kommun_raw": "Kungsbacka",
-   "price": 2800000,
-   "land_ha": 18.0,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård/skog",
-   "url": "https://www.hemnet.se/bostad/gard-kungsbacka-kommun-frillesas-21773420",
-   "lat": 57.3412585,
-   "lon": 12.2371768,
-   "published": "2026-08-21",
-   "broker": "Areal | Göteborg",
-   "teaser": "Jord och skog! Obebyggd lantbruksfastighet med blandad skog och jordbruksmark. Fastigheten ligger i ett bra läge intill väg och är väl samlad med mycket god tillgänglighet. Fastigheten omfattar ca 18 hektar varav drygt 11 ha skogsmark och ca 5 ha åkermark. Här finns möjlighet till skogsbruk, odling samt rekreation med jakt och fiske.\n\nPå fastigheten finns anlagt ett antal dammar där man planterat…",
-   "image": "https://bilder.hemnet.se/images/itemgallery_cut/0a/4f/0a4f9abcb1b9f8f63ca96d7f68b81a62.jpg",
-   "upcoming": false,
-   "labels": [
-    "MAX"
-   ],
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "drive_h": 0.5,
-   "price_per_ha": 155556,
-   "key": "kungsbacka|frillesås|280",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     2800000
-    ]
-   ],
-   "days_tracked": 0,
-   "last_seen": "2026-09-27",
-   "build_year": null,
-   "signals": [
-    "forest",
-    "arable"
-   ],
-   "score_parts": {
-    "water": 0,
-    "land": 12,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 10
-   },
-   "score": 37
   },
   {
    "id": "hemnet:21786611",
@@ -431,56 +379,8 @@
     "family": 4,
     "price": 10
    },
-   "score": 31
-  },
-  {
-   "id": "hemnet:21751072",
-   "source": "hemnet",
-   "title": "Rörsjö",
-   "location": "Kungsbacka, Kungsbacka kommun",
-   "kommun_raw": "Kungsbacka",
-   "price": 3500000,
-   "land_ha": 23.0,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård/skog",
-   "url": "https://www.hemnet.se/bostad/gard-kungsbacka-kommun-rorsjo-21751072",
-   "lat": 57.5077897,
-   "lon": 12.2401652,
-   "published": "2026-08-28",
-   "broker": "Areal | Göteborg",
-   "teaser": "Omväxlande skog och mark! I Rörsjö, strax öster om Kungsbacka, finns denna obebyggda fastighet på ca 23 hektar. Enligt skogsbruksplanen uppgår den produktiva skogsmarksarealen till knappt 18 hektar och den har ett bedömt virkesförråd på ca 4 300 m³sk varav en stor del är mogen att avverka. En del av skogen vid Stensjön innehåller lövskog med inslag av ädellövskog som ek och bok. På denna…",
-   "image": "https://bilder.hemnet.se/images/itemgallery_cut/a2/8a/a28af00a1f4fe9c0966ebd9af9541734.jpg",
-   "upcoming": false,
-   "labels": [],
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "drive_h": 0.5,
-   "price_per_ha": 152174,
-   "key": "kungsbacka|rörsjö|350",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     3500000
-    ]
-   ],
-   "days_tracked": 0,
-   "last_seen": "2026-09-27",
-   "build_year": null,
-   "signals": [
-    "forest"
-   ],
-   "score_parts": {
-    "water": 0,
-    "land": 5,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 10
-   },
-   "score": 30
+   "score": 31,
+   "house_unconfirmed": true
   },
   {
    "id": "hemnet:21748809",
@@ -519,56 +419,6 @@
    "build_year": null,
    "signals": [
     "forest"
-   ],
-   "score_parts": {
-    "water": 0,
-    "land": 5,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 10
-   },
-   "score": 30
-  },
-  {
-   "id": "hemnet:21774846",
-   "source": "hemnet",
-   "title": "48 hektar sammanhängande skogsmark strax norr om Lerkil",
-   "location": "Vallda, Kungsbacka kommun",
-   "kommun_raw": "Kungsbacka",
-   "price": 4500000,
-   "land_ha": 48.4,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård/skog",
-   "url": "https://www.hemnet.se/bostad/gard-kungsbacka-kommun-48-hektar-sammanhangande-skogsmark-strax-norr-om-lerkil-21774846",
-   "lat": 57.4625315,
-   "lon": 11.9444814,
-   "published": "2026-08-25",
-   "broker": "Ludvig & Co Fastighetsförmedling",
-   "teaser": "Strax norr om Lerkil i Kungsbacka kommun erbjuds möjlighet att förvärva ett sammanhängande skogsskifte om cirka 48 hektar med goda förutsättningar för såväl skogsbruk som jakt. Av arealen utgör cirka 42,2 hektar produktiv skogsmark med ett beräknat virkesförråd om cirka 6 469 m³sk. Skogen domineras av tall och löv och en stor del av virkesförrådet återfinns i gallringsskog. En asfalterad väg…",
-   "image": "https://bilder.hemnet.se/images/itemgallery_cut/58/a1/58a18c3e53ebe93cd57dbe0d3d054b92.jpg",
-   "upcoming": false,
-   "labels": [],
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "drive_h": 0.5,
-   "price_per_ha": 92975,
-   "key": "kungsbacka|48hektarsammanhängandeskogsmarkstraxnorromlerkil|450",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     4500000
-    ]
-   ],
-   "days_tracked": 0,
-   "last_seen": "2026-09-27",
-   "build_year": null,
-   "signals": [
-    "forest",
-    "defects"
    ],
    "score_parts": {
     "water": 0,
@@ -631,57 +481,6 @@
    "score": 30
   },
   {
-   "id": "hemnet:21698440",
-   "source": "hemnet",
-   "title": "Unika markområden i Bukärr",
-   "location": "Bukärr, Kungsbacka kommun",
-   "kommun_raw": "Kungsbacka",
-   "price": 6700000,
-   "land_ha": 7.5,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård med jordbruk",
-   "url": "https://www.hemnet.se/bostad/gard-bukarr-kungsbacka-kommun-unika-markomraden-i-bukarr-21698440",
-   "lat": 57.5255207,
-   "lon": 11.9387009,
-   "published": "2026-04-13",
-   "broker": "Ludvig & Co Fastighetsförmedling",
-   "teaser": "Vi erbjuder nu en unik möjlighet för investerare att förvärva en fastighet i eftertraktade Bukärr, ett kustnära område mellan Kullavik och Särö, känt för sitt attraktiva boende och naturnära läge.\n\nFastigheterna omfattar totalt cirka 7,5 hektar, varav 1,2 hektar inägomark och resterande skogs- och hällmark, fördelat på två skiften. Läget är strategiskt – gångavstånd till havet och omgivna av…",
-   "image": "https://bilder.hemnet.se/images/itemgallery_cut/84/dc/84dc7c889cd053a63cc98029bd008884.jpg",
-   "upcoming": false,
-   "labels": [
-    "PREMIUM"
-   ],
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "drive_h": 0.5,
-   "price_per_ha": 893333,
-   "key": "kungsbacka|unikamarkområdenibukärr|670",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     6700000
-    ]
-   ],
-   "days_tracked": 0,
-   "last_seen": "2026-09-27",
-   "build_year": null,
-   "signals": [
-    "arable"
-   ],
-   "score_parts": {
-    "water": 0,
-    "land": 7,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 7
-   },
-   "score": 29
-  },
-  {
    "id": "booli:6093722",
    "source": "booli",
    "title": "Bremnäs 200",
@@ -727,7 +526,8 @@
     "family": 4,
     "price": 7
    },
-   "score": 28
+   "score": 28,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:5778014",
@@ -776,7 +576,8 @@
     "family": 4,
     "price": 10
    },
-   "score": 28
+   "score": 28,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6230409",
@@ -825,7 +626,8 @@
     "family": 4,
     "price": 10
    },
-   "score": 27
+   "score": 27,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6138428",
@@ -874,7 +676,8 @@
     "family": 4,
     "price": 7
    },
-   "score": 26
+   "score": 26,
+   "house_unconfirmed": true
   },
   {
    "id": "hemnet:21716583",
@@ -1037,7 +840,8 @@
     "family": 4,
     "price": 7
    },
-   "score": 24
+   "score": 24,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6237422",
@@ -1085,7 +889,8 @@
     "family": 0,
     "price": 10
    },
-   "score": 24
+   "score": 24,
+   "house_unconfirmed": true
   },
   {
    "id": "hemnet:21784652",
@@ -1183,7 +988,8 @@
     "family": 0,
     "price": 10
    },
-   "score": 24
+   "score": 24,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:5714823",
@@ -1231,7 +1037,8 @@
     "family": 0,
     "price": 7
    },
-   "score": 24
+   "score": 24,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6234919",
@@ -1280,7 +1087,8 @@
     "family": 0,
     "price": 10
    },
-   "score": 24
+   "score": 24,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6116347",
@@ -1328,7 +1136,8 @@
     "family": 0,
     "price": 7
    },
-   "score": 24
+   "score": 24,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6154665",
@@ -1376,7 +1185,8 @@
     "family": 0,
     "price": 10
    },
-   "score": 23
+   "score": 23,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:5872854",
@@ -1425,7 +1235,8 @@
     "family": 4,
     "price": 10
    },
-   "score": 23
+   "score": 23,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6273526",
@@ -1526,7 +1337,8 @@
     "family": 0,
     "price": 7
    },
-   "score": 22
+   "score": 22,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6105110",
@@ -1575,7 +1387,8 @@
     "family": 4,
     "price": 1
    },
-   "score": 22
+   "score": 22,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6005309",
@@ -1623,7 +1436,8 @@
     "family": 4,
     "price": 1
    },
-   "score": 22
+   "score": 22,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6146398",
@@ -1671,7 +1485,8 @@
     "family": 4,
     "price": 1
    },
-   "score": 22
+   "score": 22,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6266042",
@@ -1768,7 +1583,8 @@
     "family": 4,
     "price": 1
    },
-   "score": 22
+   "score": 22,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6280309",
@@ -1817,7 +1633,8 @@
     "family": 4,
     "price": 4
    },
-   "score": 21
+   "score": 21,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:5336036",
@@ -1866,7 +1683,8 @@
     "family": 4,
     "price": 7
    },
-   "score": 21
+   "score": 21,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:5752737",
@@ -1914,7 +1732,8 @@
     "family": 4,
     "price": 4
    },
-   "score": 21
+   "score": 21,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6173550",
@@ -1962,7 +1781,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 21
+   "score": 21,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6263329",
@@ -2011,7 +1831,8 @@
     "family": 4,
     "price": 3
    },
-   "score": 21
+   "score": 21,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6224509",
@@ -2060,7 +1881,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 21
+   "score": 21,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6148599",
@@ -2109,7 +1931,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 21
+   "score": 21,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6219688",
@@ -2207,7 +2030,8 @@
     "family": 0,
     "price": 10
    },
-   "score": 20
+   "score": 20,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6226636",
@@ -2256,7 +2080,8 @@
     "family": 0,
     "price": 10
    },
-   "score": 20
+   "score": 20,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6078955",
@@ -2352,7 +2177,8 @@
     "family": 0,
     "price": 7
    },
-   "score": 20
+   "score": 20,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6247053",
@@ -2401,58 +2227,8 @@
     "family": 0,
     "price": 10
    },
-   "score": 20
-  },
-  {
-   "id": "hemnet:21702620",
-   "source": "hemnet",
-   "title": "2,2 ha i Bukärr",
-   "location": "Bukärr, Kungsbacka kommun",
-   "kommun_raw": "Kungsbacka",
-   "price": 3500000,
-   "land_ha": 2.2,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård med jordbruk",
-   "url": "https://www.hemnet.se/bostad/gard-bukarr-kungsbacka-kommun-2,2-ha-i-bukarr-21702620",
-   "lat": 57.5255207,
-   "lon": 11.9387009,
-   "published": "2026-04-13",
-   "broker": "Ludvig & Co Fastighetsförmedling",
-   "teaser": "Vi har nu nöjet att erbjuda en unik investeringsmöjlighet i eftertraktade Bukärr – ett kustnära och exklusivt område mellan Kullavik och Särö, känt för sin attraktiva boendemiljö och närheten till havet.\n\nFastigheten omfattar cirka 2,2 hektar och utgörs till största delen av plan, lättillgänglig skogsmark med olikåldrig lövskog. Den naturnära miljön i kombination med god tillgänglighet skapar ett…",
-   "image": "https://bilder.hemnet.se/images/itemgallery_cut/6f/29/6f291f87589254d87182a01b919b9517.jpg",
-   "upcoming": false,
-   "labels": [
-    "PREMIUM"
-   ],
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "drive_h": 0.5,
-   "price_per_ha": 1590909,
-   "key": "kungsbacka|22haibukärr|350",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     3500000
-    ]
-   ],
-   "days_tracked": 0,
-   "last_seen": "2026-09-27",
-   "build_year": null,
-   "signals": [
-    "forest"
-   ],
-   "score_parts": {
-    "water": 0,
-    "land": 3,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 1
-   },
-   "score": 19
+   "score": 20,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6017516",
@@ -2501,7 +2277,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 19
+   "score": 19,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6244570",
@@ -2549,7 +2326,8 @@
     "family": 4,
     "price": 1
    },
-   "score": 18
+   "score": 18,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6217363",
@@ -2597,7 +2375,8 @@
     "family": 0,
     "price": 3
    },
-   "score": 18
+   "score": 18,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6143493",
@@ -2646,56 +2425,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 18
-  },
-  {
-   "id": "booli:5753460",
-   "source": "booli",
-   "title": "Vedhall 160",
-   "location": "Tomt/Mark · Kärna · Kungälv",
-   "kommun_raw": "Kungälv",
-   "county": "Västra Götalands län",
-   "price": 15000000,
-   "land_ha": 2.79,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Tomt/Mark",
-   "url": "https://www.booli.se/bostad/3427047",
-   "lat": 57.82850462,
-   "lon": 11.69958178,
-   "published": null,
-   "days_text": "1 år på Booli",
-   "broker": "Residence Christie's International Real Estate",
-   "teaser": "",
-   "upcoming": false,
-   "labels": [],
-   "image": "https://bcdn.se/images/cache/47664136_1440x0.jpg",
-   "kommun": "Kungälv",
-   "region": "20 till 30 min",
-   "drive_h": 0.3,
-   "price_per_ha": 5376344,
-   "key": "kungälv|vedhall160|1500",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     15000000
-    ]
-   ],
-   "days_tracked": 0,
-   "last_seen": "2026-09-27",
-   "build_year": null,
-   "signals": [],
-   "score_parts": {
-    "water": 0,
-    "land": 0,
-    "house": 0,
-    "heating": 0,
-    "services": 17,
-    "family": 0,
-    "price": 1
-   },
-   "score": 18
+   "score": 18,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:5863422",
@@ -2744,7 +2475,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 17
+   "score": 17,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6238427",
@@ -2793,55 +2525,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 17
-  },
-  {
-   "id": "booli:6189389",
-   "source": "booli",
-   "title": "Dalslingans väg 24",
-   "location": "Tomt/Mark · Östra Kullavik · Kungsbacka",
-   "kommun_raw": "Kungsbacka",
-   "county": "Hallands län",
-   "price": 2800000,
-   "land_ha": 2.01,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Tomt/Mark",
-   "url": "https://www.booli.se/annons/6189389",
-   "lat": 57.53143098,
-   "lon": 11.9860268,
-   "published": null,
-   "days_text": "2026-08-27",
-   "broker": null,
-   "teaser": "",
-   "upcoming": false,
-   "labels": [],
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "drive_h": 0.5,
-   "price_per_ha": 1393035,
-   "key": "kungsbacka|dalslingansväg24|280",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     2800000
-    ]
-   ],
-   "days_tracked": 0,
-   "last_seen": "2026-09-27",
-   "build_year": null,
-   "signals": [],
-   "score_parts": {
-    "water": 0,
-    "land": 0,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 1
-   },
-   "score": 16
+   "score": 17,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6148557",
@@ -2889,7 +2574,8 @@
     "family": 0,
     "price": 7
    },
-   "score": 16
+   "score": 16,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6123803",
@@ -2937,7 +2623,8 @@
     "family": 0,
     "price": 1
    },
-   "score": 16
+   "score": 16,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:5780835",
@@ -2985,7 +2672,8 @@
     "family": 0,
     "price": 1
    },
-   "score": 16
+   "score": 16,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6209990",
@@ -3034,7 +2722,8 @@
     "family": 0,
     "price": 1
    },
-   "score": 15
+   "score": 15,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6197068",
@@ -3083,7 +2772,8 @@
     "family": 0,
     "price": 1
    },
-   "score": 15
+   "score": 15,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6079872",
@@ -3132,7 +2822,8 @@
     "family": 0,
     "price": 4
    },
-   "score": 13
+   "score": 13,
+   "house_unconfirmed": true
   },
   {
    "id": "booli:6148169",
@@ -3181,7 +2872,8 @@
     "family": 0,
     "price": 1
    },
-   "score": 10
+   "score": 10,
+   "house_unconfirmed": true
   }
  ]
 }

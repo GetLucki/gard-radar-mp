@@ -516,6 +516,40 @@ AREA_PAT = re.compile(r"livingarea[:\s]*(\d{2,4})|boarea[:\s]*(?:ca\s*)?(\d{2,4}
 LAND_PAT = re.compile(r"landarea[:\s]*(\d{3,9})|tomtarea[:\s]*(?:ca\s*)?([\d\s]{3,12})\s*m", re.I)
 
 
+# Gården ska vara bebyggd och inflyttningsklar (Luki 2026-09-27): inga rena
+# tomter eller skiften, och inga renoveringsobjekt. Lätt uppfräschning är ok.
+UNBUILT_RE = re.compile(
+    r"obebyggd|obebyggt|ingen bebyggelse|utan byggnader|saknar byggnader|byggklar|"
+    r"tomtmark|skogsskifte|åkerskifte|jordbruksskifte|markområde|skogsfastighet utan|"
+    r"endast mark|ren skogsfastighet|obebyggd fastighet", re.I)
+HEAVY_RENO_RE = re.compile(
+    r"renoveringsobjekt|rivningsobjekt|ödegård|ödehus|totalrenovering|"
+    r"genomgripande renovering|omfattande renovering|kräver renovering|"
+    r"för den handlingskraftige|handlingens man|renoveras i sin helhet|"
+    r"i mycket dåligt skick|förfallet", re.I)
+UNBUILT_TYPE_RE = re.compile(r"tomt|\bmark\b", re.I)
+HOUSE_RE = re.compile(
+    r"bostadshus|mangårdsbyggnad|huvudbyggnad|\bvilla\b|boningshus|\bbostad\b|"
+    r"\bhuset\b|kök|badrum|sovrum|vardagsrum", re.I)
+
+
+def is_buildable_home(l, text):
+    """Returnera (ok, orsak). Objektet ska ha ett hus att flytta in i."""
+    t = text or ""
+    typ = l.get("type") or ""
+    if UNBUILT_TYPE_RE.search(typ) and not l.get("living_m2"):
+        return False, "obebyggd tomt eller mark"
+    if UNBUILT_RE.search(t) and not l.get("living_m2"):
+        return False, "annonsen beskriver obebyggd mark"
+    if HEAVY_RENO_RE.search(t):
+        return False, "renoveringsobjekt"
+    if not l.get("living_m2") and not HOUSE_RE.search(t):
+        # Tunn annonstext är vårt problem, inte säljarens. Behåll objektet men
+        # märk det, så kontrollerar Claude huset innan det kan rankas.
+        l["house_unconfirmed"] = True
+    return True, ""
+
+
 def backfill(l, text):
     """Boarea och tomtarea saknas ofta i sökkortet men finns i detaljsidans
     faktablock. Boarean är ett skallkrav, så den fylls i före poängsättningen."""
@@ -544,11 +578,22 @@ def prepare(matched, details, label=""):
         backfill(l, details.get(l["id"], {}).get("text", ""))
         l["price_per_ha"] = round(l["price"] / l["land_ha"]) if l.get("land_ha") else None
     before = len(matched)
-    out = [l for l in matched
-           if (l.get("living_m2") is None or l["living_m2"] >= CFG.get("living_min_m2", 0))
-           and (l.get("land_ha") is None or l["land_ha"] >= CFG["land_min_ha"])]
+    out, dropped = [], {}
+    for l in matched:
+        if l.get("living_m2") is not None and l["living_m2"] < CFG.get("living_min_m2", 0):
+            dropped["boarea"] = dropped.get("boarea", 0) + 1
+            continue
+        if l.get("land_ha") is not None and l["land_ha"] < CFG["land_min_ha"]:
+            dropped["mark"] = dropped.get("mark", 0) + 1
+            continue
+        ok, why = is_buildable_home(l, details.get(l["id"], {}).get("text", ""))
+        if not ok:
+            dropped[why] = dropped.get(why, 0) + 1
+            continue
+        out.append(l)
     if before != len(out):
-        log(f"komplettering ur detaljsidorna: {before - len(out)} objekt föll på boarea eller mark {label}")
+        detalj = ", ".join(f"{v} {k}" for k, v in sorted(dropped.items(), key=lambda kv: -kv[1]))
+        log(f"filtrerade bort {before - len(out)} objekt {label}: {detalj}")
     return out
 
 
@@ -577,6 +622,7 @@ def score(l, text, median_price_per_ha):
     house += 4 if hit["renovated_wet"] else 0
     house += 5 if hit["single_storey"] else 0
     house -= 8 if hit["highmaint_need"] else 0
+    house -= 3 if l.get("house_unconfirmed") else 0
     house -= 4 if hit["defects"] else 0
     s["house"] = max(0, min(20, house))
 
@@ -905,7 +951,7 @@ def main():
         d = {k: l.get(k) for k in ("id", "title", "kommun", "region", "price", "land_ha", "living_m2",
                                     "rooms", "type", "url", "alt_url", "drive_h", "price_per_ha", "score",
                                     "score_parts", "signals", "first_seen", "days_tracked", "price_history",
-                                    "broker", "days_text", "build_year", "transit_evidence")}
+                                    "broker", "days_text", "build_year", "transit_evidence", "house_unconfirmed")}
         fresh = l["id"] in new_ids or l["id"] in changed_ids or l["id"] in prev_pick_ids
         d["is_new"] = l["id"] in new_ids
         d["price_changed"] = l["id"] in changed_ids

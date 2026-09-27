@@ -83,7 +83,7 @@
    "alt_url": "https://www.booli.se/annons/6162342",
    "drive_h": 0.3,
    "price_per_ha": 898750,
-   "score": 59,
+   "score": 62,
    "score_parts": {
     "water": 5,
     "land": 9,
@@ -91,7 +91,7 @@
     "heating": 0,
     "services": 20,
     "family": 10,
-    "price": 4
+    "price": 7
    },
    "signals": [
     "water",
@@ -111,10 +111,6 @@
    "broker": "Erik Olsson Fastighetsförmedling",
    "days_text": "16 dagar på Booli",
    "build_year": 1976,
-   "transit_evidence": true,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": "Rymligt tvåplanshus med två separata lägenheter, perfekt för generationsboende eller uthyrning. Huset har två balkonger i soligt sydvästläge och en stor, lummig trädgård med vackra äppelträd och gott om yta för utomhusaktiviteter.\r\n\r\nKareby är ett omtyckt och familjevänligt område som kombinerar lantlig idyll med närhet till service och kommunikationer. Här bor ni i en lugn och naturnära miljö med öppna landskap, vackra promenadstråk och närhet till skog och natur. I närområdet finns förskola, skola, idrottsanläggningar och goda kommunikationer som gör det enkelt att pendla till både Kungälv och Göteborg. Samtidigt får ni njuta av lugnet och den gemenskap som kännetecknar Kareby. För den som uppskattar friluftsliv finns gott om möjligheter till promenader, löprundor och cykelturer i den natursköna omgivningen. Här erbjuds ett trivsamt boende för er som söker en harmonisk vardag med närhet till både natur och stad.\r\n\r\nKontakta ansvarig mäklare Joakim Tevell för mer information om bostaden!\nFAKTA\nid: 21786760\narea: Kareby\nformattedLandArea: 4 ha\nformattedLivingArea: 183 m²\nformattedSupplementalArea: 100 m²\nhousingForm: Gård/skog\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSavable: True\nisUpcoming: False\nlegacyConstructionYear: 1976\nlistingHemnetUrl: https://www.hemnet.se/bostad/gard-7rum-kareby-kungalvs-kommun-kareby-kyrkvag-130-21786760\nlivingArea: 183\nnumberOfRooms: 7\npostCode: 44293\nstreetAddress: Kareby kyrkväg 130\nsupplementalArea: 100\ntenure: Äganderä"
   },
   {
@@ -159,10 +155,6 @@
    "broker": "Areal | Vänersborg",
    "days_text": "En månad på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": "Exklusivt utmed Göta Älv! Genom Areal i Vänersborg ges nu en sällan skådad möjlighet att förvärva en historisk och välbevarad gård som levererar det mesta man kan önska sig av ett liv på landet. Stenarsröd, som gården heter, ligger vackert belägen i det öppna odlingslandskapet som vetter ned mot Göta Älv. Gården inger en känsla av hög klass och standard med tre välbevarade och fint renoverade bostäder, rejäla och användbara ekonomibyggnader, pool och ridbana. Gården har en väl samlad areal om ca 38 ha varav 16,8 ha produktiv skogsmark och 12,7 ha jordbruksmark. Gården har ett strategiskt läge med närhet till såväl Trollhättan, Vänersborg och Uddevalla. Göteborg nås med bil på ca 1 h. Välkommen till Stenarsröd!\nFAKTA\nid: 21768667\nformattedLandArea: 38 ha\nhousingForm: Gård med skogsbruk\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSavable: True\nisUpcoming: False\nlistingHemnetUrl: https://www.hemnet.se/bostad/gard-lilla-edets-kommun-stenarsrod-21768667\npostCode: 46191\nstreetAddress: Stenarsröd\ntenure: Äganderätt\ntitle: Stenarsröd\nadTargeting: {\"item_types\":[6],\"price\":[15],\"municipality\":[123],\"region\":[19],\"country\":[1],\"water_distance\":[\"201-300\"],\"property_price\":14000000,\"property_address\":\"Stenarsröd\",\"property_living_area\":null,\"property_zipcode\":\"46191\"}\nbiddingStarted: False\ndaysOnHemnet: 44\nisBiddingOngoing: False\nisTeaser: False\npublishedAt: 1786713283.309\nlistingBrokerUrl: http://areal.se/?utm_source=hemnet&utm_medium=referral&utm_content=listing&d"
   },
   {
@@ -207,57 +199,7 @@
    "broker": "Residence Christie’s International Real Estate",
    "days_text": "En månad på Booli",
    "build_year": 1914,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": "Med ett högt och vackert läge ovanför Bysjön ligger den kompletta livsstilsgården Klockas, här möts lantlig charm, natur och livskvalitet på ett sällsynt tilltalande sätt. Huset har anor från sekelskiftet, är genomgående renoverat i tidsenlig anda och omfattar ca 180 kvm. Här råder en hög standard med generösa sällskapsytor, omsorgsfulla materialval och en ständigt närvarande utsikt över sjön. Det öppna köket är platsbyggt av Kvänum och här kommer husets alla tidstypiska detaljer till sin rätt, här finns vedspis, skursocklar, spegeldörrar och pärlspont. Totalt finns fyra sovrum, varav master bedroom med intilliggande stort badrum. Utanför väntar en stor altan i västerläge och nedanför huset breder en privat och välplanerad poolmiljö ut sig. Här har en inbjudande plats skapats för långa sommardagar, middagar och avkoppling med utsikt över sjön och det vackra landskapet. Poolområdet kompletteras av utekök och bastu.\r\n\r\nTill fastigheten hör även en vacker lada som har förvandlats till en självklar del av det moderna livet på landet. Här finns en genuin festlokal med plats för stora middagar, firanden och sociala tillställningar. Stalldelen rymmer två boxar, spolspilta och sadelkammare. Idag används stallet som gym, vilket ger byggnaden en flexibel funktion för både träning och djurhållning. Därutöver finns en äldre stalldel i byggnaden. Ytterligare ett separat uthus för hönor eller ankor samt en mindre del som kan användas som utestall. Under byggnaden finns även en praktisk mat"
-  },
-  {
-   "id": "hemnet:21773420",
-   "title": "Frillesås",
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "price": 2800000,
-   "land_ha": 18.0,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård/skog",
-   "url": "https://www.hemnet.se/bostad/gard-kungsbacka-kommun-frillesas-21773420",
-   "alt_url": null,
-   "drive_h": 0.5,
-   "price_per_ha": 155556,
-   "score": 37,
-   "score_parts": {
-    "water": 0,
-    "land": 12,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 10
-   },
-   "signals": [
-    "forest",
-    "arable"
-   ],
-   "first_seen": "2026-09-27",
-   "days_tracked": 0,
-   "price_history": [
-    [
-     "2026-09-27",
-     2800000
-    ]
-   ],
-   "broker": "Areal | Göteborg",
-   "days_text": null,
-   "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Jord och skog! Obebyggd lantbruksfastighet med blandad skog och jordbruksmark. Fastigheten ligger i ett bra läge intill väg och är väl samlad med mycket god tillgänglighet. Fastigheten omfattar ca 18 ",
-   "already_seen": true
   },
   {
    "id": "hemnet:21786611",
@@ -300,10 +242,6 @@
    "broker": "Areal | Göteborg",
    "days_text": "16 dagar på Booli",
    "build_year": null,
-   "transit_evidence": true,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": "Välkommen till en trivsam och välskött mindre gård i lantlig miljö strax utanför Kungsbacka. Här erbjuds en fin kombination av ett bekvämt boende, praktiska ekonomibyggnader och egna öppna marker – en plats för dig som längtar efter ett friare liv på landet, utan att behöva ge avkall på närheten till Kungsbackas service och kommunikationer. Gårdens bostadshus ligger öppet med den egna marken i anslutning. Runt huset finns en välordnad gårdsmiljö med gräsytor, fruktträd och gott om plats för både familjeliv och fritidsintressen. Bostaden erbjuder en hemtrevlig miljö med lantlig karaktär och fina möjligheter att skapa ett personligt hem. På gården finns en rymlig ladugård med dubbelgarage, vilket ger gott om plats för bilar, maskiner, hobbyprojekt och förvaring.  Till fastigheten hör cirka fyra hektar åkermark. Den öppna marken är sammanhängande och väl lämpad för exempelvis bete, odling eller att arrendera ut för en extra inkomst. Det här är en gård för dig som uppskattar lugnet, de öppna landskapen och känslan av att ha gott om utrymme omkring dig. Samtidigt finns Kungsbackas utbud av service, skolor och kommunikationer på bekvämt avstånd. En välskött och lättillgänglig gård med bostadshus, ladugård med dubbelgarage och fyra hektar egen åkermark – en fin möjlighet att förverkliga drömmen om ett liv på landet nära Kungsbacka.\nFAKTA\nid: 21786611\narea: Hjälm\nformattedLandArea: 4 ha\nhousingForm: Gård med jordbruk\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSa"
   },
   {
@@ -342,10 +280,6 @@
    "broker": null,
    "days_text": "2026-09-08",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": ""
   },
   {
@@ -384,56 +318,7 @@
    "broker": "LF Fastighetsförmedling",
    "days_text": "En månad på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": ""
-  },
-  {
-   "id": "hemnet:21751072",
-   "title": "Rörsjö",
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "price": 3500000,
-   "land_ha": 23.0,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård/skog",
-   "url": "https://www.hemnet.se/bostad/gard-kungsbacka-kommun-rorsjo-21751072",
-   "alt_url": null,
-   "drive_h": 0.5,
-   "price_per_ha": 152174,
-   "score": 30,
-   "score_parts": {
-    "water": 0,
-    "land": 5,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 10
-   },
-   "signals": [
-    "forest"
-   ],
-   "first_seen": "2026-09-27",
-   "days_tracked": 0,
-   "price_history": [
-    [
-     "2026-09-27",
-     3500000
-    ]
-   ],
-   "broker": "Areal | Göteborg",
-   "days_text": null,
-   "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Omväxlande skog och mark! I Rörsjö, strax öster om Kungsbacka, finns denna obebyggda fastighet på ca 23 hektar. Enligt skogsbruksplanen uppgår den produktiva skogsmarksarealen till knappt 18 hektar oc",
-   "already_seen": true
   },
   {
    "id": "hemnet:21748809",
@@ -473,58 +358,7 @@
    "broker": "Areal | Göteborg",
    "days_text": null,
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Rejält med äldre skog! Strax öster om Kungsbacka ligger denna skogsfastighet med stort virkesinnehåll. Fastigheten domineras av äldre avverkningsmogen skog. Markerna är omväxlande med vackra öppna sko",
-   "already_seen": true
-  },
-  {
-   "id": "hemnet:21774846",
-   "title": "48 hektar sammanhängande skogsmark strax norr om Lerkil",
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "price": 4500000,
-   "land_ha": 48.4,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård/skog",
-   "url": "https://www.hemnet.se/bostad/gard-kungsbacka-kommun-48-hektar-sammanhangande-skogsmark-strax-norr-om-lerkil-21774846",
-   "alt_url": null,
-   "drive_h": 0.5,
-   "price_per_ha": 92975,
-   "score": 30,
-   "score_parts": {
-    "water": 0,
-    "land": 5,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 10
-   },
-   "signals": [
-    "forest",
-    "defects"
-   ],
-   "first_seen": "2026-09-27",
-   "days_tracked": 0,
-   "price_history": [
-    [
-     "2026-09-27",
-     4500000
-    ]
-   ],
-   "broker": "Ludvig & Co Fastighetsförmedling",
-   "days_text": null,
-   "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Strax norr om Lerkil i Kungsbacka kommun erbjuds möjlighet att förvärva ett sammanhängande skogsskifte om cirka 48 hektar med goda förutsättningar för såväl skogsbruk som jakt. Av arealen utgör cirka ",
-   "already_seen": true
+   "description": "Rejält med äldre skog! Strax öster om Kungsbacka ligger denna skogsfastighet med stort virkesinnehåll. Fastigheten domineras av äldre avverkningsmogen skog. Markerna är omväxlande med vackra öppna skogar och skogsmarken omger även en liten skogstjärn. Fastigheten erbjuder fina möjligheter till jakt och rekreation med närhet till Kungsbacka och Göteborg.\nFAKTA\nid: 21748809\nformattedLandArea: 18 ha\nhousingForm: Gård/skog\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSavable: True\nisUpcoming: False\nlistingHemnetUrl: https://www.hemnet.se/bostad/gard-kungsbacka-kommun-alslov-21748809\nstreetAddress: Alslöv\ntenure: Äganderätt\ntitle: Alslöv\nadTargeting: {\"item_types\":[6],\"price\":[4],\"municipality\":[109],\"region\":[5],\"country\":[1],\"water_distance\":[\"501-\"],\"property_price\":3950000,\"property_address\":\"Alslöv\",\"property_living_area\":null,\"property_zipcode\":\"\"}\nbiddingStarted: False\ndaysOnHemnet: 93\nisBiddingOngoing: False\nisTeaser: False\npublishedAt: 1782483615.804\nlistingBrokerUrl: http://areal.se/?utm_source=hemnet&utm_medium=referral&utm_content=listing&dealid=MDIyOHwwMDAwMDAxMzM5N3w1OA..\nlistingBrokerGalleryUrl: http://areal.se/?utm_source=hemnet&utm_medium=referral&utm_content=listing&dealid=MDIyOHwwMDAwMDAxMzM5N3w1OA..&img=1\ntimesViewed: 3642\nisProjectUnit: False\nactivePackage: BASIC\nlandArea: 180000\nclosestWaterDistanceMeters: 2100\ncoastlineDistanceMeters: 7000"
   },
   {
    "id": "hemnet:21750449",
@@ -564,57 +398,7 @@
    "broker": "Areal | Göteborg",
    "days_text": null,
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Nu finns möjligheten att förvärva en omväxlande skogsfastighet på drygt 33 hektar strax söder om Kungsbacka. Genom fastighetens kuperade marker finns flera bra vägar. Skogsmarken har bra bonitet och b",
-   "already_seen": true
-  },
-  {
-   "id": "hemnet:21698440",
-   "title": "Unika markområden i Bukärr",
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "price": 6700000,
-   "land_ha": 7.5,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård med jordbruk",
-   "url": "https://www.hemnet.se/bostad/gard-bukarr-kungsbacka-kommun-unika-markomraden-i-bukarr-21698440",
-   "alt_url": null,
-   "drive_h": 0.5,
-   "price_per_ha": 893333,
-   "score": 29,
-   "score_parts": {
-    "water": 0,
-    "land": 7,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 7
-   },
-   "signals": [
-    "arable"
-   ],
-   "first_seen": "2026-09-27",
-   "days_tracked": 0,
-   "price_history": [
-    [
-     "2026-09-27",
-     6700000
-    ]
-   ],
-   "broker": "Ludvig & Co Fastighetsförmedling",
-   "days_text": null,
-   "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Vi erbjuder nu en unik möjlighet för investerare att förvärva en fastighet i eftertraktade Bukärr, ett kustnära område mellan Kullavik och Särö, känt för sitt attraktiva boende och naturnära läge.\n\nFa",
-   "already_seen": true
+   "description": "Nu finns möjligheten att förvärva en omväxlande skogsfastighet på drygt 33 hektar strax söder om Kungsbacka. Genom fastighetens kuperade marker finns flera bra vägar. Skogsmarken har bra bonitet och bjuder på allt från plantskog till slutavverkningsmogen skog. Enligt skogsbruksplanen uppgår den produktiva skogsmarksarealen till drygt 30 hektar och den har ett bedömt virkesförråd på ca 5 200 m³sk. Delar av skogsmarken domineras av lövskog och ädellövskog med naturbete. På denna fastighet finns goda möjligheter till jakt, rekreation och ett aktivt friluftsliv med närhet till Göteborg.\nFAKTA\nid: 21750449\nformattedLandArea: 34 ha\nhousingForm: Gård/skog\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSavable: True\nisUpcoming: False\nlistingHemnetUrl: https://www.hemnet.se/bostad/gard-kungsbacka-kommun-idalahult-21750449\nstreetAddress: Idalahult \ntenure: Äganderätt\ntitle: Idalahult \nadTargeting: {\"item_types\":[6],\"price\":[5],\"municipality\":[109],\"region\":[5],\"country\":[1],\"water_distance\":[\"501-\"],\"property_price\":4500000,\"property_address\":\"Idalahult\",\"property_living_area\":null,\"property_zipcode\":\"\"}\nbiddingStarted: False\ndaysOnHemnet: 88\nisBiddingOngoing: False\nisTeaser: False\npublishedAt: 1782891450.917\nlistingBrokerUrl: http://areal.se/?utm_source=hemnet&utm_medium=referral&utm_content=listing&dealid=MDIyOHwwMDAwMDAxMjg4M3w1OA..\nlistingBrokerGalleryUrl: http://areal.se/?utm_source=hemnet&utm_medium=referral&utm_content=listing&dealid=MDIyOHwwMDAwMDAxMjg4M3w1OA."
   },
   {
    "id": "booli:6093722",
@@ -652,12 +436,7 @@
    "broker": null,
    "days_text": "2026-07-30",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:5778014",
@@ -695,12 +474,7 @@
    "broker": "LF Fastighetsförmedling",
    "days_text": "1 år på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6230409",
@@ -738,12 +512,7 @@
    "broker": "LF Fastighetsförmedling",
    "days_text": "En månad på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6138428",
@@ -781,12 +550,7 @@
    "broker": null,
    "days_text": "2026-06-11",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "hemnet:21716583",
@@ -829,12 +593,7 @@
    "broker": "Svensk Fastighetsförmedling Alingsås",
    "days_text": "4 månader på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "ULVASUND – En unik halvö med historia, möjligheter och magiskt läge. \n\nVälkommen till en fastighet utöver det vanliga – en privat halvö där natur, vatten och möjligheter möts i perfekt harmoni. Här er",
-   "already_seen": true
+   "description": "ULVASUND – En unik halvö med historia, möjligheter och magiskt läge. \n\nVälkommen till en fastighet utöver det vanliga – en privat halvö där natur, vatten och möjligheter möts i perfekt harmoni. Här erbjuds ett helt unikt läge med sjön som närmaste granne och en enastående chans att kombinera exklusivt boende med verksamhet i en inspirerande miljö.\n\nFastigheten bär på en fascinerande historia. Ursprungligen stod här ett äldre torp som senare ersattes av en större bostadsbyggnad samt en specialanpassad träningsanläggning för elitsimhoppare. Anläggningen fungerade under många år som en avskild och exklusiv träningsmiljö, där fokus och kvalitet stod i centrum. Bland annat var detta en viktig plats i Ulrika Knapes resa mot sina olympiska framgångar, där hon förberedde sig inför sina OS-guld i en lugn och ostörd miljö.\n\nMed tiden har fastigheten utvecklats och använts som restaurang- och boendeanläggning, och på senare år har den varit en uppskattad plats för bröllop, större tillställningar och event. Idag finns även goda intäktsmöjligheter genom uthyrning, där flera bostadshus nyttjas flitigt via Airbnb.\n\nPå området finns två charmiga gästhus med fantastiska sjölägen. Det ena om cirka 20 kvm erbjuder en altan precis vid vattenkanten, medan det andra, om cirka 45 kvm, har en rymlig altan med utsikt över sjön. Här finns även egen bastu, sandstrand och goda möjligheter till fiske, båtliv och kanotpaddling.\n\nFastigheten nås via en hängbro som ansluter till vägen mellan Hemsjö och Lövh"
   },
   {
    "id": "hemnet:21773562",
@@ -874,10 +633,6 @@
    "broker": "Areal | Göteborg",
    "days_text": "17 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": "Välskött och viltrik skogsgård!\nSkogsgård med välhållen byggnation. Här finns unika möjligheter förskogsbruk, jakt och rekreation bara dryga halvtimmen från Göteborg. Gården ligger vid vägs ände och har en samlad ägobild. Totalareal är ca 59 hektar varav ca 50 ha är produktiv skogsmark med ett\nvirkesförråd på drygt 9 000 m³sk och goda avverkningsmöjligheter. Naturskönt belägen på en höjd med utblick över marken ligger bostaden som är i bra skick med möjlighet till övernattning för gäster. Nyare maskinhall/traktorgarage och i en påbyggd och inredd stengrund finns möjlighet till förvaring av vilt och avkoppling efter jakten. De viltrika\noch omväxlande markerna erbjuder goda möjligheter till rekreation med jakt och skogsbruk.\nFAKTA\nid: 21773562\nformattedLandArea: 59 ha\nhousingForm: Gård med skogsbruk\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSavable: True\nisUpcoming: False\nlistingHemnetUrl: https://www.hemnet.se/bostad/gard-lilla-edets-kommun-attlered-21773562\npostCode: 46372\nstreetAddress: Attlered\ntenure: Äganderätt\ntitle: Attlered\nadTargeting: {\"item_types\":[6],\"price\":[12],\"municipality\":[123],\"region\":[19],\"country\":[1],\"water_distance\":[\"501-\"],\"property_price\":11000000,\"property_address\":\"Attlered\",\"property_living_area\":null,\"property_zipcode\":\"46372\"}\nbiddingStarted: False\ndaysOnHemnet: 17\nisBiddingOngoing: False\nisTeaser: False\npublishedAt: 1789036257.655\nlistingBrokerUrl: http://areal.se/?utm_source=hemnet&utm_medium=referral&utm_content=listing"
   },
   {
@@ -916,12 +671,7 @@
    "broker": null,
    "days_text": "2026-07-15",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6237422",
@@ -959,12 +709,7 @@
    "broker": null,
    "days_text": "2026-09-10",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "hemnet:21784652",
@@ -1004,12 +749,7 @@
    "broker": "Skogsbyrån Sjuhärad AB",
    "days_text": null,
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Välskött skogsfastighet samlad i ett skifte i Fagerhult, norr om Töllsjö. Lättillgänglig skog med bilväg genom fastigheten och ett par mindre skogsvägar. Skogen har en bra åldersfördelning och utgörs ",
-   "already_seen": true
+   "description": "Välskött skogsfastighet samlad i ett skifte i Fagerhult, norr om Töllsjö. Lättillgänglig skog med bilväg genom fastigheten och ett par mindre skogsvägar. Skogen har en bra åldersfördelning och utgörs av gran (64 %) och tall (33 %). Virkesförråd 4266 m³sk, varav 2421 m³sk är slutavverkningsbar skog. Bonitet 8,0 och årlig tillväxt 169 m³sk.\nFAKTA\nid: 21784652\narea: Töllsjö\nformattedLandArea: 31,3 ha\nhousingForm: Gård med skogsbruk\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSavable: True\nisUpcoming: False\nlistingHemnetUrl: https://www.hemnet.se/bostad/gard-tollsjo-bollebygds-kommun-fagerhult-21784652\nstreetAddress: Fagerhult\ntenure: Äganderätt\ntitle: Fagerhult\nadTargeting: {\"item_types\":[6],\"price\":[4],\"municipality\":[16],\"region\":[19],\"country\":[1],\"water_distance\":[\"501-\"],\"property_price\":3700000,\"property_address\":\"Fagerhult\",\"property_living_area\":null,\"property_zipcode\":\"\"}\nbiddingStarted: False\ndaysOnHemnet: 18\nisBiddingOngoing: False\nisTeaser: False\npublishedAt: 1788958915.755\nlistingBrokerUrl: https://app.maklarcrm.se/api/v1/publishers/redirect/MDI1MnwwMDAwMDAwMTY0Nnw1OA../direct?utm_source=hemnet&utm_medium=referral&utm_content=listing\nlistingBrokerGalleryUrl: https://app.maklarcrm.se/api/v1/publishers/redirect/MDI1MnwwMDAwMDAwMTY0Nnw1OA../direct?utm_source=hemnet&utm_medium=referral&utm_content=listing&hash=allabilder\ntimesViewed: 1031\nisProjectUnit: False\nactivePackage: BASIC\nlandArea: 313000\nclosestWaterDistanceMeters: 950"
   },
   {
    "id": "booli:6169486",
@@ -1047,12 +787,7 @@
    "broker": "Fastighetsbyrån",
    "days_text": "3 månader på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:5714823",
@@ -1090,12 +825,7 @@
    "broker": null,
    "days_text": "2026-07-24",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6234919",
@@ -1133,12 +863,7 @@
    "broker": "Skeppsholmen Sotheby’s International Realty",
    "days_text": "En månad på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6116347",
@@ -1176,12 +901,7 @@
    "broker": null,
    "days_text": "2026-09-03",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6154665",
@@ -1219,12 +939,7 @@
    "broker": null,
    "days_text": "2026-09-21",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:5872854",
@@ -1262,12 +977,7 @@
    "broker": "HusmanHagberg",
    "days_text": "12 månader på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6273526",
@@ -1305,10 +1015,6 @@
    "broker": "LF Fastighetsförmedling",
    "days_text": "9 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": true,
    "description": ""
   },
   {
@@ -1347,12 +1053,7 @@
    "broker": null,
    "days_text": "2026-09-03",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6105110",
@@ -1390,12 +1091,7 @@
    "broker": null,
    "days_text": "2026-05-27",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6005309",
@@ -1433,12 +1129,7 @@
    "broker": null,
    "days_text": "2026-07-01",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6146398",
@@ -1476,12 +1167,7 @@
    "broker": null,
    "days_text": "2026-08-14",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6266042",
@@ -1519,12 +1205,7 @@
    "broker": "Bjurfors",
    "days_text": "13 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6177273",
@@ -1562,12 +1243,7 @@
    "broker": null,
    "days_text": "2026-08-21",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6280309",
@@ -1605,12 +1281,7 @@
    "broker": "Fastighetsbyrån",
    "days_text": "4 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:5336036",
@@ -1648,12 +1319,7 @@
    "broker": null,
    "days_text": "2026-09-19",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:5752737",
@@ -1691,12 +1357,7 @@
    "broker": null,
    "days_text": "2026-07-28",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6173550",
@@ -1734,12 +1395,7 @@
    "broker": null,
    "days_text": "2026-09-10",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6263329",
@@ -1777,12 +1433,7 @@
    "broker": "Bjurfors",
    "days_text": "11 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6224509",
@@ -1820,12 +1471,7 @@
    "broker": "LF Fastighetsförmedling",
    "days_text": "6 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6148599",
@@ -1863,12 +1509,7 @@
    "broker": "Fastighetsbyrån",
    "days_text": "3 månader på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6219688",
@@ -1906,12 +1547,7 @@
    "broker": "Fastighetsbyrån",
    "days_text": "En månad på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6185500",
@@ -1949,12 +1585,7 @@
    "broker": "Ludvig & Co",
    "days_text": "2 månader på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6226636",
@@ -1992,12 +1623,7 @@
    "broker": null,
    "days_text": "En månad på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6078955",
@@ -2035,12 +1661,7 @@
    "broker": null,
    "days_text": "2026-09-09",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:5923363",
@@ -2078,12 +1699,7 @@
    "broker": null,
    "days_text": "2026-03-26",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6247053",
@@ -2121,57 +1737,7 @@
    "broker": null,
    "days_text": "26 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
-  },
-  {
-   "id": "hemnet:21702620",
-   "title": "2,2 ha i Bukärr",
-   "kommun": "Kungsbacka",
-   "region": "30 till 40 min",
-   "price": 3500000,
-   "land_ha": 2.2,
-   "living_m2": null,
-   "rooms": null,
-   "type": "Gård med jordbruk",
-   "url": "https://www.hemnet.se/bostad/gard-bukarr-kungsbacka-kommun-2,2-ha-i-bukarr-21702620",
-   "alt_url": null,
-   "drive_h": 0.5,
-   "price_per_ha": 1590909,
-   "score": 19,
-   "score_parts": {
-    "water": 0,
-    "land": 3,
-    "house": 0,
-    "heating": 0,
-    "services": 15,
-    "family": 0,
-    "price": 1
-   },
-   "signals": [
-    "forest"
-   ],
-   "first_seen": "2026-09-27",
-   "days_tracked": 0,
-   "price_history": [
-    [
-     "2026-09-27",
-     3500000
-    ]
-   ],
-   "broker": "Ludvig & Co Fastighetsförmedling",
-   "days_text": null,
-   "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "Vi har nu nöjet att erbjuda en unik investeringsmöjlighet i eftertraktade Bukärr – ett kustnära och exklusivt område mellan Kullavik och Särö, känt för sin attraktiva boendemiljö och närheten till hav",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6017516",
@@ -2209,12 +1775,7 @@
    "broker": "LF Fastighetsförmedling",
    "days_text": "12 dagar på Booli",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
   },
   {
    "id": "booli:6244570",
@@ -2252,12 +1813,197 @@
    "broker": null,
    "days_text": "2026-09-04",
    "build_year": null,
-   "transit_evidence": null,
-   "is_new": false,
-   "price_changed": false,
-   "previously_picked": false,
-   "description": "",
-   "already_seen": true
+   "description": ""
+  },
+  {
+   "id": "booli:6217363",
+   "title": "Stockaredsvägen 438",
+   "kommun": "Kungsbacka",
+   "region": "30 till 40 min",
+   "price": 5200000,
+   "land_ha": null,
+   "living_m2": null,
+   "rooms": null,
+   "type": "Gård",
+   "url": "https://www.booli.se/bostad/2106756",
+   "alt_url": null,
+   "drive_h": 0.5,
+   "price_per_ha": null,
+   "score": 18,
+   "score_parts": {
+    "water": 0,
+    "land": 0,
+    "house": 0,
+    "heating": 0,
+    "services": 15,
+    "family": 0,
+    "price": 3
+   },
+   "signals": [],
+   "first_seen": "2026-09-27",
+   "days_tracked": 0,
+   "price_history": [
+    [
+     "2026-09-27",
+     5200000
+    ]
+   ],
+   "broker": null,
+   "days_text": "2026-08-09",
+   "build_year": null,
+   "description": ""
+  },
+  {
+   "id": "booli:6143493",
+   "title": "Blåbärsåsvägen 62",
+   "kommun": "Lerum",
+   "region": "20 till 30 min",
+   "price": 8250000,
+   "land_ha": 7.5,
+   "living_m2": null,
+   "rooms": "5 rum",
+   "type": "Gård",
+   "url": "https://www.booli.se/annons/6143493",
+   "alt_url": null,
+   "drive_h": 0.4,
+   "price_per_ha": 1100000,
+   "score": 18,
+   "score_parts": {
+    "water": 0,
+    "land": 0,
+    "house": 0,
+    "heating": 0,
+    "services": 14,
+    "family": 0,
+    "price": 4
+   },
+   "signals": [],
+   "first_seen": "2026-09-27",
+   "days_tracked": 0,
+   "price_history": [
+    [
+     "2026-09-27",
+     8250000
+    ]
+   ],
+   "broker": "LF Fastighetsförmedling",
+   "days_text": "3 månader på Booli",
+   "build_year": null,
+   "description": ""
+  },
+  {
+   "id": "booli:5863422",
+   "title": "Stora Askerön 820",
+   "kommun": "Stenungsund",
+   "region": "30 till 40 min",
+   "price": 3400000,
+   "land_ha": 2.73,
+   "living_m2": null,
+   "rooms": null,
+   "type": "Villa",
+   "url": "https://www.booli.se/bostad/3458538",
+   "alt_url": null,
+   "drive_h": 0.5,
+   "price_per_ha": 1245421,
+   "score": 17,
+   "score_parts": {
+    "water": 0,
+    "land": 0,
+    "house": 0,
+    "heating": 0,
+    "services": 13,
+    "family": 0,
+    "price": 4
+   },
+   "signals": [],
+   "first_seen": "2026-09-27",
+   "days_tracked": 0,
+   "price_history": [
+    [
+     "2026-09-27",
+     3400000
+    ]
+   ],
+   "broker": null,
+   "days_text": "2026-03-09",
+   "build_year": null,
+   "description": ""
+  },
+  {
+   "id": "booli:6238427",
+   "title": "Stripplekärr 602",
+   "kommun": "Stenungsund",
+   "region": "30 till 40 min",
+   "price": 5985000,
+   "land_ha": 5.1,
+   "living_m2": null,
+   "rooms": "4 rum",
+   "type": "Gård",
+   "url": "https://www.booli.se/annons/6238427",
+   "alt_url": null,
+   "drive_h": 0.5,
+   "price_per_ha": 1173529,
+   "score": 17,
+   "score_parts": {
+    "water": 0,
+    "land": 0,
+    "house": 0,
+    "heating": 0,
+    "services": 13,
+    "family": 0,
+    "price": 4
+   },
+   "signals": [],
+   "first_seen": "2026-09-27",
+   "days_tracked": 0,
+   "price_history": [
+    [
+     "2026-09-27",
+     5985000
+    ]
+   ],
+   "broker": "Fastighetsbyrån",
+   "days_text": "25 dagar på Booli",
+   "build_year": null,
+   "description": ""
+  },
+  {
+   "id": "booli:6148557",
+   "title": "Mölnebo 44",
+   "kommun": "Tjörn",
+   "region": "30 till 40 min",
+   "price": 5195000,
+   "land_ha": 6.72,
+   "living_m2": null,
+   "rooms": "4 rum",
+   "type": "Gård",
+   "url": "https://www.booli.se/annons/6148557",
+   "alt_url": null,
+   "drive_h": 0.6,
+   "price_per_ha": 773065,
+   "score": 16,
+   "score_parts": {
+    "water": 0,
+    "land": 0,
+    "house": 0,
+    "heating": 0,
+    "services": 9,
+    "family": 0,
+    "price": 7
+   },
+   "signals": [],
+   "first_seen": "2026-09-27",
+   "days_tracked": 0,
+   "price_history": [
+    [
+     "2026-09-27",
+     5195000
+    ]
+   ],
+   "broker": null,
+   "days_text": "3 månader på Booli",
+   "build_year": null,
+   "description": ""
   }
  ]
 }
