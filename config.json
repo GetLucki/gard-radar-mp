@@ -9,137 +9,98 @@
     "parisa.hajjari.lifarjani@gmail.com"
   ],
   "base": {
-    "name": "Göteborg",
-    "lat": 57.7089,
-    "lon": 11.9746
+    "name": "Sannegårdshamnen",
+    "lat": 57.7085,
+    "lon": 11.921
   },
   "price_min": 2500000,
-  "price_max": 10000000,
+  "price_max": 15000000,
   "land_min_ha": 2,
   "keep_unknown_land": true,
   "kommuner": {
-    "Partille": {
-      "region": "Under 45 min",
+    "Göteborg": {
+      "region": "Under 20 min",
       "drive_h": 0.25,
-      "services": 4
+      "services": 5,
+      "transit": 5
+    },
+    "Partille": {
+      "region": "Under 20 min",
+      "drive_h": 0.3,
+      "services": 4,
+      "transit": 5
     },
     "Mölndal": {
-      "region": "Under 45 min",
+      "region": "Under 20 min",
       "drive_h": 0.3,
-      "services": 5
-    },
-    "Lerum": {
-      "region": "Under 45 min",
-      "drive_h": 0.35,
-      "services": 4
-    },
-    "Härryda": {
-      "region": "Under 45 min",
-      "drive_h": 0.4,
-      "services": 4
-    },
-    "Ale": {
-      "region": "Under 45 min",
-      "drive_h": 0.4,
-      "services": 4
+      "services": 5,
+      "transit": 5
     },
     "Kungälv": {
-      "region": "Under 45 min",
-      "drive_h": 0.45,
-      "services": 5
+      "region": "20 till 30 min",
+      "drive_h": 0.3,
+      "services": 5,
+      "transit": 4
     },
-    "Kungsbacka": {
-      "region": "Under 45 min",
-      "drive_h": 0.5,
-      "services": 5
+    "Ale": {
+      "region": "20 till 30 min",
+      "drive_h": 0.35,
+      "services": 4,
+      "transit": 4
     },
-    "Bollebygd": {
-      "region": "Under 45 min",
-      "drive_h": 0.5,
-      "services": 3
+    "Härryda": {
+      "region": "20 till 30 min",
+      "drive_h": 0.4,
+      "services": 4,
+      "transit": 3
     },
-    "Alingsås": {
-      "region": "Under 45 min",
-      "drive_h": 0.6,
-      "services": 5
-    },
-    "Lilla Edet": {
-      "region": "45 till 60 min",
-      "drive_h": 0.7,
-      "services": 3
+    "Lerum": {
+      "region": "20 till 30 min",
+      "drive_h": 0.4,
+      "services": 4,
+      "transit": 4
     },
     "Stenungsund": {
-      "region": "45 till 60 min",
-      "drive_h": 0.7,
-      "services": 4
+      "region": "30 till 40 min",
+      "drive_h": 0.5,
+      "services": 4,
+      "transit": 3
     },
-    "Mark": {
-      "region": "45 till 60 min",
-      "drive_h": 0.8,
-      "services": 4
+    "Kungsbacka": {
+      "region": "30 till 40 min",
+      "drive_h": 0.5,
+      "services": 5,
+      "transit": 4
     },
-    "Vårgårda": {
-      "region": "45 till 60 min",
-      "drive_h": 0.8,
-      "services": 3
+    "Alingsås": {
+      "region": "30 till 40 min",
+      "drive_h": 0.6,
+      "services": 5,
+      "transit": 4
+    },
+    "Lilla Edet": {
+      "region": "30 till 40 min",
+      "drive_h": 0.6,
+      "services": 3,
+      "transit": 3
     },
     "Tjörn": {
-      "region": "45 till 60 min",
-      "drive_h": 0.8,
-      "services": 3
+      "region": "30 till 40 min",
+      "drive_h": 0.6,
+      "services": 3,
+      "transit": 2
     },
-    "Varberg": {
-      "region": "45 till 60 min",
-      "drive_h": 0.85,
-      "services": 5
-    },
-    "Borås": {
-      "region": "45 till 60 min",
-      "drive_h": 0.85,
-      "services": 5
-    },
-    "Trollhättan": {
-      "region": "45 till 60 min",
-      "drive_h": 0.9,
-      "services": 5
-    },
-    "Uddevalla": {
-      "region": "Runt en timme",
-      "drive_h": 0.95,
-      "services": 5
-    },
-    "Vänersborg": {
-      "region": "Runt en timme",
-      "drive_h": 1.0,
-      "services": 4
-    },
-    "Orust": {
-      "region": "Runt en timme",
-      "drive_h": 1.0,
-      "services": 3
-    },
-    "Herrljunga": {
-      "region": "Runt en timme",
-      "drive_h": 1.0,
-      "services": 3
-    },
-    "Essunga": {
-      "region": "Runt en timme",
-      "drive_h": 1.0,
-      "services": 2
-    },
-    "Ulricehamn": {
-      "region": "Runt en timme",
-      "drive_h": 1.0,
-      "services": 4
-    },
-    "Falkenberg": {
-      "region": "Runt en timme",
-      "drive_h": 1.0,
-      "services": 4
+    "Bollebygd": {
+      "region": "30 till 40 min",
+      "drive_h": 0.6,
+      "services": 3,
+      "transit": 2
     }
   },
   "living_min_m2": 170,
   "keep_unknown_living": true,
-  "schedule": "weekly Sat 09:00"
+  "schedule": "daily 07:40",
+  "max_drive_h": 0.67,
+  "require_transit": true,
+  "top_n": 50
 }

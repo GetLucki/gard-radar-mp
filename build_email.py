@@ -42,6 +42,7 @@ def e(s):
     return html.escape(str(s if s is not None else ""))
 
 picks = R.get("top", R.get("top3", []))
+new_ids = {x.get("id") for x in (C.get("new") or [])}
 n_cuts = S.get("price_cuts", 0)
 subject = f"{CFG.get('profile_title', 'Gård-radar')} {date}: {S.get('matched', '?')} träffar, {S.get('new', '?')} nya, {n_cuts} prissänkningar"
 
@@ -105,7 +106,7 @@ for i, p in enumerate(picks, 1):
     ] if x)
     rows.append(f"""
 <tr>
- <td class="rank">{i}</td>
+ <td class="rank">{i}{'<br><span style="font-size:10px;color:#2f5fa8;font-weight:700">NY</span>' if p.get("id") in new_ids else ''}</td>
  <td><a href="{e(url)}"><b>{e(title)}</b></a><br><span class="small">{facts}</span>
      {('<br><span class="small"><b>Underhåll:</b> ' + e(p.get('maintenance')) + '</span>') if p.get('maintenance') else ''}</td>
  <td>{e(p.get('home_why') or p.get('prepping_why') or p.get('why'))}</td>
@@ -147,6 +148,9 @@ region_rows = "".join(
 html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><div class="wrap">
 <h1>{e(CFG.get("profile_title", "Gård-radar"))} {e(date)}</h1>
 <div class="sub">{S.get('matched', '?')} träffar · {S.get('new', 0)} nya · {S.get('gone', 0)} borta · {n_cuts} prissänkningar · medianpris {kr(S.get('median_price'))} · median {kr(S.get('median_price_per_ha'))} per ha</div>
+
+<h2>Nytt sedan i går</h2>
+<p>{('<b>' + str(len(C.get('new') or [])) + ' nya</b> och ' + str(len(C.get('price_changes') or [])) + ' prisändringar. De är markerade med NY i tabellen nedan.') if (C.get('new') or C.get('price_changes')) else 'Inget nytt sedan i går. Listan är oförändrad.'}</p>
 
 <h2>Läget i korthet</h2>
 <p>{e(R.get('market_summary') or 'Ingen bedömning skriven i dag.')}</p>

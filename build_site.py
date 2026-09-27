@@ -106,6 +106,8 @@ details{margin-top:24px}summary{cursor:pointer;font-weight:600;color:var(--muted
 <div class="sub" id="sub"></div>
 <div class="chips" id="chips"></div>
 
+<div id="newbox"></div>
+
 <h2>Topp tre</h2>
 <div id="recs"></div>
 
@@ -114,6 +116,7 @@ details{margin-top:24px}summary{cursor:pointer;font-weight:600;color:var(--muted
   <select id="fRegion"><option value="">Alla områden</option></select>
   <input id="fText" placeholder="Filtrera: kommun, objekt, mäklare">
   <label class="small"><input type="checkbox" id="fNew"> bara nya</label>
+  <label class="small"><input type="checkbox" id="fAll"> visa alla (annars topp 50)</label>
   <span class="small" id="count"></span>
   <span class="small" style="opacity:.75">Klicka på valfri rubrik för att sortera</span>
 </div>
@@ -127,6 +130,7 @@ details{margin-top:24px}summary{cursor:pointer;font-weight:600;color:var(--muted
   <th data-k="living_m2" class="num">m²</th>
   <th data-k="build_year" class="num">Byggår</th>
   <th data-k="drive_h" class="num">Restid</th>
+  <th>Kollektivt</th>
   <th data-k="score" class="num">Poäng</th>
   <th data-k="days_tracked" class="num">Dagar</th>
   <th>Status</th>
@@ -181,6 +185,17 @@ if (TOP.length){
 } else rh = `<div class="note">Ingen bedömning än. Morgonkörningen skriver topp tre efter skanningen.</div>`;
 document.getElementById('recs').innerHTML = rh;
 
+// nytt sedan förra körningen, tydligt överst
+const nb = document.getElementById('newbox');
+const nw = (C.new||[]), pc = (C.price_changes||[]);
+if (nw.length || pc.length){
+  nb.innerHTML = `<div class="note" style="border-left:5px solid var(--blue)"><b>Nytt sedan förra körningen:</b> ` +
+    (nw.length ? nw.slice(0,10).map(x=>`<span class="tag new">ny</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> (${esc(x.kommun)}, ${kr(x.price)})`).join(' · ') : '') +
+    (nw.length && pc.length ? ' · ' : '') +
+    (pc.length ? pc.slice(0,10).map(x=>`<span class="tag cut">pris</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> (${kr(x.old)} till ${kr(x.new)})`).join(' · ') : '') +
+    (nw.length > 10 ? ` och ${nw.length-10} till` : '') + `</div>`;
+} else nb.innerHTML = `<div class="note">Inget nytt sedan förra körningen. Listan nedan är oförändrad.</div>`;
+
 // table
 const regions = [...new Set(L.map(l=>l.region))].sort();
 const fR = document.getElementById('fRegion'); regions.forEach(r=>{const o=document.createElement('option');o.value=r;o.textContent=r;fR.appendChild(o)});
@@ -197,7 +212,10 @@ function render(){
   const r=fR.value, q=document.getElementById('fText').value.toLowerCase(), onlyNew=document.getElementById('fNew').checked;
   let rows = L.filter(l => (!r || l.region===r) && (!onlyNew || newIds.has(l.id)) && (!q || (l.title+' '+l.kommun+' '+(l.location||'')+' '+(l.broker||'')).toLowerCase().includes(q)));
   rows.sort((a,b)=>{ let x=a[sortKey], y=b[sortKey]; if (typeof x==='string') return sortDir*x.localeCompare(y||'', 'sv'); x=(x==null?Infinity*sortDir:x); y=(y==null?Infinity*sortDir:y); return sortDir*(x-y); });
-  document.getElementById('count').textContent = `${rows.length} av ${L.length}`;
+  const cap = document.getElementById('fAll').checked ? rows.length : Math.min(rows.length, D.config.top_n||50);
+  const shown = rows.slice(0, cap);
+  document.getElementById('count').textContent = `visar ${shown.length} av ${rows.length}`;
+  rows = shown;
   document.getElementById('rows').innerHTML = rows.map(l=>`<tr>
     <td class="rank">${l.rank}</td>
     <td>${l.image?`<a href="${esc(l.url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(l.image)}" alt=""></a>`:''}</td>
@@ -207,11 +225,12 @@ function render(){
     <td class="num">${l.price_per_ha?l.price_per_ha.toLocaleString('sv-SE'):'–'}</td>
     <td class="num">${l.living_m2??'–'}</td>
     <td class="num">${l.build_year??'–'}</td>
-    <td class="num">${l.drive_h!=null?l.drive_h+' h':'–'}</td>
+    <td class="num">${l.drive_h!=null?Math.round(l.drive_h*60)+' min':'–'}</td>
+    <td class="small">${l.transit_evidence?'<span class="tag pick">nämns</span>':(D.config.kommuner[l.kommun]||{}).transit>=4?'bra i kommunen':'okänt'}</td>
     <td class="num"><b>${l.score}</b></td>
     <td class="num">${l.days_tracked??'–'}</td>
     <td>${status(l)}</td>
-  </tr>`).join('') || `<tr><td colspan="12" class="small">Inget matchar dessa filter.</td></tr>`;
+  </tr>`).join('') || `<tr><td colspan="14" class="small">Inget matchar dessa filter.</td></tr>`;
   document.querySelectorAll('th[data-k]').forEach(th=>{
     if (!th.querySelector('.sa')) th.insertAdjacentHTML('beforeend', '<span class="sa"></span>');
     const on = th.dataset.k===sortKey;
@@ -221,7 +240,7 @@ function render(){
   });
 }
 document.querySelectorAll('th[data-k]').forEach(th=>th.addEventListener('click',()=>{ const k=th.dataset.k; if (sortKey===k) sortDir=-sortDir; else { sortKey=k; sortDir = (k==='rank'||k==='price'||k==='price_per_ha'||k==='drive_h'||k==='title') ? 1 : -1; } render(); }));
-['fRegion','fText','fNew'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+['fRegion','fText','fNew','fAll'].forEach(id=>document.getElementById(id).addEventListener('input',render));
 render();
 
 // collapsed market block

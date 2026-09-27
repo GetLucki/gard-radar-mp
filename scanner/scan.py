@@ -295,6 +295,8 @@ def passes(l):
     l["region"] = CFG["kommuner"][k]["region"]
     if l.get("price") is None or not (CFG["price_min"] <= l["price"] <= CFG["price_max"]):
         return False
+    if CFG.get("max_drive_h") and CFG["kommuner"].get(k, {}).get("drive_h", 9) > CFG["max_drive_h"] + 0.001:
+        return False
     m2 = l.get("living_m2")
     if m2 is None:
         if not CFG.get("keep_unknown_living", True):
@@ -432,6 +434,7 @@ KW = {
     "renovated_wet": r"renoverat (kök|badrum)|nytt kök|nytt badrum|kök från 20|badrum från 20|kök och badrum (är )?(renoverade|nya)|helrenoverat|totalrenoverat|nyrenoverat",
     "fiber": r"\bfiber\b|fiberanslut|bredband via fiber|fibernät",
     "seclusion": r"enskilt läge|avskilt|ostört|återvändsväg|insynsskyddat|lugnt läge",
+    "transit": r"busshållplats|busshållsplats|kollektivtrafik|pendeltåg|pendelstation|järnvägsstation|tågstation|\bbuss\b|bussförbindelse|västtrafik|spårvagn|\bpendel\b|allmänna kommunikationer|goda kommunikationer|kommunikationer",
     "neighbours": r"grannar|byn\b|\bby\b|bygemenskap|nära (till )?service|nära (till )?skola|busshållplats|pendel|kollektivtrafik|mataffär|vårdcentral",
     "highmaint_need": r"renoveringsbehov|renoveringsobjekt|i behov av (renovering|upprustning|underhåll)|upprustningsbehov|handlingens|för den handlingskraftige|eftersatt|ödegård|rivningsobjekt",
     "defects": r"eternit|asbest|fuktskad|mögel|sättningar|takläckage|enkelglas",
@@ -520,9 +523,14 @@ def score(l, text, median_price_per_ha):
     s["heating"] = 10 if (hit["heat_pump"] and hit["wood_heat"]) else (6 if (hit["heat_pump"] or hit["wood_heat"]) else 0)
 
     d = l.get("drive_h")
-    drive_pts = 0 if d is None else (10 if d <= 0.5 else 8 if d <= 0.75 else 6 if d <= 1.0 else 0)
-    services = CFG["kommuner"].get(l.get("kommun"), {}).get("services", 0)
-    s["services"] = drive_pts + min(5, int(services))
+    km = CFG["kommuner"].get(l.get("kommun"), {})
+    drive_pts = 0 if d is None else (8 if d <= 0.33 else 6 if d <= 0.5 else 4 if d <= 0.67 else 0)
+    # Kollektivtrafik är ett krav: kommunens grundnivå plus bevis i annonsen.
+    transit = min(4, int(km.get("transit", 0)))
+    if hit["transit"]:
+        transit = min(7, transit + 3)
+        l["transit_evidence"] = True
+    s["services"] = min(20, drive_pts + transit + min(5, int(km.get("services", 0))))
 
     rooms = 0
     mr = re.search(r"(\d+)", str(l.get("rooms") or ""))
@@ -578,8 +586,8 @@ def rescore_only():
     save_json(DATA / "listings.json", cur)
     dig = load_json(DATA / "digest_input.json", {})
     changes = dig.get("changes", {})
-    top = matched[:15]
-    lowmaint = [l for l in matched if l["score_parts"].get("house", 0) >= 12 or l["score_parts"].get("land", 0) >= 12][:20]
+    top = matched[:CFG.get("top_n", 50)]
+    lowmaint = []
     pick_ids = {l["id"] for l in top} | {l["id"] for l in lowmaint} | {c["id"] for c in changes.get("price_changes", [])} | {n["id"] for n in changes.get("new", [])}
     digest = []
     for l in matched:
@@ -821,22 +829,40 @@ def main():
     save_json(HIST / f"{TODAY}.json", {"date": TODAY, "stats": stats,
                                         "ids": [(l["id"], l["price"], l["score"]) for l in matched]})
 
-    # compact input for the Claude step
-    top = matched[:15]
-    # the keyword pre-score is weak on maintenance, so always show Claude the
-    # modern or renovated houses too (build year 1965+ or maintenance >= 8)
-    lowmaint = [l for l in matched if l["score_parts"].get("house", 0) >= 12 or l["score_parts"].get("land", 0) >= 12][:20]
-    pick_ids = {l["id"] for l in top} | {l["id"] for l in lowmaint} | {n["id"] for n in new} | {c["id"] for c in price_changes}
+    # Compact input for the Claude step. Inkrementellt: bara topp N, och full
+    # beskrivning enbart för det som är nytt, prisändrat eller redan valt. Allt
+    # annat skickas som en rad fakta, så att gamla objekt inte kostar tokens om
+    # igen varje morgon.
+    prev_recs = load_json(DATA / "recommendations.json", {})
+    prev_pick_ids = set()
+    for t in prev_recs.get("top", []) + prev_recs.get("watch", []):
+        prev_pick_ids.add(t.get("id"))
+    new_ids = {n["id"] for n in new}
+    changed_ids = {c["id"] for c in price_changes}
+    top = matched[:CFG.get("top_n", 50)]
     digest = []
-    for l in matched:
-        if l["id"] in pick_ids:
-            d = {k: l.get(k) for k in ("id", "title", "kommun", "region", "price", "land_ha", "living_m2",
-                                        "rooms", "type", "url", "alt_url", "drive_h", "price_per_ha", "score",
-                                        "score_parts", "signals", "first_seen", "days_tracked", "price_history",
-                                        "broker", "days_text", "build_year")}
+    for l in top:
+        d = {k: l.get(k) for k in ("id", "title", "kommun", "region", "price", "land_ha", "living_m2",
+                                    "rooms", "type", "url", "alt_url", "drive_h", "price_per_ha", "score",
+                                    "score_parts", "signals", "first_seen", "days_tracked", "price_history",
+                                    "broker", "days_text", "build_year", "transit_evidence")}
+        fresh = l["id"] in new_ids or l["id"] in changed_ids or l["id"] in prev_pick_ids
+        d["is_new"] = l["id"] in new_ids
+        d["price_changed"] = l["id"] in changed_ids
+        d["previously_picked"] = l["id"] in prev_pick_ids
+        if fresh:
             d["description"] = (details.get(l["id"], {}).get("text", "") or l.get("teaser") or "")[:1500]
-            digest.append(d)
-    save_json(DATA / "digest_input.json", {"date": TODAY, "stats": stats, "changes": changes, "listings": digest})
+        else:
+            # redan bedömt en tidigare dag: skicka bara en kort teaser
+            d["description"] = (l.get("teaser") or "")[:200]
+            d["already_seen"] = True
+        digest.append(d)
+    save_json(DATA / "digest_input.json", {
+        "date": TODAY, "stats": stats, "changes": changes,
+        "counts": {"total": len(matched), "in_digest": len(digest),
+                   "with_description": sum(1 for d in digest if not d.get("already_seen"))},
+        "previous_top": [{"id": t.get("id"), "title": t.get("title")} for t in prev_recs.get("top", [])],
+        "listings": digest})
     log(f"done: {len(matched)} matched, {len(new)} new, {len(gone)} gone, {len(price_changes)} price changes")
 
 
