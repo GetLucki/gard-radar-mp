@@ -560,6 +560,10 @@ def backfill(l, text):
             if 20 <= v <= 2000:
                 l["living_m2"] = v
                 l["living_m2_source"] = "detalj"
+    if l.get("water_m") is None:
+        m = re.search(r"closestwaterdistancemeters[:\s]*(\d+)", (text or "").lower())
+        if m:
+            l["water_m"] = int(m.group(1))
     if not l.get("land_ha"):
         m = LAND_PAT.search(text or "")
         if m:
@@ -598,52 +602,65 @@ def prepare(matched, details, label=""):
 
 
 def score(l, text, median_price_per_ha):
-    """100 poäng, profil 'mp' (dokumentets avsnitt 8, reviderad 2026-09-20):
-    permanent hem för Mina och Parviz max en timme från Göteborg, stort hus,
-    befintliga möjligheter för djur och odling, som också bär familjen i kris."""
+    """100 poäng, profil 'mp', femte utgåvan 2026-09-27. Mark och boarea är inte
+    längre trösklar utan poäng, eldstad är ett plus i stället för ett krav, och
+    sjönärhet mäts i meter när Hemnet anger det."""
     t = ((text or "") + " " + (l.get("teaser") or "") + " " + (l.get("type") or "")).lower()
     hit = {k: bool(re.search(p, t)) for k, p in KW.items()}
     s = {}
-    s["water"] = (10 if hit["well"] else 0) + (5 if hit["water"] else 0)
 
+    # Vatten 15: egen brunn plus närhet till sjö, bäck eller hav
+    w = 7 if hit["well"] else 0
+    wm = l.get("water_m")
+    if wm is not None:
+        w += 8 if wm <= 100 else 7 if wm <= 300 else 6 if wm <= 500 else 5 if wm <= 1000 else 3 if wm <= 2000 else 1 if wm <= 5000 else 0
+    elif hit["water"]:
+        w += 5
+    s["water"] = min(15, w)
+
+    # Mark och djur 18
     ha = l.get("land_ha") or 0
-    land = 0
-    land += 7 if hit["arable"] else 0
-    land += 8 if hit["animal_buildings"] else (4 if hit["animals"] else 0)
-    land += 5 if (ha >= 4 and hit["forest"]) else (3 if hit["forest"] else 0)
-    s["land"] = min(20, land)
+    land = 8 if ha >= 4 else 7 if ha >= 2 else 5 if ha >= 1 else 3 if ha >= 0.5 else 1
+    land += 6 if hit["animal_buildings"] else (3 if hit["animals"] else 0)
+    land += 4 if hit["arable"] else 0
+    s["land"] = min(18, land)
 
+    # Huset 20
     y = build_year(text)
     l["build_year"] = y
     m2 = l.get("living_m2") or 0
-    house = 0
-    house += 6 if m2 >= 180 else (4 if m2 >= 170 else (2 if m2 >= 150 else 0))
+    house = 6 if m2 >= 250 else 5 if m2 >= 180 else 4 if m2 >= 150 else 3 if m2 >= 130 else 1 if m2 else 0
     house += 5 if ((y and y >= 1970) or hit["lowmaint_renovated"]) else 0
     house += 4 if hit["renovated_wet"] else 0
     house += 5 if hit["single_storey"] else 0
     house -= 8 if hit["highmaint_need"] else 0
-    house -= 3 if l.get("house_unconfirmed") else 0
     house -= 4 if hit["defects"] else 0
+    house -= 3 if l.get("house_unconfirmed") else 0
     s["house"] = max(0, min(20, house))
 
-    s["heating"] = 10 if (hit["heat_pump"] and hit["wood_heat"]) else (6 if (hit["heat_pump"] or hit["wood_heat"]) else 0)
+    # Värme 8: värmepump för vardagen, eldstad som bonus (inte krav)
+    s["heating"] = min(8, (5 if hit["heat_pump"] else 0) + (4 if hit["wood_heat"] else 0))
 
+    # Läge, service och kollektivtrafik 20
     d = l.get("drive_h")
     km = CFG["kommuner"].get(l.get("kommun"), {})
-    drive_pts = 0 if d is None else (8 if d <= 0.33 else 6 if d <= 0.5 else 4 if d <= 0.67 else 0)
-    # Kollektivtrafik är ett krav: kommunens grundnivå plus bevis i annonsen.
-    transit = min(4, int(km.get("transit", 0)))
+    drive_pts = 0 if d is None else (7 if d <= 0.33 else 6 if d <= 0.5 else 4 if d <= 0.67 else 2 if d <= CFG.get("max_drive_h", 0.75) else 0)
+    # Smidig kollektivtrafik väger tungt (Luki 2026-09-27)
+    transit = min(5, int(km.get("transit", 0)))
     if hit["transit"]:
-        transit = min(7, transit + 3)
+        transit = min(9, transit + 4)
         l["transit_evidence"] = True
-    s["services"] = min(20, drive_pts + transit + min(5, int(km.get("services", 0))))
+    l["transit_weak"] = int(km.get("transit", 0)) <= 2 and not hit["transit"]
+    s["services"] = min(20, drive_pts + transit + min(4, int(km.get("services", 0))))
 
+    # Plats för familjen 9
     rooms = 0
     mr = re.search(r"(\d+)", str(l.get("rooms") or ""))
     if mr:
         rooms = int(mr.group(1))
-    s["family"] = (6 if hit["second_dwelling"] else 0) + (4 if (rooms >= 6 or m2 >= 220 or hit["fiber"]) else 0)
+    s["family"] = min(9, (5 if hit["second_dwelling"] else 0) + (4 if (rooms >= 6 or m2 >= 220 or hit["fiber"]) else 0))
 
+    # Prisrimlighet 10
     pph = l.get("price_per_ha")
     if pph and median_price_per_ha:
         r = pph / median_price_per_ha
@@ -951,7 +968,7 @@ def main():
         d = {k: l.get(k) for k in ("id", "title", "kommun", "region", "price", "land_ha", "living_m2",
                                     "rooms", "type", "url", "alt_url", "drive_h", "price_per_ha", "score",
                                     "score_parts", "signals", "first_seen", "days_tracked", "price_history",
-                                    "broker", "days_text", "build_year", "transit_evidence", "house_unconfirmed")}
+                                    "broker", "days_text", "build_year", "transit_evidence", "house_unconfirmed", "water_m", "transit_weak")}
         fresh = l["id"] in new_ids or l["id"] in changed_ids or l["id"] in prev_pick_ids
         d["is_new"] = l["id"] in new_ids
         d["price_changed"] = l["id"] in changed_ids

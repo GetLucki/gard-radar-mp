@@ -1,16 +1,16 @@
 {
   "date": "2026-09-27",
-  "market_summary": "Listan är oförändrad: inga nya objekt, inga borttagna och inga prisändringar sedan förra körningen. Radarn har 63 träffar med ett medianpris på 5 995 000 kr och ungefär 900 000 kr per hektar. Flest objekt finns i 30 till 40 minuters radie, främst Kungsbacka, men där är det mest skog utan hus. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.",
+  "market_summary": "Listan är oförändrad: fem nya objekt kom in, men inget av dem når topplistan, och inga objekt försvann eller ändrade pris. Radarn visade 205 träffar med ett medianpris på 5 430 000 kr, fler än vanligt eftersom filtret tillfälligt stod på 0,2 hektar och även tog med Mark och Vårgårda. Fyra av de nya ligger just i Mark och Vårgårda, som inte längre finns med i planen, och det femte är Östra Särövägen 286 i Kungsbacka med 155 m² och ingen beskrivning. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.",
   "top": [
     {
       "id": "hemnet:21786760",
       "title": "Kareby kyrkväg 130",
       "kommun": "Kungälv",
-      "region": "20 till 30 min",
+      "region": "Under 20 min",
       "price": 3595000,
       "land_ha": 4.0,
       "url": "https://www.hemnet.se/bostad/gard-7rum-kareby-kungalvs-kommun-kareby-kyrkvag-130-21786760",
-      "score": 59,
+      "score": 60,
       "home_why": "Tvåplanshus på 183 m² från 1976 med två separata lägenheter, så Mina och Parviz kan bo på ett plan och ha den andra lägenheten för familj eller uthyrning. Kareby har skola, förskola och goda kommunikationer, och Kungälvs vård och handel ligger nära.",
       "safehouse_why": "Fyra hektar med fruktträd, skog och plats för djur, och annonsen nämner vatten. Den andra lägenheten gör att fyra personer till kan bo här på riktigt, inte bara på ett gästrum.",
       "invest_why": "Runt 900 000 kr per hektar, alltså exakt medianen, men med ett stort hus och bara 3 595 000 kr totalt. Kareby ligger en halvtimme från Göteborg och är lätt att sälja vidare; fyra hektar går att sköta för två personer.",
@@ -23,11 +23,11 @@
       "id": "hemnet:21786611",
       "title": "Anders Månsgård",
       "kommun": "Kungsbacka",
-      "region": "30 till 40 min",
+      "region": "20 till 30 min",
       "price": 5975000,
       "land_ha": 4.0,
       "url": "https://www.hemnet.se/bostad/gard-hjalm-kungsbacka-kommun-anders-mansgard-21786611",
-      "score": 34,
+      "score": 47,
       "home_why": "Välskött mindre gård i Hjälm strax utanför Kungsbacka, med nära till stadens vård, handel och kommunikationer. Husets storlek och planlösning står inte i annonsen.",
       "safehouse_why": "Fyra hektar sammanhängande åker som passar för bete och odling, och en rymlig ladugård med dubbelgarage för djur, ved och maskiner. Brunn och vattenförsörjning nämns inte.",
       "invest_why": "Omkring 1 490 000 kr per hektar, över medianen, men åkermark nära Kungsbacka håller värdet bra. Marken kan arrenderas ut om skötseln blir för tung.",
@@ -42,9 +42,9 @@
       "kommun": "Alingsås",
       "region": "30 till 40 min",
       "price": 13975000,
-      "land_ha": 2.08,
+      "land_ha": 2.1,
       "url": "https://www.hemnet.se/bostad/villa-6rum-alingsas-kommun-rydvagen-29-21773447",
-      "score": 42,
+      "score": 50,
       "home_why": "Sekelskiftshus på 180 m², genomgående renoverat med Kvänumkök, vedspis och master bedroom med eget badrum. Högt läge med sjöutsikt över Bysjön; närheten till buss framgår inte av annonsen.",
       "safehouse_why": "Stall med två boxar, separat hönshus och ett litet utestall gör djurhållning möjlig direkt, och vedspisen ger värme utan el. Drygt två hektar räcker för höns och odling men inte för större bete.",
       "invest_why": "Nära 6 700 000 kr per hektar, långt över medianen, så man betalar för huset och läget snarare än marken. Pool, bastu och festlada ger hög skötselbörda och en smalare köparkrets vid försäljning.",
@@ -57,11 +57,11 @@
       "id": "booli:6234942",
       "title": "Gössby 224",
       "kommun": "Stenungsund",
-      "region": "30 till 40 min",
+      "region": "20 till 30 min",
       "price": 6050000,
       "land_ha": 11.7,
       "url": "https://www.booli.se/annons/6234942",
-      "score": 33,
+      "score": 41,
       "home_why": "Stort hus på 280 m² med nio rum, men annonsen på Booli saknar beskrivning, så standard och plan är okända. Stenungsund har vård och handel inom rimligt avstånd.",
       "safehouse_why": "Nästan tolv hektar och plats för hela familjen i huset. Vatten, åker och uthus går inte att bedöma utan beskrivning.",
       "invest_why": "Runt 520 000 kr per hektar, klart under medianen, för ett stort hus en halvtimme från Göteborg. Nio rum och tolv hektar kan bli mycket att sköta för två.",
@@ -72,11 +72,15 @@
     }
   ],
   "dropped": [],
-  "criteria_changes": [],
+  "criteria_changes": [
+    "Minsta mark ändrad från 0,2 till 2 hektar i config.json så att den följer planens avsnitt 8. Skannern använder det från i morgon.",
+    "Mark och Vårgårda borttagna ur kommunlistan i config.json, eftersom planen plockade bort dem när radien sattes till 40 minuter. Gäller från i morgon."
+  ],
   "watch": [
     {"id": "booli:6177021", "title": "Kareby Kyrkväg 270", "note": "16 hektar i Kareby för 5 495 000 kr men annonsen saknar beskrivning; värd en titt när den finns"},
     {"id": "hemnet:21773562", "title": "Attlered", "note": "skogsgård i bra skick men vid vägs ände i Lilla Edet; värd en andra titt om kollektivtrafiken visar sig fungera och priset sjunker"},
     {"id": "booli:6273526", "title": "Brändeskogsvägen 15", "note": "173 m² på 3,5 hektar i Lerum, beskrivning saknas; värd en andra titt om priset sjunker"},
-    {"id": "hemnet:21768667", "title": "Stenarsröd", "note": "tre renoverade bostäder och 38 hektar, men mäklaren anger en timme till Göteborg, över taket på 40 minuter"}
+    {"id": "hemnet:21768667", "title": "Stenarsröd", "note": "tre renoverade bostäder och 38 hektar, men mäklaren anger en timme till Göteborg, över taket på 40 minuter"},
+    {"id": "booli:6218455", "title": "Östra Särövägen 286", "note": "ny gård i Kungsbacka, 2,85 hektar för 7 000 000 kr, men bara 155 m² och ingen beskrivning; be mäklaren om husets skick, brunn och närmaste hållplats"}
   ]
 }

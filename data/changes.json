@@ -1,6 +1,52 @@
 {
  "date": "2026-09-27",
- "new": [],
+ "new": [
+  {
+   "id": "booli:6218455",
+   "title": "Östra Särövägen 286",
+   "kommun": "Kungsbacka",
+   "price": 7000000,
+   "land_ha": 2.85,
+   "score": 35,
+   "url": "https://www.booli.se/annons/6218455"
+  },
+  {
+   "id": "booli:6149504",
+   "title": "Ramhultavägen 47",
+   "kommun": "Mark",
+   "price": 3995000,
+   "land_ha": 7.6,
+   "score": 31,
+   "url": "https://www.booli.se/annons/6149504"
+  },
+  {
+   "id": "booli:6017613",
+   "title": "Postvägen 32",
+   "kommun": "Vårgårda",
+   "price": 4700000,
+   "land_ha": 6.42,
+   "score": 30,
+   "url": "https://www.booli.se/bostad/4118085"
+  },
+  {
+   "id": "booli:6164532",
+   "title": "Öresten Hultet 1",
+   "kommun": "Mark",
+   "price": 5985000,
+   "land_ha": 16.1,
+   "score": 27,
+   "url": "https://www.booli.se/annons/6164532"
+  },
+  {
+   "id": "booli:6102811",
+   "title": "Karlshed Hjortedal",
+   "kommun": "Mark",
+   "price": 3600000,
+   "land_ha": 2.14,
+   "score": 26,
+   "url": "https://www.booli.se/bostad/4560209"
+  }
+ ],
  "gone": [],
  "price_changes": [],
  "first_run": false

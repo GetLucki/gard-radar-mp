@@ -1,8 +1,8 @@
 GÅRD-RADAR: MINA & PARVIZ 2026-09-27
-Mina & Parviz 2026-09-27: 56 träffar, 0 nya, 0 prissänkningar
+Mina & Parviz 2026-09-27: 205 träffar, 5 nya, 0 prissänkningar
 
 LÄGET I KORTHET
-Listan är oförändrad: inga nya objekt, inga borttagna och inga prisändringar sedan förra körningen. Radarn har 63 träffar med ett medianpris på 5 995 000 kr och ungefär 900 000 kr per hektar. Flest objekt finns i 30 till 40 minuters radie, främst Kungsbacka, men där är det mest skog utan hus. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.
+Listan är oförändrad: fem nya objekt kom in, men inget av dem når topplistan, och inga objekt försvann eller ändrade pris. Radarn visade 205 träffar med ett medianpris på 5 430 000 kr, fler än vanligt eftersom filtret tillfälligt stod på 0,2 hektar och även tog med Mark och Vårgårda. Fyra av de nya ligger just i Mark och Vårgårda, som inte längre finns med i planen, och det femte är Östra Särövägen 286 i Kungsbacka med 155 m² och ingen beskrivning. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.
 
 DAGENS FÖRSLAG
 1. Kareby kyrkväg 130, Kungälv, 3 595 000 kr, 4.0 ha
@@ -23,7 +23,7 @@ DAGENS FÖRSLAG
    Rekommendation: Fråga mäklaren om boarea, byggår, vatten och entréplan först, och boka visning om svaren håller.
    https://www.hemnet.se/bostad/gard-hjalm-kungsbacka-kommun-anders-mansgard-21786611
 
-3. Rydvägen 29, Alingsås, 13 975 000 kr, 2.08 ha
+3. Rydvägen 29, Alingsås, 13 975 000 kr, 2.1 ha
    Hem: Sekelskiftshus på 180 m², genomgående renoverat med Kvänumkök, vedspis och master bedroom med eget badrum. Högt läge med sjöutsikt över Bysjön; närheten till buss framgår inte av annonsen.
    Safe house: Stall med två boxar, separat hönshus och ett litet utestall gör djurhållning möjlig direkt, och vedspisen ger värme utan el. Drygt två hektar räcker för höns och odling men inte för större bete.
    Ekonomi: Nära 6 700 000 kr per hektar, långt över medianen, så man betalar för huset och läget snarare än marken. Pool, bastu och festlada ger hög skötselbörda och en smalare köparkrets vid försäljning.
@@ -41,14 +41,14 @@ DAGENS FÖRSLAG
    Rekommendation: Fråga mäklaren om beskrivning, byggår och närmaste hållplats med turtäthet på helgen först, eftersom annonsen är tom.
    https://www.booli.se/annons/6234942
 
-BEVAKAS: Kareby Kyrkväg 270 (16 hektar i Kareby för 5 495 000 kr men annonsen saknar beskrivning; värd en titt när den finns); Attlered (skogsgård i bra skick men vid vägs ände i Lilla Edet; värd en andra titt om kollektivtrafiken visar sig fungera och priset sjunker); Brändeskogsvägen 15 (173 m² på 3,5 hektar i Lerum, beskrivning saknas; värd en andra titt om priset sjunker); Stenarsröd (tre renoverade bostäder och 38 hektar, men mäklaren anger en timme till Göteborg, över taket på 40 minuter)
+BEVAKAS: Kareby Kyrkväg 270 (16 hektar i Kareby för 5 495 000 kr men annonsen saknar beskrivning; värd en titt när den finns); Attlered (skogsgård i bra skick men vid vägs ände i Lilla Edet; värd en andra titt om kollektivtrafiken visar sig fungera och priset sjunker); Brändeskogsvägen 15 (173 m² på 3,5 hektar i Lerum, beskrivning saknas; värd en andra titt om priset sjunker); Stenarsröd (tre renoverade bostäder och 38 hektar, men mäklaren anger en timme till Göteborg, över taket på 40 minuter); Östra Särövägen 286 (ny gård i Kungsbacka, 2,85 hektar för 7 000 000 kr, men bara 155 m² och ingen beskrivning; be mäklaren om husets skick, brunn och närmaste hållplats)
 
 BEDÖMS PÅ
 Hem och trygghet: Bebyggd gård med färdigt hus, minst 170 kvadratmeter, inflyttningsklart. Ingen ren tomt, inget renoveringsobjekt; Självförsörjning: egen brunn, odlingsbar mark, plats för höns och gärna får, ved från egen skog, vedeldning plus värmepump; Plats för hela familjen: andra bostad, flygel eller minst fem rum; Max 40 minuter med bil från Sannegårdshamnen, buss eller tåg på gångavstånd eller några minuter med bil, grannar inom synhåll
 Ekonomi: Nära Göteborg håller huset värdet bäst i landet och går alltid att sälja; Pris per hektar under medianen bland träffarna; Skog och åker i södra Sverige nära rekordnivå, färre affärer ger förhandlingsläge; Inte mer skog eller byggnader än Mina och Parviz kan sköta
 
 FÖRÄNDRINGAR
-Nya 0, borta 0, prissänkningar 0.
+Nya 5, borta 0, prissänkningar 0.
 
 Sajt: https://getlucki.github.io/gard-radar-mp/
 Plandokument: https://docs.google.com/document/d/1l_OdLrsYhxoHd2GYJJemgkluYCbCrcybefaayJHVwL4/edit
