@@ -1,0 +1,885 @@
+{
+ "_keyed": true,
+ "kungälv|karebykyrkväg130|360": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3595000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Kareby kyrkväg 130",
+  "kommun": "Kungälv",
+  "ids": [
+   "hemnet:21786760"
+  ]
+ },
+ "kungsbacka|andersmånsgård|598": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5975000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Anders Månsgård",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21786611"
+  ]
+ },
+ "lilla edet|attlered|1100": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   11000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Attlered",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "hemnet:21773562"
+  ]
+ },
+ "bollebygd|fagerhult|370": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3700000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Fagerhult",
+  "kommun": "Bollebygd",
+  "ids": [
+   "hemnet:21784652"
+  ]
+ },
+ "kungsbacka|rörsjö|350": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Rörsjö",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21751072"
+  ]
+ },
+ "kungsbacka|48hektarsammanhängandeskogsmarkstraxnorromlerkil|450": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   4500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "48 hektar sammanhängande skogsmark strax norr om Lerkil",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21774846"
+  ]
+ },
+ "kungsbacka|frillesås|280": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   2800000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Frillesås",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21773420"
+  ]
+ },
+ "lilla edet|stenarsröd|1400": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   14000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Stenarsröd",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "hemnet:21768667"
+  ]
+ },
+ "kungsbacka|idalahult|450": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   4500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Idalahult ",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21750449"
+  ]
+ },
+ "kungsbacka|alslöv|395": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3950000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Alslöv",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21748809"
+  ]
+ },
+ "alingsås|ulvasundsvägen11|1175": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   11750000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Ulvasundsvägen 11",
+  "kommun": "Alingsås",
+  "ids": [
+   "hemnet:21716583"
+  ]
+ },
+ "kungsbacka|22haibukärr|350": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "2,2 ha i Bukärr",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21702620"
+  ]
+ },
+ "kungsbacka|unikamarkområdenibukärr|670": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6700000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Unika markområden i Bukärr",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "hemnet:21698440"
+  ]
+ },
+ "alingsås|rydvägen29|1398": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   13975000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Rydvägen 29",
+  "kommun": "Alingsås",
+  "ids": [
+   "hemnet:21773447"
+  ]
+ },
+ "alingsås|stengatan7|285": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   2850000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Stengatan 7",
+  "kommun": "Alingsås",
+  "ids": [
+   "booli:6280309"
+  ]
+ },
+ "kungsbacka|förlandavägen274|740": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7400000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Förlandavägen 274",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:5780835"
+  ]
+ },
+ "alingsås|gennevedsvägen108|298": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   2975000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Gennevedsvägen 108",
+  "kommun": "Alingsås",
+  "ids": [
+   "booli:6154665"
+  ]
+ },
+ "lilla edet|myrtuvan141|300": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Myrtuvan 141",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "booli:5336036"
+  ]
+ },
+ "lerum|brändeskogsvägen15|780": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7800000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Brändeskogsvägen 15",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6273526"
+  ]
+ },
+ "lerum|brunebergsvägen6|550": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Brunebergsvägen 6",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6263329"
+  ]
+ },
+ "kungsbacka|torredsvägen168|830": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   8295000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Torredsvägen 168",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6017516"
+  ]
+ },
+ "ale|uspastorp150|300": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Uspastorp 150",
+  "kommun": "Ale",
+  "ids": [
+   "booli:6237422"
+  ]
+ },
+ "kungsbacka|ramsjödalsvägen150|720": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7200000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Ramsjödalsvägen 150",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6266042"
+  ]
+ },
+ "lilla edet|lekvall241|380": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3800000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Lekvall 241",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "booli:6078955"
+  ]
+ },
+ "stenungsund|gössby224|605": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6050000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Gössby 224",
+  "kommun": "Stenungsund",
+  "ids": [
+   "booli:6234942"
+  ]
+ },
+ "kungsbacka|östrasärövägen46|410": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   4100000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Östra Särövägen 46",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6218876"
+  ]
+ },
+ "mölndal|tvärgårdsvägen1|1100": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   11000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Tvärgårdsvägen 1",
+  "kommun": "Mölndal",
+  "ids": [
+   "booli:6116347"
+  ]
+ },
+ "stenungsund|stripplekärr602|598": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5985000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Stripplekärr 602",
+  "kommun": "Stenungsund",
+  "ids": [
+   "booli:6238427"
+  ]
+ },
+ "lilla edet|västravallby110|1000": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   10000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Västra Vallby 110",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "booli:6247053"
+  ]
+ },
+ "alingsås|gennevedsvägen49|710": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7100000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Gennevedsvägen 49",
+  "kommun": "Alingsås",
+  "ids": [
+   "booli:6230409"
+  ]
+ },
+ "kungälv|karebykyrkväg270|550": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5495000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Kareby Kyrkväg 270",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:6177021"
+  ]
+ },
+ "lerum|brännekullen34|790": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7895000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Brännekullen 34",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6197068"
+  ]
+ },
+ "lilla edet|intagan128|350": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Intagan 128",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "booli:6226636"
+  ]
+ },
+ "ale|osbacken105|750": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7495000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Osbacken 105",
+  "kommun": "Ale",
+  "ids": [
+   "booli:6209990"
+  ]
+ },
+ "lilla edet|attlered122|295": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   2950000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Attlered 122",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "booli:6185500"
+  ]
+ },
+ "lerum|skogsmarkalsjön|650": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Skogsmark Alsjön",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6169486"
+  ]
+ },
+ "lerum|blåbärsåsvägen62|825": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   8250000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Blåbärsåsvägen 62",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6143493"
+  ]
+ },
+ "tjörn|mölnebo44|520": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5195000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Mölnebo 44",
+  "kommun": "Tjörn",
+  "ids": [
+   "booli:6148557"
+  ]
+ },
+ "göteborg|lillakallhedsvägen2|800": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7995000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Lilla Kallhedsvägen 2",
+  "kommun": "Göteborg",
+  "ids": [
+   "booli:6148599"
+  ]
+ },
+ "tjörn|varvsvägen2a|785": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7850000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Varvsvägen 2A",
+  "kommun": "Tjörn",
+  "ids": [
+   "booli:6148169"
+  ]
+ },
+ "kungsbacka|stockaredsvägen438|520": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5200000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Stockaredsvägen 438",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6217363"
+  ]
+ },
+ "kungsbacka|apelrödsvägen166|730": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7300000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Apelrödsvägen 166",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6123803"
+  ]
+ },
+ "kungälv|bremnäs200|950": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   9500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Bremnäs 200",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:6093722"
+  ]
+ },
+ "alingsås|västrasvedernavägen3|388": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3875000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Västra Svedernavägen 3",
+  "kommun": "Alingsås",
+  "ids": [
+   "booli:5752737"
+  ]
+ },
+ "kungälv|karebykyrkväg230|670": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6700000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Kareby Kyrkväg 230",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:5714823"
+  ]
+ },
+ "tjörn|tolleby31|650": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6495000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Tolleby 31",
+  "kommun": "Tjörn",
+  "ids": [
+   "booli:5872854"
+  ]
+ },
+ "ale|skönningared373|1350": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   13500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Skönningared 373",
+  "kommun": "Ale",
+  "ids": [
+   "booli:5778014"
+  ]
+ },
+ "alingsås|magravägen83|298": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   2985000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Magravägen 83",
+  "kommun": "Alingsås",
+  "ids": [
+   "booli:6081985"
+  ]
+ },
+ "kungälv|åberget110|600": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5995000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Åberget 110",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:6224509"
+  ]
+ },
+ "göteborg|norralyckekärrsvägen4|475": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   4750000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Norra Lyckekärrsvägen 4",
+  "kommun": "Göteborg",
+  "ids": [
+   "booli:6173550"
+  ]
+ },
+ "stenungsund|västraröd112|455": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   4550000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Västra Röd 112",
+  "kommun": "Stenungsund",
+  "ids": [
+   "booli:6244570"
+  ]
+ },
+ "kungsbacka|dalslingansväg24|280": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   2800000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Dalslingans väg 24",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6189389"
+  ]
+ },
+ "kungälv|gustavsberg110|750": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   7500000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Gustavsberg 110",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:6177273"
+  ]
+ },
+ "lerum|brattaliden1|930": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   9300000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Brattaliden 1",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6234919"
+  ]
+ },
+ "göteborg|fjällhultsvägen10|600": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Fjällhultsvägen 10",
+  "kommun": "Göteborg",
+  "ids": [
+   "booli:6146398"
+  ]
+ },
+ "lerum|björnåsvägen21|875": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   8750000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Björnåsvägen 21",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6219688"
+  ]
+ },
+ "göteborg|kvarnhagen1|525": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5250000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Kvarnhagen 1",
+  "kommun": "Göteborg",
+  "ids": [
+   "booli:6005309"
+  ]
+ },
+ "tjörn|berga25|468": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   4680000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Berga 25",
+  "kommun": "Tjörn",
+  "ids": [
+   "booli:6079872"
+  ]
+ },
+ "kungsbacka|ekedalsvägen75|675": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6750000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Ekedalsvägen 75",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6138428"
+  ]
+ },
+ "kungälv|högsberg460|456": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   4560000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Högsberg 460",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:6105110"
+  ]
+ },
+ "kungälv|vedhall160|1500": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   15000000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Vedhall 160",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:5753460"
+  ]
+ },
+ "stenungsund|labol221|640": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6400000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Labol 221",
+  "kommun": "Stenungsund",
+  "ids": [
+   "booli:5923363"
+  ]
+ },
+ "stenungsund|storaaskerön820|340": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3400000
+  ],
+  "price_dates": [
+   "2026-09-27"
+  ],
+  "title": "Stora Askerön 820",
+  "kommun": "Stenungsund",
+  "ids": [
+   "booli:5863422"
+  ]
+ }
+}
