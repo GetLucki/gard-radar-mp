@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "market_summary": "Första körningen med de nya kriterierna gav 63 träffar, alla nya för radarn. Medianpriset ligger på 5 995 000 kr och ungefär 900 000 kr per hektar. Mest händer i 30 till 40 minuters radie, framför allt Kungsbacka, men där är det mest ren skogsmark utan hus. De bästa bostadsgårdarna just nu finns i Kareby i Kungälv och i Hjälm utanför Kungsbacka. Plandokumentet gick inte att läsa i dag, så bedömningen följer kriterierna i config.",
+  "market_summary": "Listan är oförändrad: inga nya objekt, inga borttagna och inga prisändringar sedan förra körningen. Radarn har 63 träffar med ett medianpris på 5 995 000 kr och ungefär 900 000 kr per hektar. Flest objekt finns i 30 till 40 minuters radie, främst Kungsbacka, men där är det mest skog utan hus. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.",
   "top": [
     {
       "id": "hemnet:21786760",
@@ -16,7 +16,8 @@
       "invest_why": "Runt 900 000 kr per hektar, alltså exakt medianen, men med ett stort hus och bara 3 595 000 kr totalt. Kareby ligger en halvtimme från Göteborg och är lätt att sälja vidare; fyra hektar går att sköta för två personer.",
       "rank_why": "Billigast av alla bostadsgårdar på listan, generationsboende från start och bevisad kollektivtrafik. Det som hindrar är ett hus från 70-talet som troligen behöver uppdateras.",
       "maintenance": "Byggår 1976: kontrollera tak, fönster, värmesystem och avlopp; entréplanet finns redan genom den nedre lägenheten.",
-      "recommendation": "Boka visning, eftersom priset är lågt för läget och huset redan är byggt för två hushåll."
+      "recommendation": "Boka visning, eftersom priset är lågt för läget och huset redan är byggt för två hushåll.",
+      "unchanged": true
     },
     {
       "id": "hemnet:21786611",
@@ -32,7 +33,8 @@
       "invest_why": "Omkring 1 490 000 kr per hektar, över medianen, men åkermark nära Kungsbacka håller värdet bra. Marken kan arrenderas ut om skötseln blir för tung.",
       "rank_why": "Bra läge och riktig odlingsmark, men okänd husstandard gör att den hamnar under Kareby.",
       "maintenance": "Byggår okänt: fråga om tak, fönster, värme och om ladugården är i skick för djur.",
-      "recommendation": "Fråga mäklaren om boarea, byggår, vatten och entréplan först, och boka visning om svaren håller."
+      "recommendation": "Fråga mäklaren om boarea, byggår, vatten och entréplan först, och boka visning om svaren håller.",
+      "unchanged": true
     },
     {
       "id": "hemnet:21773447",
@@ -48,7 +50,8 @@
       "invest_why": "Nära 6 700 000 kr per hektar, långt över medianen, så man betalar för huset och läget snarare än marken. Pool, bastu och festlada ger hög skötselbörda och en smalare köparkrets vid försäljning.",
       "rank_why": "Bäst husstandard på hela listan och inflyttningsklart, men priset och underhållet av poolmiljön håller den under de två billigare gårdarna.",
       "maintenance": "Renoverat nyligen; pool, utekök och festlada kräver löpande skötsel, och huset i två plan kan behöva sovrum på entréplan.",
-      "recommendation": "Fråga mäklaren om närmaste hållplats och turtäthet på helgen först, och om det finns sovrum på entréplan."
+      "recommendation": "Fråga mäklaren om närmaste hållplats och turtäthet på helgen först, och om det finns sovrum på entréplan.",
+      "unchanged": true
     },
     {
       "id": "booli:6234942",
@@ -64,7 +67,8 @@
       "invest_why": "Runt 520 000 kr per hektar, klart under medianen, för ett stort hus en halvtimme från Göteborg. Nio rum och tolv hektar kan bli mycket att sköta för två.",
       "rank_why": "Siffrorna ser lovande ut, men utan beskrivning går den inte att placera högre.",
       "maintenance": "Okänt: be om byggår, värmesystem, tak och avlopp innan något annat.",
-      "recommendation": "Fråga mäklaren om beskrivning, byggår och närmaste hållplats med turtäthet på helgen först, eftersom annonsen är tom."
+      "recommendation": "Fråga mäklaren om beskrivning, byggår och närmaste hållplats med turtäthet på helgen först, eftersom annonsen är tom.",
+      "unchanged": true
     }
   ],
   "dropped": [],

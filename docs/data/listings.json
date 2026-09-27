@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T08:58",
+ "generated": "2026-09-27T09:09",
  "config": {
   "price_min": 2500000,
   "price_max": 15000000,
@@ -8,7 +8,7 @@
  "stats": {
   "date": "2026-09-27",
   "matched": 63,
-  "new": 63,
+  "new": 0,
   "gone": 0,
   "price_cuts": 0,
   "price_rises": 0,
@@ -28,17 +28,17 @@
   "by_region": {
    "20 till 30 min": {
     "count": 18,
-    "new": 18,
+    "new": 0,
     "median_price": 7497500
    },
    "30 till 40 min": {
     "count": 40,
-    "new": 40,
+    "new": 0,
     "median_price": 4937500
    },
    "Under 20 min": {
     "count": 5,
-    "new": 5,
+    "new": 0,
     "median_price": 6000000
    }
   }
@@ -170,7 +170,7 @@
    "location": "Alingsås, Alingsås kommun",
    "kommun_raw": "Alingsås",
    "price": 13975000,
-   "land_ha": 2.08,
+   "land_ha": 2.1,
    "living_m2": 180,
    "rooms": "6 rum",
    "type": "Villa",
@@ -194,7 +194,7 @@
    "alt_url": "https://www.booli.se/bostad/4089332",
    "days_text": "En månad på Booli",
    "drive_h": 0.6,
-   "price_per_ha": 6718750,
+   "price_per_ha": 6654762,
    "key": "alingsås|rydvägen29|1398",
    "first_seen": "2026-09-27",
    "price_history": [
@@ -637,7 +637,7 @@
    "location": "Bukärr, Kungsbacka kommun",
    "kommun_raw": "Kungsbacka",
    "price": 6700000,
-   "land_ha": 7.51,
+   "land_ha": 7.5,
    "living_m2": null,
    "rooms": null,
    "type": "Gård med jordbruk",
@@ -655,7 +655,7 @@
    "kommun": "Kungsbacka",
    "region": "30 till 40 min",
    "drive_h": 0.5,
-   "price_per_ha": 892144,
+   "price_per_ha": 893333,
    "key": "kungsbacka|unikamarkområdenibukärr|670",
    "first_seen": "2026-09-27",
    "price_history": [
@@ -883,7 +883,7 @@
    "location": "Tollered, Alingsås kommun",
    "kommun_raw": "Alingsås",
    "price": 11750000,
-   "land_ha": 2.64,
+   "land_ha": 2.6,
    "living_m2": null,
    "rooms": null,
    "type": "Gård med jordbruk",
@@ -906,7 +906,7 @@
    "alt_url": "https://www.booli.se/bostad/4026741",
    "days_text": "4 månader på Booli",
    "drive_h": 0.6,
-   "price_per_ha": 4450758,
+   "price_per_ha": 4519231,
    "key": "alingsås|ulvasundsvägen11|1175",
    "first_seen": "2026-09-27",
    "price_history": [

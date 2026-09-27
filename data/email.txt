@@ -1,8 +1,8 @@
 GÅRD-RADAR: MINA & PARVIZ 2026-09-27
-Mina & Parviz 2026-09-27: 63 träffar, 63 nya, 0 prissänkningar
+Mina & Parviz 2026-09-27: 63 träffar, 0 nya, 0 prissänkningar
 
 LÄGET I KORTHET
-Första körningen med de nya kriterierna gav 63 träffar, alla nya för radarn. Medianpriset ligger på 5 995 000 kr och ungefär 900 000 kr per hektar. Mest händer i 30 till 40 minuters radie, framför allt Kungsbacka, men där är det mest ren skogsmark utan hus. De bästa bostadsgårdarna just nu finns i Kareby i Kungälv och i Hjälm utanför Kungsbacka. Plandokumentet gick inte att läsa i dag, så bedömningen följer kriterierna i config.
+Listan är oförändrad: inga nya objekt, inga borttagna och inga prisändringar sedan förra körningen. Radarn har 63 träffar med ett medianpris på 5 995 000 kr och ungefär 900 000 kr per hektar. Flest objekt finns i 30 till 40 minuters radie, främst Kungsbacka, men där är det mest skog utan hus. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.
 
 VECKANS FÖRSLAG
 1. Kareby kyrkväg 130, Kungälv, 3 595 000 kr, 4.0 ha
@@ -48,7 +48,7 @@ Hem och trygghet: Hem för två: beboeligt hus utan renovering, helst enplan ell
 Ekonomi: Nära Göteborg håller huset värdet bäst i landet och går alltid att sälja; Pris per hektar under medianen bland träffarna; Skog och åker i södra Sverige nära rekordnivå, färre affärer ger förhandlingsläge; Inte mer skog eller byggnader än Mina och Parviz kan sköta
 
 FÖRÄNDRINGAR
-Nya 63, borta 0, prissänkningar 0.
+Nya 0, borta 0, prissänkningar 0.
 
 Sajt: https://getlucki.github.io/gard-radar-mp/
 Plandokument: https://docs.google.com/document/d/1l_OdLrsYhxoHd2GYJJemgkluYCbCrcybefaayJHVwL4/edit

@@ -3,7 +3,7 @@
  "stats": {
   "date": "2026-09-27",
   "matched": 63,
-  "new": 63,
+  "new": 0,
   "gone": 0,
   "price_cuts": 0,
   "price_rises": 0,
@@ -23,17 +23,17 @@
   "by_region": {
    "20 till 30 min": {
     "count": 18,
-    "new": 18,
+    "new": 0,
     "median_price": 7497500
    },
    "30 till 40 min": {
     "count": 40,
-    "new": 40,
+    "new": 0,
     "median_price": 4937500
    },
    "Under 20 min": {
     "count": 5,
-    "new": 5,
+    "new": 0,
     "median_price": 6000000
    }
   }
