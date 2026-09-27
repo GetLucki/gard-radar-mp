@@ -51,7 +51,7 @@ criteria_surv = [
     "Hem för två: beboeligt hus utan renovering, helst enplan eller sovrum och badrum på entréplan, fiber, vårdcentral inom 25 min och mataffär inom 15",
     "Självförsörjning: egen brunn, odlingsbar mark, plats för höns och gärna får, ved från egen skog, vedeldning plus värmepump",
     "Plats för hela familjen: andra bostad, flygel eller minst fem rum",
-    "Max 60 minuter från Göteborg, grannar inom synhåll, levande bygd",
+    "Max 40 minuter med bil från Sannegårdshamnen, buss eller tåg på gångavstånd eller några minuter med bil, grannar inom synhåll",
 ]
 criteria_fin = [
     "Nära Göteborg håller huset värdet bäst i landet och går alltid att sälja",
@@ -128,7 +128,7 @@ else:
         items.append(f"<li><b>Pris {arrow}</b>: <a href=\"{e(x['url'])}\">{e(x['title'])}</a>, {kr(x['old'])} to {kr(x['new'])}</li>")
     for x in (C.get("gone") or [])[:10]:
         items.append(f"<li><b>Borta</b>: {e(x.get('title'))}, {e(x.get('kommun'))}, {kr(x.get('price'))}</li>")
-    changes_html = "<ul>" + "".join(items) + "</ul>" if items else "<p>Inga förändringar sedan förra veckan.</p>"
+    changes_html = "<ul>" + "".join(items) + "</ul>" if items else "<p>Inget nytt sedan i går. Listan är oförändrad.</p>"
 
 dropped_html = ""
 if R.get("dropped"):
@@ -155,7 +155,7 @@ html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</st
 <h2>Läget i korthet</h2>
 <p>{e(R.get('market_summary') or 'Ingen bedömning skriven i dag.')}</p>
 
-<h2>Veckans förslag</h2>
+<h2>Dagens förslag</h2>
 <table class="t">
 <tr><th style="width:3%">#</th><th style="width:17%">Objekt</th><th style="width:20%">Hem för Mina och Parviz</th><th style="width:20%">Safe house för familjen</th><th style="width:15%">Ekonomi</th><th style="width:12%">Varför denna plats</th><th style="width:13%">Rekommendation</th></tr>
 {''.join(rows) if rows else '<tr><td colspan="7">Inget objekt klarade ribban i dag.</td></tr>'}
@@ -174,7 +174,7 @@ html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</st
 <h2>Marknad per område</h2>
 <table class="t"><tr><th>Område</th><th>Träffar</th><th>Nya</th><th>Medianpris</th></tr>{region_rows}</table>
 
-<h2>Förändringar sedan förra veckan</h2>
+<h2>Nytt sedan i går</h2>
 {changes_html}
 
 <p><a href="{e(site)}"><b>Öppna radarsajten</b></a> (alla {S.get('matched', '?')} träffar, filter, poäng) · <a href="{e(doc)}">Plandokumentet</a></p>
@@ -183,7 +183,7 @@ html_out = f"""<!doctype html><html><head><meta charset="utf-8"><style>{css}</st
 
 # ---------- plain text fallback ----------
 lines = [f"{CFG.get('profile_title', 'GÅRD-RADAR').upper()} {date}", subject.split(': ', 1)[1] if ': ' in subject else "", "",
-         "LÄGET I KORTHET", R.get("market_summary") or "Ingen bedömning skriven i dag.", "", "VECKANS FÖRSLAG"]
+         "LÄGET I KORTHET", R.get("market_summary") or "Ingen bedömning skriven i dag.", "", "DAGENS FÖRSLAG"]
 for i, p in enumerate(picks, 1):
     l = by_id.get(p.get("id"), {})
     lines += [f"{i}. {p.get('title') or l.get('title')}, {p.get('kommun') or l.get('kommun')}, {kr(p.get('price') or l.get('price'))}, {p.get('land_ha') or l.get('land_ha') or '?'} ha",
