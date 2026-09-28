@@ -745,8 +745,7 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6177273"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "lerum|brattaliden1|930": {
   "first_seen": "2026-09-27",
@@ -774,8 +773,7 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:6146398"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "lerum|björnåsvägen21|875": {
   "first_seen": "2026-09-27",
@@ -804,8 +802,7 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:6005309"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "tjörn|berga25|468": {
   "first_seen": "2026-09-27",
@@ -819,8 +816,7 @@
   "kommun": "Tjörn",
   "ids": [
    "booli:6079872"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "kungsbacka|ekedalsvägen75|675": {
   "first_seen": "2026-09-27",
@@ -834,8 +830,7 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6138428"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "kungälv|högsberg460|456": {
   "first_seen": "2026-09-27",
@@ -849,8 +844,7 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6105110"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "kungälv|vedhall160|1500": {
   "first_seen": "2026-09-27",
@@ -878,8 +872,7 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:5923363"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "stenungsund|storaaskerön820|340": {
   "first_seen": "2026-09-27",
@@ -893,8 +886,7 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:5863422"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "mark|grebbeshultängsjödalgård|745": {
   "first_seen": "2026-09-27",
@@ -908,7 +900,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21693166"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|edvardkesväg8|875": {
   "first_seen": "2026-09-27",
@@ -922,7 +915,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21465326"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|nödinge75|480": {
   "first_seen": "2026-09-27",
@@ -950,7 +944,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21712278"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|ljurskogslund|398": {
   "first_seen": "2026-09-27",
@@ -964,7 +959,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "hemnet:21639465"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|horshultsvägen151|695": {
   "first_seen": "2026-09-27",
@@ -1020,7 +1016,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21751612"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|törestorp5|490": {
   "first_seen": "2026-09-27",
@@ -1034,7 +1031,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21729254"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|hol271|450": {
   "first_seen": "2026-09-27",
@@ -1048,7 +1046,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "hemnet:21690486"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|skeparedmellangården|1460": {
   "first_seen": "2026-09-27",
@@ -1062,7 +1061,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21676629"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|asserdalsvägen226|550": {
   "first_seen": "2026-09-27",
@@ -1076,7 +1076,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21795015"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|ormo140|670": {
   "first_seen": "2026-09-27",
@@ -1090,7 +1091,8 @@
   "kommun": "Kungälv",
   "ids": [
    "hemnet:21667883"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|ödsmål510|450": {
   "first_seen": "2026-09-27",
@@ -1104,7 +1106,8 @@
   "kommun": "Kungälv",
   "ids": [
    "hemnet:21717735"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|lillaaggetorpsvägen3|545": {
   "first_seen": "2026-09-27",
@@ -1118,7 +1121,8 @@
   "kommun": "Lerum",
   "ids": [
    "hemnet:21771201"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|hjälmetorpsvägen17|275": {
   "first_seen": "2026-09-27",
@@ -1132,7 +1136,8 @@
   "kommun": "Alingsås",
   "ids": [
    "hemnet:21794292"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mölndal|älgvägen1|730": {
   "first_seen": "2026-09-27",
@@ -1146,7 +1151,8 @@
   "kommun": "Mölndal",
   "ids": [
    "hemnet:21687964"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|norraekekullsvägen8|1445": {
   "first_seen": "2026-09-27",
@@ -1160,7 +1166,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21761531"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|västragatan52a|900": {
   "first_seen": "2026-09-27",
@@ -1174,7 +1181,8 @@
   "kommun": "Kungälv",
   "ids": [
    "hemnet:21532336"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|lugnet1|600": {
   "first_seen": "2026-09-27",
@@ -1188,7 +1196,8 @@
   "kommun": "Härryda",
   "ids": [
    "hemnet:21581075"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|brännefjällsvägen20|1385": {
   "first_seen": "2026-09-27",
@@ -1202,7 +1211,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21717994"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "stenungsund|rödgrindsvägen4|400": {
   "first_seen": "2026-09-27",
@@ -1216,7 +1226,8 @@
   "kommun": "Stenungsund",
   "ids": [
    "hemnet:21771767"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|lillaaggetorpsvägen58|550": {
   "first_seen": "2026-09-27",
@@ -1230,7 +1241,8 @@
   "kommun": "Lerum",
   "ids": [
    "hemnet:21790125"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|björlandavägen22a|605": {
   "first_seen": "2026-09-27",
@@ -1244,7 +1256,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21790872"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|ässjavägen3|460": {
   "first_seen": "2026-09-27",
@@ -1258,7 +1271,8 @@
   "kommun": "Alingsås",
   "ids": [
    "hemnet:21787478"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|berggatan10|430": {
   "first_seen": "2026-09-27",
@@ -1272,7 +1286,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21752921"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|lygnövägen76|439": {
   "first_seen": "2026-09-27",
@@ -1300,7 +1315,8 @@
   "kommun": "Kungälv",
   "ids": [
    "hemnet:21786109"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "tjörn|berga26|998": {
   "first_seen": "2026-09-27",
@@ -1314,7 +1330,8 @@
   "kommun": "Tjörn",
   "ids": [
    "hemnet:21655228"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lilla edet|larsered242|375": {
   "first_seen": "2026-09-27",
@@ -1328,7 +1345,8 @@
   "kommun": "Lilla Edet",
   "ids": [
    "hemnet:21766563"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|gamlasärövägen270|945": {
   "first_seen": "2026-09-27",
@@ -1342,7 +1360,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21765953"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "ale|bönabo190|500": {
   "first_seen": "2026-09-27",
@@ -1356,7 +1375,8 @@
   "kommun": "Ale",
   "ids": [
    "hemnet:21786470"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|annebergsgård|650": {
   "first_seen": "2026-09-27",
@@ -1370,7 +1390,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21407041"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|duvesjön190|420": {
   "first_seen": "2026-09-27",
@@ -1384,7 +1405,8 @@
   "kommun": "Kungälv",
   "ids": [
    "hemnet:21523653"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|gamlagöteborgsvägen30|850": {
   "first_seen": "2026-09-27",
@@ -1398,7 +1420,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21561388"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|hobergsunnanäng13|415": {
   "first_seen": "2026-09-27",
@@ -1412,7 +1435,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "hemnet:21784881"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|gundalsvägen1|570": {
   "first_seen": "2026-09-27",
@@ -1426,7 +1450,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21564907"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|gamlasärövägen249|895": {
   "first_seen": "2026-09-27",
@@ -1440,7 +1465,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21763590"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|boråsvägen254|350": {
   "first_seen": "2026-09-27",
@@ -1454,7 +1480,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21782107"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|torpakvarnväg275|490": {
   "first_seen": "2026-09-27",
@@ -1468,7 +1495,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21615440"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "partille|gavelåsvägen34|740": {
   "first_seen": "2026-09-27",
@@ -1482,7 +1510,8 @@
   "kommun": "Partille",
   "ids": [
    "hemnet:21581736"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "stenungsund|oskarsberg120|1000": {
   "first_seen": "2026-09-27",
@@ -1496,7 +1525,8 @@
   "kommun": "Stenungsund",
   "ids": [
    "hemnet:21716336"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|bockövägen18|1095": {
   "first_seen": "2026-09-27",
@@ -1510,7 +1540,8 @@
   "kommun": "Härryda",
   "ids": [
    "hemnet:21627606"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "göteborg|ambjörnhagsvägen18|698": {
   "first_seen": "2026-09-27",
@@ -1524,7 +1555,8 @@
   "kommun": "Göteborg",
   "ids": [
    "hemnet:21780320"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|hagenvägen33|1250": {
   "first_seen": "2026-09-27",
@@ -1538,7 +1570,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "hemnet:21698952"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|kanaredtallbacken1|575": {
   "first_seen": "2026-09-27",
@@ -1552,7 +1585,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21707580"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "ale|svenstorp141|525": {
   "first_seen": "2026-09-27",
@@ -1566,7 +1600,8 @@
   "kommun": "Ale",
   "ids": [
    "hemnet:21589583"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|västraingsjövägen23|300": {
   "first_seen": "2026-09-27",
@@ -1580,7 +1615,8 @@
   "kommun": "Mark",
   "ids": [
    "hemnet:21642993"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "bollebygd|hägsbol12|860": {
   "first_seen": "2026-09-27",
@@ -1594,7 +1630,8 @@
   "kommun": "Bollebygd",
   "ids": [
    "hemnet:21502769"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|södrahärenelärarbostaden|300": {
   "first_seen": "2026-09-27",
@@ -1608,7 +1645,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "hemnet:21699368"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "tjörn|sörbyvägen38|1050": {
   "first_seen": "2026-09-27",
@@ -1622,7 +1660,8 @@
   "kommun": "Tjörn",
   "ids": [
    "hemnet:21724276"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|bredehallsliden11|570": {
   "first_seen": "2026-09-27",
@@ -1636,7 +1675,8 @@
   "kommun": "Lerum",
   "ids": [
    "hemnet:19586657"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|yxåsvägen9|560": {
   "first_seen": "2026-09-27",
@@ -1650,7 +1690,8 @@
   "kommun": "Härryda",
   "ids": [
    "hemnet:21738377"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|skogsgärde186|380": {
   "first_seen": "2026-09-27",
@@ -1664,7 +1705,8 @@
   "kommun": "Härryda",
   "ids": [
    "hemnet:21731383"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|norrmannebo610|645": {
   "first_seen": "2026-09-27",
@@ -1678,7 +1720,8 @@
   "kommun": "Kungälv",
   "ids": [
    "hemnet:21591151"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|hultakullen|358": {
   "first_seen": "2026-09-27",
@@ -1706,7 +1749,8 @@
   "kommun": "Alingsås",
   "ids": [
    "hemnet:19855758"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|björkesbackabäckaskog|400": {
   "first_seen": "2026-09-27",
@@ -1720,7 +1764,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6270854"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|kullamittbäcken|380": {
   "first_seen": "2026-09-27",
@@ -1734,7 +1779,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6274063"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|norraytterstadvägen22|850": {
   "first_seen": "2026-09-27",
@@ -1748,7 +1794,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6164917"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|byslättsvägen4|300": {
   "first_seen": "2026-09-27",
@@ -1762,7 +1809,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6112124"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|önsörgården1|590": {
   "first_seen": "2026-09-27",
@@ -1776,7 +1824,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "booli:6217355"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|edsåsvägen51|570": {
   "first_seen": "2026-09-27",
@@ -1804,7 +1853,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6149504"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|hultetgranhult1|400": {
   "first_seen": "2026-09-27",
@@ -1818,7 +1868,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6174781"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|örestenhultet1|598": {
   "first_seen": "2026-09-27",
@@ -1832,7 +1883,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6164532"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|högajonsgård|600": {
   "first_seen": "2026-09-27",
@@ -1846,7 +1898,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6003861"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|häljeröd170|540": {
   "first_seen": "2026-09-27",
@@ -1860,7 +1913,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:5744978"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|lenarosengården|290": {
   "first_seen": "2026-09-27",
@@ -1874,7 +1928,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "booli:5982145"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|nårungaskanterna1|830": {
   "first_seen": "2026-09-27",
@@ -1888,7 +1943,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "booli:6087784"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|hultetfridkulla|300": {
   "first_seen": "2026-09-27",
@@ -1902,7 +1958,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:5914567"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|sandlid140|750": {
   "first_seen": "2026-09-27",
@@ -1930,7 +1987,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:5770039"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|laggarnsväg35|795": {
   "first_seen": "2026-09-27",
@@ -1944,7 +2002,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:5575142"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "ale|björkliden400|260": {
   "first_seen": "2026-09-27",
@@ -1958,7 +2017,8 @@
   "kommun": "Ale",
   "ids": [
    "booli:5957290"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|drageredsolvillan|618": {
   "first_seen": "2026-09-27",
@@ -1972,7 +2032,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:5476487"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|törnrosvägen7a|850": {
   "first_seen": "2026-09-27",
@@ -1986,7 +2047,8 @@
   "kommun": "Härryda",
   "ids": [
    "booli:6282595"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|sjöhåla200|460": {
   "first_seen": "2026-09-27",
@@ -2000,7 +2062,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6282462"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "ale|pussen483|480": {
   "first_seen": "2026-09-27",
@@ -2014,7 +2077,8 @@
   "kommun": "Ale",
   "ids": [
    "booli:6268630"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|romelandanedergård120|500": {
   "first_seen": "2026-09-27",
@@ -2028,7 +2092,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6269449"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lilla edet|dyeslätt128|390": {
   "first_seen": "2026-09-27",
@@ -2042,7 +2107,8 @@
   "kommun": "Lilla Edet",
   "ids": [
    "booli:6249547"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|gravsjövägen|500": {
   "first_seen": "2026-09-27",
@@ -2070,7 +2136,8 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:6273624"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "göteborg|svankällevägen92|455": {
   "first_seen": "2026-09-27",
@@ -2084,7 +2151,8 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:6075219"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|anåsbergsvägen18|470": {
   "first_seen": "2026-09-27",
@@ -2098,7 +2166,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6252366"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|brändeskogsvägen7|250": {
   "first_seen": "2026-09-27",
@@ -2126,7 +2195,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6270614"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mölndal|skåregärdevägen56|649": {
   "first_seen": "2026-09-27",
@@ -2140,7 +2210,8 @@
   "kommun": "Mölndal",
   "ids": [
    "booli:6262867"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|åshallavägen2|448": {
   "first_seen": "2026-09-27",
@@ -2168,7 +2239,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6244076"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|lahälla290|585": {
   "first_seen": "2026-09-27",
@@ -2182,7 +2254,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6190739"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|hermansby150|600": {
   "first_seen": "2026-09-27",
@@ -2196,7 +2269,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:5957675"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|svartebäcksvägen36|538": {
   "first_seen": "2026-09-27",
@@ -2210,7 +2284,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6272735"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|rävo132|630": {
   "first_seen": "2026-09-27",
@@ -2224,7 +2299,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6261320"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|solkullenfröstebovägen61|300": {
   "first_seen": "2026-09-27",
@@ -2238,7 +2314,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6269628"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|moryttargården|295": {
   "first_seen": "2026-09-27",
@@ -2252,7 +2329,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "booli:6263455"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|tubackavägen41|650": {
   "first_seen": "2026-09-27",
@@ -2266,7 +2344,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6249807"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|silvergnejsvägen24|460": {
   "first_seen": "2026-09-27",
@@ -2280,7 +2359,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:5979435"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "ale|ölanda275|300": {
   "first_seen": "2026-09-27",
@@ -2294,7 +2374,8 @@
   "kommun": "Ale",
   "ids": [
    "booli:6262445"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|lundby350|548": {
   "first_seen": "2026-09-27",
@@ -2308,7 +2389,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6258675"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|edenhjelmsväg13|1150": {
   "first_seen": "2026-09-27",
@@ -2322,7 +2404,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6250678"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "göteborg|eskilslycka13|850": {
   "first_seen": "2026-09-27",
@@ -2336,7 +2419,8 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:6254291"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|gamlabjörboholmsvägen18|350": {
   "first_seen": "2026-09-27",
@@ -2350,7 +2434,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6264627"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|hemsjövägen50|580": {
   "first_seen": "2026-09-27",
@@ -2364,7 +2449,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6264333"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "göteborg|tullarehög3|273": {
   "first_seen": "2026-09-27",
@@ -2378,7 +2464,8 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:6222056"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|säröängväg32|975": {
   "first_seen": "2026-09-27",
@@ -2392,7 +2479,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6244729"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|gällingevägen316|480": {
   "first_seen": "2026-09-27",
@@ -2406,7 +2494,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6262457"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|färgenäsvägen17|348": {
   "first_seen": "2026-09-27",
@@ -2420,7 +2509,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6262235"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|frillesåsvägen395|295": {
   "first_seen": "2026-09-27",
@@ -2434,7 +2524,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6261841"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|hamnholmsvägen3|910": {
   "first_seen": "2026-09-27",
@@ -2448,7 +2539,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6239755"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|edsåsvägen209|350": {
   "first_seen": "2026-09-27",
@@ -2462,7 +2554,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6260928"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|pojkebovägen40|649": {
   "first_seen": "2026-09-27",
@@ -2476,7 +2569,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6260924"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|kullavägen10|295": {
   "first_seen": "2026-09-27",
@@ -2490,7 +2584,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6231646"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|svallåsvägen132|1500": {
   "first_seen": "2026-09-27",
@@ -2504,7 +2599,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6250336"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|lootrålanda165|260": {
   "first_seen": "2026-09-27",
@@ -2518,7 +2614,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6259915"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "stenungsund|stripplekärr410|350": {
   "first_seen": "2026-09-27",
@@ -2532,7 +2629,8 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:6256343"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|sundshultnordlyckan126|650": {
   "first_seen": "2026-09-27",
@@ -2546,7 +2644,8 @@
   "kommun": "Härryda",
   "ids": [
    "booli:6238580"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|pykstensvägen9|450": {
   "first_seen": "2026-09-27",
@@ -2560,7 +2659,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6223738"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|stenbacken16|550": {
   "first_seen": "2026-09-27",
@@ -2574,7 +2674,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "booli:6119910"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|norratorpavägen31|560": {
   "first_seen": "2026-09-27",
@@ -2588,7 +2689,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6091470"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "ale|sandliden11|500": {
   "first_seen": "2026-09-27",
@@ -2602,7 +2704,8 @@
   "kommun": "Ale",
   "ids": [
    "booli:6252707"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|lillaöverön110|870": {
   "first_seen": "2026-09-27",
@@ -2616,7 +2719,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6236441"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|stockholmsvägen16|279": {
   "first_seen": "2026-09-27",
@@ -2630,7 +2734,8 @@
   "kommun": "Vårgårda",
   "ids": [
    "booli:6250842"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|lommabackevägen21|302": {
   "first_seen": "2026-09-27",
@@ -2644,7 +2749,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6176981"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|skepplaskogsvägen35|445": {
   "first_seen": "2026-09-27",
@@ -2658,7 +2764,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6144873"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|bysjövägen12|425": {
   "first_seen": "2026-09-27",
@@ -2672,7 +2779,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6055962"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|hultastenbacke|339": {
   "first_seen": "2026-09-27",
@@ -2686,7 +2794,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6141391"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|saxofongatan7|400": {
   "first_seen": "2026-09-27",
@@ -2700,7 +2809,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6219296"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|andersolssonsväg12|600": {
   "first_seen": "2026-09-27",
@@ -2714,7 +2824,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6247936"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "tjörn|österängsvägen20|300": {
   "first_seen": "2026-09-27",
@@ -2728,7 +2839,8 @@
   "kommun": "Tjörn",
   "ids": [
    "booli:6242095"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|knapegårdsvägen195|895": {
   "first_seen": "2026-09-27",
@@ -2742,7 +2854,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6243854"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|björröd260|345": {
   "first_seen": "2026-09-27",
@@ -2756,7 +2869,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6206737"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "ale|hövägen43|540": {
   "first_seen": "2026-09-27",
@@ -2770,7 +2884,8 @@
   "kommun": "Ale",
   "ids": [
    "booli:6234433"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|slättaråsbacken12|480": {
   "first_seen": "2026-09-27",
@@ -2784,7 +2899,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6191275"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|östadsvägen370|500": {
   "first_seen": "2026-09-27",
@@ -2798,7 +2914,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6195431"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|vikarydsvägen38|450": {
   "first_seen": "2026-09-27",
@@ -2812,7 +2929,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6242392"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|hällingsjövägen1654|260": {
   "first_seen": "2026-09-27",
@@ -2826,7 +2944,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6243821"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|gransjöås141|425": {
   "first_seen": "2026-09-27",
@@ -2840,7 +2959,8 @@
   "kommun": "Härryda",
   "ids": [
    "booli:6172279"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|kärrbohöjdsvägen|630": {
   "first_seen": "2026-09-27",
@@ -2854,7 +2974,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6215680"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|brunebergsvägen33|260": {
   "first_seen": "2026-09-27",
@@ -2868,7 +2989,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6197339"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|laggarnsväg15b|950": {
   "first_seen": "2026-09-27",
@@ -2882,7 +3004,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6181725"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|enstigen21|730": {
   "first_seen": "2026-09-27",
@@ -2896,7 +3019,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6163802"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lilla edet|norrakattunga126|320": {
   "first_seen": "2026-09-27",
@@ -2910,7 +3034,8 @@
   "kommun": "Lilla Edet",
   "ids": [
    "booli:6210236"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungälv|rörtången156|700": {
   "first_seen": "2026-09-27",
@@ -2924,7 +3049,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6235902"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|nedflovägen1|750": {
   "first_seen": "2026-09-27",
@@ -2938,7 +3064,8 @@
   "kommun": "Härryda",
   "ids": [
    "booli:6233708"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|långaredsvägen195|400": {
   "first_seen": "2026-09-27",
@@ -2952,7 +3079,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6233657"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "göteborg|rönningsmellangårdar14|500": {
   "first_seen": "2026-09-27",
@@ -2966,7 +3094,8 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:5880489"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mark|textilgatan3|300": {
   "first_seen": "2026-09-27",
@@ -2980,7 +3109,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6183804"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "stenungsund|askekärret107|760": {
   "first_seen": "2026-09-27",
@@ -2994,7 +3124,8 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:6179236"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|gamlahärskogsvägen9|575": {
   "first_seen": "2026-09-27",
@@ -3008,7 +3139,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6151536"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mölndal|kungsbackavägen147|590": {
   "first_seen": "2026-09-27",
@@ -3022,7 +3154,8 @@
   "kommun": "Mölndal",
   "ids": [
    "booli:6230148"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "göteborg|åsebyöstergård1|380": {
   "first_seen": "2026-09-27",
@@ -3050,7 +3183,8 @@
   "kommun": "Härryda",
   "ids": [
    "booli:6229660"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|källerydsvägen1|490": {
   "first_seen": "2026-09-27",
@@ -3064,7 +3198,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6229437"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "mölndal|raneredsvägen151|290": {
   "first_seen": "2026-09-27",
@@ -3078,7 +3213,8 @@
   "kommun": "Mölndal",
   "ids": [
    "booli:6215124"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|kärrbogata36|600": {
   "first_seen": "2026-09-27",
@@ -3092,7 +3228,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6227437"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lilla edet|sandliden163|340": {
   "first_seen": "2026-09-27",
@@ -3106,7 +3243,8 @@
   "kommun": "Lilla Edet",
   "ids": [
    "booli:6227315"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "bollebygd|hindåsvägen200a|400": {
   "first_seen": "2026-09-27",
@@ -3120,7 +3258,8 @@
   "kommun": "Bollebygd",
   "ids": [
    "booli:6211585"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|fringshultsvägen70|260": {
   "first_seen": "2026-09-27",
@@ -3134,7 +3273,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6133704"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "göteborg|furuhöjdsbacken2|398": {
   "first_seen": "2026-09-27",
@@ -3148,7 +3288,8 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:6221513"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "alingsås|tångenvägen34|520": {
   "first_seen": "2026-09-27",
@@ -3162,7 +3303,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6224777"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "lerum|lillabråtavägen17|420": {
   "first_seen": "2026-09-27",
@@ -3176,7 +3318,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6223900"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "härryda|kroksjövägen5|450": {
   "first_seen": "2026-09-27",
@@ -3190,7 +3333,8 @@
   "kommun": "Härryda",
   "ids": [
    "booli:6222624"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "kungsbacka|östrasärövägen286|700": {
   "first_seen": "2026-09-27",
@@ -3218,7 +3362,8 @@
   "kommun": "Mark",
   "ids": [
    "booli:6102811"
-  ]
+  ],
+  "gone": "2026-09-28"
  },
  "vårgårda|postvägen32|470": {
   "first_seen": "2026-09-27",
@@ -3232,6 +3377,35 @@
   "kommun": "Vårgårda",
   "ids": [
    "booli:6017613"
+  ],
+  "gone": "2026-09-28"
+ },
+ "tjörn|viksödegärde23|410": {
+  "first_seen": "2026-09-28",
+  "prices": [
+   4100000
+  ],
+  "price_dates": [
+   "2026-09-28"
+  ],
+  "title": "Viks Ödegärde 23",
+  "kommun": "Tjörn",
+  "ids": [
+   "booli:6085087"
+  ]
+ },
+ "stenungsund|tönneröd172|430": {
+  "first_seen": "2026-09-28",
+  "prices": [
+   4295000
+  ],
+  "price_dates": [
+   "2026-09-28"
+  ],
+  "title": "Tönneröd 172",
+  "kommun": "Stenungsund",
+  "ids": [
+   "booli:5803844"
   ]
  }
 }
