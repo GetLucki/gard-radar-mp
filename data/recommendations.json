@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-28",
-  "market_summary": "Listan är oförändrad: tio nya objekt kom in, men inget av dem når topplistan, och inga val försvann eller ändrade pris. Radarn visar nu 61 träffar i stället för 205, eftersom filtret åter står på 2 hektar och Mark och Vårgårda är borta; det förklarar nästan alla 154 som försvann. Medianpriset är 5 995 000 kr, och de nya ligger mest i Kungälv, Stenungsund och Göteborgs landsbygd, men samtliga saknar beskrivning på Booli och de flesta saknar boarea. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.",
+  "date": "2026-09-29",
+  "market_summary": "Listan är oförändrad: ett nytt objekt och en prissänkning kom in, men inget av dem når topplistan. Radarn visar 61 träffar, en gård i Kungsbacka försvann och medianpriset ligger kvar på 6 000 000 kr. Det nya är en villa på 180 m² och drygt fyra hektar i Lerum för 8 750 000 kr, men annonsen saknar beskrivning och priset per hektar är mer än dubbla medianen. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.",
   "top": [
     {
       "id": "hemnet:21786760",
@@ -74,17 +74,19 @@
   "dropped": [],
   "criteria_changes": [],
   "watch": [
+    {"id": "booli:6219688", "title": "Björnåsvägen 21", "note": "ny: villa på 180 m² och 4,1 hektar i Lerum för 8 750 000 kr, men bara fyra rum, ingen beskrivning och runt 2 130 000 kr per hektar; be mäklaren om husets skick, brunn, djurbyggnader och närmaste hållplats"},
+    {"id": "booli:6017516", "title": "Torredsvägen 168", "note": "sänkt från 8 295 000 till 7 795 000 kr för 7,3 hektar i Kungsbacka, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
     {"id": "booli:6177021", "title": "Kareby Kyrkväg 270", "note": "16 hektar i Kareby för 5 495 000 kr men annonsen saknar beskrivning; värd en titt när den finns"},
     {"id": "hemnet:21773562", "title": "Attlered", "note": "skogsgård i bra skick men vid vägs ände i Lilla Edet; värd en andra titt om kollektivtrafiken visar sig fungera och priset sjunker"},
     {"id": "booli:6273526", "title": "Brändeskogsvägen 15", "note": "173 m² på 3,5 hektar i Lerum, beskrivning saknas; värd en andra titt om priset sjunker"},
     {"id": "hemnet:21768667", "title": "Stenarsröd", "note": "tre renoverade bostäder och 38 hektar, men mäklaren anger en timme till Göteborg, över taket på 40 minuter"},
     {"id": "booli:6218455", "title": "Östra Särövägen 286", "note": "ny gård i Kungsbacka, 2,85 hektar för 7 000 000 kr, men bara 155 m² och ingen beskrivning; be mäklaren om husets skick, brunn och närmaste hållplats"},
-    {"id": "booli:6138428", "title": "Ekedalsvägen 75", "note": "ny: 9,2 hektar och sex rum i Kungsbacka för 6 750 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
-    {"id": "booli:6146398", "title": "Fjällhultsvägen 10", "note": "ny: nio rum på 4,2 hektar i Göteborg för 6 000 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
-    {"id": "booli:6177273", "title": "Gustavsberg 110", "note": "ny: sju rum på 3,9 hektar i Kungälv för 7 500 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
-    {"id": "booli:5923363", "title": "Labol 221", "note": "ny: 7,3 hektar i Stenungsund för 6 400 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
-    {"id": "booli:6005309", "title": "Kvarnhagen 1", "note": "ny: 2,3 hektar i Göteborg för 5 250 000 kr, dyrt per hektar; bebyggelsen och boarean behöver bekräftas hos mäklaren"},
-    {"id": "booli:6105110", "title": "Högsberg 460", "note": "ny: 2,1 hektar i Kungälv för 4 560 000 kr; bebyggelsen och boarean behöver bekräftas hos mäklaren"},
-    {"id": "booli:5803844", "title": "Tönneröd 172", "note": "ny: 150 m² på 2,1 hektar i Stenungsund för 4 295 000 kr, under planens 170 m² och utan beskrivning; bara intressant om huset visar sig större"}
+    {"id": "booli:6138428", "title": "Ekedalsvägen 75", "note": "9,2 hektar och sex rum i Kungsbacka för 6 750 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
+    {"id": "booli:6146398", "title": "Fjällhultsvägen 10", "note": "nio rum på 4,2 hektar i Göteborg för 6 000 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
+    {"id": "booli:6177273", "title": "Gustavsberg 110", "note": "sju rum på 3,9 hektar i Kungälv för 7 500 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
+    {"id": "booli:5923363", "title": "Labol 221", "note": "7,3 hektar i Stenungsund för 6 400 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
+    {"id": "booli:6005309", "title": "Kvarnhagen 1", "note": "2,3 hektar i Göteborg för 5 250 000 kr, dyrt per hektar; bebyggelsen och boarean behöver bekräftas hos mäklaren"},
+    {"id": "booli:6105110", "title": "Högsberg 460", "note": "2,1 hektar i Kungälv för 4 560 000 kr; bebyggelsen och boarean behöver bekräftas hos mäklaren"},
+    {"id": "booli:5803844", "title": "Tönneröd 172", "note": "150 m² på 2,1 hektar i Stenungsund, under planens 170 m² och utan beskrivning; bara intressant om huset visar sig större"}
   ]
 }

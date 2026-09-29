@@ -207,7 +207,8 @@
   "title": "Stengatan 7",
   "kommun": "Alingsås",
   "ids": [
-   "booli:6280309"
+   "booli:6280309",
+   "hemnet:21795975"
   ]
  },
  "kungsbacka|förlandavägen274|740": {
@@ -222,7 +223,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:5780835"
-  ]
+  ],
+  "gone": "2026-09-29"
  },
  "alingsås|gennevedsvägen108|298": {
   "first_seen": "2026-09-27",
@@ -264,34 +266,6 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6273526"
-  ]
- },
- "lerum|brunebergsvägen6|550": {
-  "first_seen": "2026-09-27",
-  "prices": [
-   5500000
-  ],
-  "price_dates": [
-   "2026-09-27"
-  ],
-  "title": "Brunebergsvägen 6",
-  "kommun": "Lerum",
-  "ids": [
-   "booli:6263329"
-  ]
- },
- "kungsbacka|torredsvägen168|830": {
-  "first_seen": "2026-09-27",
-  "prices": [
-   8295000
-  ],
-  "price_dates": [
-   "2026-09-27"
-  ],
-  "title": "Torredsvägen 168",
-  "kommun": "Kungsbacka",
-  "ids": [
-   "booli:6017516"
   ]
  },
  "ale|uspastorp150|300": {
@@ -787,8 +761,7 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6219688"
-  ],
-  "gone": "2026-09-27"
+  ]
  },
  "göteborg|kvarnhagen1|525": {
   "first_seen": "2026-09-27",
@@ -961,20 +934,6 @@
    "hemnet:21639465"
   ],
   "gone": "2026-09-28"
- },
- "kungsbacka|horshultsvägen151|695": {
-  "first_seen": "2026-09-27",
-  "prices": [
-   6950000
-  ],
-  "price_dates": [
-   "2026-09-27"
-  ],
-  "title": "Horshultsvägen 151",
-  "kommun": "Kungsbacka",
-  "ids": [
-   "hemnet:21714613"
-  ]
  },
  "ale|stockedalen150|498": {
   "first_seen": "2026-09-27",
@@ -3406,6 +3365,54 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:5803844"
+  ]
+ },
+ "kungsbacka|torredsvägen168|780": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   8295000,
+   7795000
+  ],
+  "price_dates": [
+   "2026-09-27",
+   "2026-09-29"
+  ],
+  "title": "Torredsvägen 168",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6017516"
+  ]
+ },
+ "kungsbacka|horshultsvägen151|710": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6950000,
+   7100000
+  ],
+  "price_dates": [
+   "2026-09-27",
+   "2026-09-29"
+  ],
+  "title": "Horshultsvägen 151",
+  "kommun": "Kungsbacka",
+  "ids": [
+   "booli:6052071"
+  ]
+ },
+ "lerum|brunebergsvägen6|700": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   5500000,
+   7000000
+  ],
+  "price_dates": [
+   "2026-09-27",
+   "2026-09-29"
+  ],
+  "title": "Brunebergsvägen 6",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6263329"
   ]
  }
 }
