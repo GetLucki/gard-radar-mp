@@ -521,7 +521,8 @@
   "kommun": "Göteborg",
   "ids": [
    "booli:6148599"
-  ]
+  ],
+  "gone": "2026-09-30"
  },
  "tjörn|varvsvägen2a|785": {
   "first_seen": "2026-09-27",
@@ -733,7 +734,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6234919"
-  ]
+  ],
+  "gone": "2026-09-30"
  },
  "göteborg|fjällhultsvägen10|600": {
   "first_seen": "2026-09-27",
@@ -859,7 +861,8 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:5863422"
-  ]
+  ],
+  "gone": "2026-09-30"
  },
  "mark|grebbeshultängsjödalgård|745": {
   "first_seen": "2026-09-27",

@@ -1,51 +1,32 @@
 {
- "date": "2026-09-29",
- "new": [
-  {
-   "id": "booli:6219688",
-   "title": "Björnåsvägen 21",
-   "kommun": "Lerum",
-   "price": 8750000,
-   "land_ha": 4.11,
-   "score": 28,
-   "url": "https://www.booli.se/annons/6219688"
-  }
- ],
+ "date": "2026-09-30",
+ "new": [],
  "gone": [
   {
-   "id": "booli:5780835",
-   "title": "Förlandavägen 274",
-   "kommun": "Kungsbacka",
-   "price": 7400000,
-   "url": "https://www.booli.se/annons/5780835",
-   "days_tracked": 1
-  }
- ],
- "price_changes": [
-  {
-   "id": "booli:6017516",
-   "title": "Torredsvägen 168",
-   "kommun": "Kungsbacka",
-   "old": 8295000,
-   "new": 7795000,
-   "url": "https://www.booli.se/annons/6017516"
-  },
-  {
-   "id": "booli:6052071",
-   "title": "Horshultsvägen 151",
-   "kommun": "Kungsbacka",
-   "old": 6950000,
-   "new": 7100000,
-   "url": "https://www.booli.se/annons/6052071"
-  },
-  {
-   "id": "booli:6263329",
-   "title": "Brunebergsvägen 6",
+   "id": "booli:6234919",
+   "title": "Brattaliden 1",
    "kommun": "Lerum",
-   "old": 5500000,
-   "new": 7000000,
-   "url": "https://www.booli.se/annons/6263329"
+   "price": 9300000,
+   "url": "https://www.booli.se/annons/6234919",
+   "days_tracked": 2
+  },
+  {
+   "id": "booli:6148599",
+   "title": "Lilla Kallhedsvägen 2",
+   "kommun": "Göteborg",
+   "price": 7995000,
+   "url": "https://www.booli.se/bostad/3141377",
+   "days_tracked": 2
+  },
+  {
+   "id": "booli:5863422",
+   "title": "Stora Askerön 820",
+   "kommun": "Stenungsund",
+   "price": 3400000,
+   "url": "https://www.booli.se/bostad/3458538",
+   "days_tracked": 2
   }
  ],
+ "price_changes": [],
  "first_run": false
 }
