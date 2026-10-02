@@ -1,30 +1,32 @@
 {
- "date": "2026-09-30",
- "new": [],
+ "date": "2026-10-02",
+ "new": [
+  {
+   "id": "hemnet:21797583",
+   "title": "Fagerfjäll 80",
+   "kommun": "Tjörn",
+   "price": 3775000,
+   "land_ha": 2.79,
+   "score": 49,
+   "url": "https://www.hemnet.se/bostad/gard-137m2-fagerfjall-tjorns-kommun-fagerfjall-80-21797583"
+  }
+ ],
  "gone": [
   {
-   "id": "booli:6234919",
-   "title": "Brattaliden 1",
-   "kommun": "Lerum",
-   "price": 9300000,
-   "url": "https://www.booli.se/annons/6234919",
-   "days_tracked": 2
+   "id": "booli:6081985",
+   "title": "Magravägen 83",
+   "kommun": "Alingsås",
+   "price": 2985000,
+   "url": "https://www.booli.se/bostad/1760939",
+   "days_tracked": 3
   },
   {
-   "id": "booli:6148599",
-   "title": "Lilla Kallhedsvägen 2",
-   "kommun": "Göteborg",
-   "price": 7995000,
-   "url": "https://www.booli.se/bostad/3141377",
-   "days_tracked": 2
-  },
-  {
-   "id": "booli:5863422",
-   "title": "Stora Askerön 820",
+   "id": "booli:5923363",
+   "title": "Labol 221",
    "kommun": "Stenungsund",
-   "price": 3400000,
-   "url": "https://www.booli.se/bostad/3458538",
-   "days_tracked": 2
+   "price": 6400000,
+   "url": "https://www.booli.se/bostad/1724644",
+   "days_tracked": 3
   }
  ],
  "price_changes": [],

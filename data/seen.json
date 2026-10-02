@@ -650,7 +650,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6081985"
-  ]
+  ],
+  "gone": "2026-10-02"
  },
  "kungälv|åberget110|600": {
   "first_seen": "2026-09-27",
@@ -847,7 +848,8 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:5923363"
-  ]
+  ],
+  "gone": "2026-10-02"
  },
  "stenungsund|storaaskerön820|340": {
   "first_seen": "2026-09-27",
@@ -3416,6 +3418,20 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6263329"
+  ]
+ },
+ "tjörn|fagerfjäll80|378": {
+  "first_seen": "2026-10-02",
+  "prices": [
+   3775000
+  ],
+  "price_dates": [
+   "2026-10-02"
+  ],
+  "title": "Fagerfjäll 80",
+  "kommun": "Tjörn",
+  "ids": [
+   "hemnet:21797583"
   ]
  }
 }
