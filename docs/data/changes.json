@@ -1,32 +1,33 @@
 {
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "new": [
   {
-   "id": "hemnet:21797583",
-   "title": "Fagerfjäll 80",
-   "kommun": "Tjörn",
-   "price": 3775000,
-   "land_ha": 2.79,
-   "score": 49,
-   "url": "https://www.hemnet.se/bostad/gard-137m2-fagerfjall-tjorns-kommun-fagerfjall-80-21797583"
+   "id": "hemnet:21765056",
+   "title": "Öregärde 11",
+   "kommun": "Bollebygd",
+   "price": 4750000,
+   "land_ha": 2.84,
+   "score": 26,
+   "url": "https://www.hemnet.se/bostad/villa-bollebygds-kommun-oregarde-11-21765056"
+  },
+  {
+   "id": "booli:5770039",
+   "title": "Hundsjövägen 5",
+   "kommun": "Alingsås",
+   "price": 3795000,
+   "land_ha": null,
+   "score": 20,
+   "url": "https://www.booli.se/bostad/3199514"
   }
  ],
  "gone": [
   {
-   "id": "booli:6081985",
-   "title": "Magravägen 83",
-   "kommun": "Alingsås",
-   "price": 2985000,
-   "url": "https://www.booli.se/bostad/1760939",
-   "days_tracked": 3
-  },
-  {
-   "id": "booli:5923363",
-   "title": "Labol 221",
-   "kommun": "Stenungsund",
-   "price": 6400000,
-   "url": "https://www.booli.se/bostad/1724644",
-   "days_tracked": 3
+   "id": "booli:6197068",
+   "title": "Brännekullen 34",
+   "kommun": "Lerum",
+   "price": 7895000,
+   "url": "https://www.booli.se/annons/6197068",
+   "days_tracked": 5
   }
  ],
  "price_changes": [],

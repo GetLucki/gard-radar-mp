@@ -421,7 +421,8 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6197068"
-  ]
+  ],
+  "gone": "2026-10-03"
  },
  "lilla edet|intagan128|350": {
   "first_seen": "2026-09-27",
@@ -1951,8 +1952,7 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:5770039"
-  ],
-  "gone": "2026-09-28"
+  ]
  },
  "lerum|laggarnsväg35|795": {
   "first_seen": "2026-09-27",
@@ -3432,6 +3432,48 @@
   "kommun": "Tjörn",
   "ids": [
    "hemnet:21797583"
+  ]
+ },
+ "bollebygd|öregärde11|475": {
+  "first_seen": "2026-10-03",
+  "prices": [
+   4750000
+  ],
+  "price_dates": [
+   "2026-10-03"
+  ],
+  "title": "Öregärde 11",
+  "kommun": "Bollebygd",
+  "ids": [
+   "hemnet:21765056"
+  ]
+ },
+ "alingsås|östergården|800": {
+  "first_seen": "2026-10-03",
+  "prices": [
+   8000000
+  ],
+  "price_dates": [
+   "2026-10-03"
+  ],
+  "title": "Östergården",
+  "kommun": "Alingsås",
+  "ids": [
+   "hemnet:21889841"
+  ]
+ },
+ "lilla edet|backer|350": {
+  "first_seen": "2026-10-03",
+  "prices": [
+   3500000
+  ],
+  "price_dates": [
+   "2026-10-03"
+  ],
+  "title": "Backer ",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "hemnet:21889826"
   ]
  }
 }
