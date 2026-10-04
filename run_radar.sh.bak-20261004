@@ -6,8 +6,6 @@
 # 3) headless Claude judges candidates + sends the litpanda email,
 # 4) final site build, 5) git commit + push -> GitHub Pages.
 
-source "$HOME/.claude/bin/net-wait.sh"
-
 REPO="${0:A:h}"
 PROMPT_FILE="$HOME/.claude/scheduled-tasks/daily-gard-radar-mp/SKILL.md"
 PY="$REPO/.venv/bin/python"
@@ -20,11 +18,15 @@ ts() { date '+%F %T'; }
 cd "$REPO" || { echo "$(ts) gard-radar-mp: repo saknas: $REPO" >&2; exit 1; }
 echo "$(ts) gard-radar-mp: startar"
 
-# 0. Vänta in nätet. Wi-Fi och routern är av 23:30 till 07:00, så varje värd
-#    jobbet använder slås upp på riktigt innan vi börjar (se net-wait.sh).
-if ! NET_WAIT_LABEL=gard-radar-mp net_wait www.booli.se www.hemnet.se api.anthropic.com github.com; then
-  echo "$(ts) inget nät efter väntan, kunde inte slå upp ${LAST_BAD_HOST:-okänd värd}" > data/scan_failed.txt
-fi
+# 0. Vänta in nätet. Macen vaknar ofta precis vid 07:15 och wifi kommer upp
+#    någon minut senare; 2026-09-19 och 09-20 föll hela körningen på det.
+net_ok() { curl -s -m 8 -o /dev/null -w '%{http_code}' https://www.booli.se/ 2>/dev/null | grep -qE '^(2|3|4)'; }
+for i in {1..60}; do
+  if net_ok; then break; fi
+  (( i == 1 )) && echo "$(ts) gard-radar-mp: inget nät ännu, väntar (max 10 min)"
+  sleep 10
+done
+net_ok || { echo "$(ts) gard-radar-mp: fortfarande inget nät efter 10 min, avbryter"; echo "$(ts) inget nät efter 10 min väntan" > data/scan_failed.txt; }
 
 # 1. scan (writes data/scan_failed.txt on crash, so Claude can report it)
 if [[ "$SKIP_SCAN" != "1" ]]; then
@@ -39,7 +41,10 @@ python3 build_site.py
 if [[ "$SKIP_CLAUDE" != "1" ]]; then
   # Prefer the Homebrew binary (kept current by brew); the nvm copy lags and
   # rejected the Fable 5.1 default model on 2026-09-17.
-  CLAUDE="$(find_claude)"
+  CLAUDE=""
+  for cand in /opt/homebrew/bin/claude "$HOME"/.nvm/versions/node/*/bin/claude(N-.om); do
+    [[ -x "$cand" ]] && { CLAUDE="$cand"; break; }
+  done
   if [[ -z "$CLAUDE" ]]; then
     echo "$(ts) gard-radar-mp: ingen claude-binär hittad" >&2
   else
@@ -47,16 +52,15 @@ if [[ "$SKIP_CLAUDE" != "1" ]]; then
     if [[ -z "$PROMPT" ]]; then
       echo "$(ts) gard-radar-mp: prompten blev tom" >&2
     else
-      # mejlet skickas inne i samma anrop, så ett omförsök får inte ske efter en lyckad sändning
-      CLAUDE_TRY_NO_RETRY_IF="sent to [0-9]+ recipients|email sent|mejl.*skickat" \
-      claude_try judge "$CLAUDE" -p "$PROMPT" \
+      "$CLAUDE" -p "$PROMPT" \
         --permission-mode acceptEdits \
         --add-dir "$HOME/.claude" --add-dir "$REPO" \
         --allowedTools "Read,Write,Edit,Glob,Grep,\
 Bash(date:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),\
 Bash(python3 \"$REPO/build_email.py\"),Bash(python3 $REPO/build_email.py),\
 mcp__gsuite-kalender-privat__read_file,\
-mcp__gmail-litpanda-auto__send_message"
+mcp__gmail-litpanda-auto__send_message" 2>&1 | tail -n 20
+      echo "$(ts) gard-radar-mp: claude exit ${pipestatus[1]}"
     fi
   fi
 fi
