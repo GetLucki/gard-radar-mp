@@ -1,30 +1,30 @@
 {
- "date": "2026-10-03",
+ "date": "2026-10-04",
  "stats": {
-  "date": "2026-10-03",
-  "matched": 58,
-  "new": 2,
+  "date": "2026-10-04",
+  "matched": 57,
+  "new": 0,
   "gone": 1,
   "price_cuts": 0,
   "price_rises": 0,
-  "median_price": 5980000,
+  "median_price": 5985000,
   "median_price_per_ha": 1066059,
   "national_in_band": {
    "hemnet": {
-    "gard": 819,
-    "villa": 183
+    "gard": 821,
+    "villa": 182
    },
    "booli": {
-    "gard": 887,
-    "hus": 529
+    "gard": 889,
+    "hus": 528
    }
   },
   "hemnet_ok": true,
   "by_region": {
    "30 till 40 min": {
-    "count": 22,
-    "new": 2,
-    "median_price": 4390000
+    "count": 21,
+    "new": 0,
+    "median_price": 4680000
    },
    "20 till 30 min": {
     "count": 25,
@@ -39,44 +39,25 @@
   }
  },
  "changes": {
-  "date": "2026-10-03",
-  "new": [
-   {
-    "id": "hemnet:21765056",
-    "title": "Öregärde 11",
-    "kommun": "Bollebygd",
-    "price": 4750000,
-    "land_ha": 2.84,
-    "score": 26,
-    "url": "https://www.hemnet.se/bostad/villa-bollebygds-kommun-oregarde-11-21765056"
-   },
+  "date": "2026-10-04",
+  "new": [],
+  "gone": [
    {
     "id": "booli:5770039",
     "title": "Hundsjövägen 5",
     "kommun": "Alingsås",
     "price": 3795000,
-    "land_ha": null,
-    "score": 20,
-    "url": "https://www.booli.se/bostad/3199514"
-   }
-  ],
-  "gone": [
-   {
-    "id": "booli:6197068",
-    "title": "Brännekullen 34",
-    "kommun": "Lerum",
-    "price": 7895000,
-    "url": "https://www.booli.se/annons/6197068",
-    "days_tracked": 5
+    "url": "https://www.booli.se/bostad/3199514",
+    "days_tracked": 6
    }
   ],
   "price_changes": [],
   "first_run": false
  },
  "counts": {
-  "total": 58,
+  "total": 57,
   "in_digest": 50,
-  "with_description": 19
+  "with_description": 18
  },
  "previous_top": [
   {
@@ -129,7 +110,7 @@
     "big_house"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -181,7 +162,7 @@
     "heat_pump"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -233,7 +214,7 @@
     "transit"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -241,7 +222,7 @@
     ]
    ],
    "broker": "Erik Olsson Fastighetsförmedling",
-   "days_text": "22 dagar på Booli",
+   "days_text": "23 dagar på Booli",
    "build_year": 1976,
    "transit_evidence": true,
    "house_unconfirmed": null,
@@ -281,7 +262,7 @@
     "second_dwelling"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -334,7 +315,7 @@
     "fiber"
    ],
    "first_seen": "2026-10-02",
-   "days_tracked": 1,
+   "days_tracked": 2,
    "price_history": [
     [
      "2026-10-02",
@@ -342,7 +323,7 @@
     ]
    ],
    "broker": "Bjurfors Södra Bohuslän",
-   "days_text": "2 dagar på Booli",
+   "days_text": "3 dagar på Booli",
    "build_year": 1973,
    "transit_evidence": null,
    "house_unconfirmed": null,
@@ -385,7 +366,7 @@
     "animals"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -436,7 +417,7 @@
     "wood_heat"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -487,7 +468,7 @@
     "neighbours"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -513,14 +494,14 @@
    "kommun": "Alingsås",
    "region": "30 till 40 min",
    "price": 2850000,
-   "land_ha": 2.26,
+   "land_ha": 2.3,
    "living_m2": 139,
    "rooms": "6 rum",
    "type": "Gård utan jordbruk",
    "url": "https://www.hemnet.se/bostad/villa-6rum-sollebrunn-med-omnejd-alingsas-kommun-stengatan-7-21795975",
    "alt_url": "https://www.booli.se/annons/6280309",
    "drive_h": 0.6,
-   "price_per_ha": 1261062,
+   "price_per_ha": 1239130,
    "score": 41,
    "score_parts": {
     "water": 1,
@@ -538,7 +519,7 @@
     "big_house"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -546,7 +527,7 @@
     ]
    ],
    "broker": "Fastighetsbyrån Alingsås",
-   "days_text": "5 dagar på Booli",
+   "days_text": "6 dagar på Booli",
    "build_year": 1901,
    "transit_evidence": null,
    "house_unconfirmed": null,
@@ -589,7 +570,7 @@
     "transit"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -597,7 +578,7 @@
     ]
    ],
    "broker": "Areal | Göteborg",
-   "days_text": "22 dagar på Booli",
+   "days_text": "23 dagar på Booli",
    "build_year": null,
    "transit_evidence": true,
    "house_unconfirmed": null,
@@ -634,7 +615,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -679,7 +660,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -727,7 +708,7 @@
     "forest"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -773,7 +754,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -823,7 +804,7 @@
     "defects"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -874,7 +855,7 @@
     "defects"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -920,7 +901,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -966,7 +947,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1014,7 +995,7 @@
     "forest"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1060,7 +1041,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1106,7 +1087,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1151,7 +1132,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1199,7 +1180,7 @@
     "forest"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1245,7 +1226,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1290,7 +1271,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1336,7 +1317,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1382,7 +1363,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1428,7 +1409,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1474,7 +1455,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1520,7 +1501,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1528,7 +1509,7 @@
     ]
    ],
    "broker": "LF Fastighetsförmedling",
-   "days_text": "12 dagar på Booli",
+   "days_text": "13 dagar på Booli",
    "build_year": null,
    "transit_evidence": null,
    "house_unconfirmed": true,
@@ -1566,7 +1547,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1574,7 +1555,7 @@
     ]
    ],
    "broker": "LF Fastighetsförmedling",
-   "days_text": "15 dagar på Booli",
+   "days_text": "16 dagar på Booli",
    "build_year": null,
    "transit_evidence": null,
    "house_unconfirmed": null,
@@ -1611,7 +1592,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1659,7 +1640,7 @@
     "forest"
    ],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1667,7 +1648,7 @@
     ]
    ],
    "broker": "Areal | Göteborg",
-   "days_text": "23 dagar på Booli",
+   "days_text": "24 dagar på Booli",
    "build_year": null,
    "transit_evidence": null,
    "house_unconfirmed": null,
@@ -1704,7 +1685,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1750,7 +1731,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1795,7 +1776,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1840,7 +1821,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1886,7 +1867,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1931,7 +1912,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -1977,7 +1958,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2027,7 +2008,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2035,7 +2016,7 @@
     ]
    ],
    "broker": "Bjurfors",
-   "days_text": "19 dagar på Booli",
+   "days_text": "20 dagar på Booli",
    "build_year": null,
    "transit_evidence": null,
    "house_unconfirmed": null,
@@ -2073,7 +2054,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2118,7 +2099,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2144,14 +2125,14 @@
    "kommun": "Bollebygd",
    "region": "30 till 40 min",
    "price": 4750000,
-   "land_ha": 2.84,
+   "land_ha": 2.8,
    "living_m2": null,
    "rooms": null,
    "type": "Gård utan jordbruk",
    "url": "https://www.hemnet.se/bostad/villa-bollebygds-kommun-oregarde-11-21765056",
    "alt_url": null,
    "drive_h": 0.6,
-   "price_per_ha": 1672535,
+   "price_per_ha": 1696429,
    "score": 26,
    "score_parts": {
     "water": 3,
@@ -2168,7 +2149,7 @@
     "animals"
    ],
    "first_seen": "2026-10-03",
-   "days_tracked": 0,
+   "days_tracked": 1,
    "price_history": [
     [
      "2026-10-03",
@@ -2182,10 +2163,11 @@
    "house_unconfirmed": null,
    "water_m": 1100,
    "transit_weak": true,
-   "is_new": true,
+   "is_new": false,
    "price_changed": false,
    "previously_picked": false,
-   "description": "Välkommen till Öregärde! Gården för ett lantligt boende med exempelvis djurhållning eller andra intressen som kräver utrymmen. Byggnaderna består av:  ett inbjudande och trivsamt bostadshus, bilgarage, maskinhall samt ladugård med nytt tak. Till gården finns 2,5 ha mark. Samtidigt med denna försäljning är  angränsande fastighet Öregärde 1:16 med ett stort bostadshus innehållande två lägenheter till salu. Fastigheterna kan köpas varför sig. Populära platser för aktiviteter i närområdet är: Hestrafors IF med Bollevi, Hulta golfklubb och Tubbareds badplats.\nFAKTA\nid: 21765056\nformattedLandArea: 2,8 ha\nhousingForm: Gård utan jordbruk\nisForeclosure: False\nisNewConstruction: False\nisProject: False\nisSavable: True\nisUpcoming: False\nlistingHemnetUrl: https://www.hemnet.se/bostad/villa-bollebygds-kommun-oregarde-11-21765056\npostCode: 51792\nstreetAddress: Öregärde 11\ntenure: Äganderätt\ntitle: Öregärde 11\nadTargeting: {\"item_types\":[2],\"price\":[5],\"municipality\":[16],\"region\":[19],\"country\":[1],\"water_distance\":[\"501-\"],\"property_price\":4750000,\"property_address\":\"Öregärde 11\",\"property_living_area\":null,\"property_zipcode\":\"51792\"}\nbiddingStarted: False\ndaysOnHemnet: 1\nisBiddingOngoing: False\nisTeaser: False\npublishedAt: 1790972068.885\nlistingBrokerUrl: https://app.maklarcrm.se/api/v1/publishers/redirect/MDI1MnwwMDAwMDAwMTYyOHw1OA../direct?utm_source=hemnet&utm_medium=referral&utm_content=listing\nlistingBrokerGalleryUrl: https://app.maklarcrm.se/api/v1/publishers/redirect/MDI1MnwwMDAwMD"
+   "description": "Välkommen till Öregärde! Gården för ett lantligt boende med exempelvis djurhållning eller andra intressen som kräver utrymmen. Byggnaderna består av:  ett inbjudande och trivsamt bostadshus, bilgarage",
+   "already_seen": true
   },
   {
    "id": "booli:6218455",
@@ -2213,7 +2195,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2258,7 +2240,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2270,7 +2252,7 @@
     ]
    ],
    "broker": "LF Fastighetsförmedling",
-   "days_text": "5 dagar på Booli",
+   "days_text": "6 dagar på Booli",
    "build_year": null,
    "transit_evidence": null,
    "house_unconfirmed": true,
@@ -2307,7 +2289,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2353,7 +2335,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-28",
-   "days_tracked": 5,
+   "days_tracked": 6,
    "price_history": [
     [
      "2026-09-28",
@@ -2398,7 +2380,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
@@ -2444,7 +2426,7 @@
    },
    "signals": [],
    "first_seen": "2026-09-27",
-   "days_tracked": 6,
+   "days_tracked": 7,
    "price_history": [
     [
      "2026-09-27",
