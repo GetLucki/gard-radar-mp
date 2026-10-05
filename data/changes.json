@@ -1,16 +1,16 @@
 {
- "date": "2026-10-04",
+ "date": "2026-10-05",
  "new": [],
- "gone": [
+ "gone": [],
+ "price_changes": [
   {
-   "id": "booli:5770039",
-   "title": "Hundsjövägen 5",
-   "kommun": "Alingsås",
-   "price": 3795000,
-   "url": "https://www.booli.se/bostad/3199514",
-   "days_tracked": 6
+   "id": "booli:6162342",
+   "title": "Kareby Kyrkväg 130",
+   "kommun": "Kungälv",
+   "old": 3595000,
+   "new": 3400000,
+   "url": "https://www.booli.se/annons/6162342"
   }
  ],
- "price_changes": [],
  "first_run": false
 }

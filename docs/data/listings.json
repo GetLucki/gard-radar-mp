@@ -1,26 +1,26 @@
 {
- "generated": "2026-10-04T07:48",
+ "generated": "2026-10-05T08:14",
  "config": {
   "price_min": 2500000,
   "price_max": 15000000,
   "land_min_ha": 2
  },
  "stats": {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "matched": 57,
   "new": 0,
-  "gone": 1,
-  "price_cuts": 0,
+  "gone": 0,
+  "price_cuts": 1,
   "price_rises": 0,
   "median_price": 5985000,
   "median_price_per_ha": 1066059,
   "national_in_band": {
    "hemnet": {
-    "gard": 821,
-    "villa": 182
+    "gard": 816,
+    "villa": 179
    },
    "booli": {
-    "gard": 889,
+    "gard": 885,
     "hus": 528
    }
   },
@@ -85,8 +85,8 @@
      3500000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 100,
    "build_year": 1975,
    "transit_weak": false,
@@ -148,8 +148,8 @@
      13500000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 1600,
    "build_year": 2000,
    "transit_weak": false,
@@ -170,69 +170,6 @@
     "price": 10
    },
    "score": 59
-  },
-  {
-   "id": "hemnet:21786760",
-   "source": "hemnet",
-   "title": "Kareby kyrkväg 130",
-   "location": "Kareby, Kungälvs kommun",
-   "kommun_raw": "Kungälvs",
-   "price": 3595000,
-   "land_ha": 4.0,
-   "living_m2": 183,
-   "rooms": "7 rum",
-   "type": "Gård/skog",
-   "url": "https://www.hemnet.se/bostad/gard-7rum-kareby-kungalvs-kommun-kareby-kyrkvag-130-21786760",
-   "lat": 57.902874,
-   "lon": 11.8995848,
-   "published": "2026-09-14",
-   "broker": "Erik Olsson Fastighetsförmedling",
-   "teaser": "Rymligt tvåplanshus med två separata lägenheter, perfekt för generationsboende eller uthyrning. Huset har två balkonger i soligt sydvästläge och en stor, lummig trädgård med vackra äppelträd och gott om yta för utomhusaktiviteter.\r\n\r\nKareby är ett omtyckt och familjevänligt område som kombinerar lantlig idyll med närhet till service och kommunikationer. Här bor ni i en lugn och naturnära miljö…",
-   "image": "https://bilder.hemnet.se/images/itemgallery_cut/7d/6d/7d6dbf63aa9173db5c8f72ff60a77537.jpg",
-   "upcoming": false,
-   "labels": [
-    "ONGOING_VERIFIED_BIDDING"
-   ],
-   "kommun": "Kungälv",
-   "region": "Under 20 min",
-   "alt_ids": [
-    "booli:6162342"
-   ],
-   "alt_url": "https://www.booli.se/annons/6162342",
-   "days_text": "23 dagar på Booli",
-   "drive_h": 0.3,
-   "price_per_ha": 898750,
-   "key": "kungälv|karebykyrkväg130|360",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     3595000
-    ]
-   ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
-   "water_m": 2800,
-   "build_year": 1976,
-   "transit_evidence": true,
-   "transit_weak": false,
-   "signals": [
-    "water",
-    "forest",
-    "animals",
-    "second_dwelling",
-    "transit"
-   ],
-   "score_parts": {
-    "water": 1,
-    "land": 11,
-    "house": 10,
-    "heating": 0,
-    "services": 19,
-    "family": 9,
-    "price": 7
-   },
-   "score": 57
   },
   {
    "id": "hemnet:21777377",
@@ -274,8 +211,8 @@
      4975000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 200,
    "build_year": null,
    "transit_weak": false,
@@ -322,7 +259,7 @@
     "booli:6292297"
    ],
    "alt_url": "https://www.booli.se/bostad/4147315",
-   "days_text": "3 dagar på Booli",
+   "days_text": "4 dagar på Booli",
    "drive_h": 0.6,
    "price_per_ha": 1348214,
    "key": "tjörn|fagerfjäll80|378",
@@ -333,8 +270,8 @@
      3775000
     ]
    ],
-   "days_tracked": 2,
-   "last_seen": "2026-10-04",
+   "days_tracked": 3,
+   "last_seen": "2026-10-05",
    "build_year": 1973,
    "transit_weak": true,
    "signals": [
@@ -393,8 +330,8 @@
      14000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 200,
    "build_year": null,
    "transit_weak": false,
@@ -456,8 +393,8 @@
      13975000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 50,
    "build_year": 1914,
    "transit_weak": false,
@@ -516,8 +453,8 @@
      2950000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 3100,
    "build_year": null,
    "transit_weak": false,
@@ -568,7 +505,7 @@
     "booli:6280309"
    ],
    "alt_url": "https://www.booli.se/annons/6280309",
-   "days_text": "6 dagar på Booli",
+   "days_text": "7 dagar på Booli",
    "drive_h": 0.6,
    "price_per_ha": 1239130,
    "key": "alingsås|stengatan7|285",
@@ -579,8 +516,8 @@
      2850000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 4900,
    "build_year": 1901,
    "transit_weak": false,
@@ -627,7 +564,7 @@
     "booli:6263838"
    ],
    "alt_url": "https://www.booli.se/annons/6263838",
-   "days_text": "23 dagar på Booli",
+   "days_text": "24 dagar på Booli",
    "drive_h": 0.5,
    "price_per_ha": 1493750,
    "key": "kungsbacka|andersmånsgård|598",
@@ -638,8 +575,8 @@
      5975000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 2200,
    "build_year": null,
    "transit_evidence": true,
@@ -694,8 +631,8 @@
      6050000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -743,8 +680,8 @@
      7500000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -791,8 +728,8 @@
      4500000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 900,
    "build_year": null,
    "transit_weak": false,
@@ -844,8 +781,8 @@
      5495000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -900,8 +837,8 @@
      11750000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 50,
    "build_year": null,
    "transit_weak": false,
@@ -959,8 +896,8 @@
      7850000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": 1975,
    "transit_evidence": true,
    "transit_weak": false,
@@ -1015,8 +952,8 @@
      7100000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1065,8 +1002,8 @@
      9500000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1081,6 +1018,56 @@
     "price": 7
    },
    "score": 34
+  },
+  {
+   "id": "booli:6162342",
+   "source": "booli",
+   "title": "Kareby Kyrkväg 130",
+   "location": "Gård · Kareby · Kungälv",
+   "kommun_raw": "Kungälv",
+   "county": "Västra Götalands län",
+   "price": 3400000,
+   "land_ha": 3.48,
+   "living_m2": null,
+   "rooms": "7 rum",
+   "type": "Gård",
+   "url": "https://www.booli.se/annons/6162342",
+   "lat": 57.90985577,
+   "lon": 11.91064423,
+   "published": null,
+   "days_text": "2026-10-04",
+   "broker": null,
+   "teaser": "",
+   "upcoming": false,
+   "labels": [],
+   "kommun": "Kungälv",
+   "region": "Under 20 min",
+   "drive_h": 0.3,
+   "price_per_ha": 977011,
+   "key": "kungälv|karebykyrkväg130|340",
+   "first_seen": "2026-09-27",
+   "price_history": [
+    [
+     "2026-10-05",
+     3400000
+    ]
+   ],
+   "days_tracked": 0,
+   "last_seen": "2026-10-05",
+   "house_unconfirmed": true,
+   "build_year": null,
+   "transit_weak": false,
+   "signals": [],
+   "score_parts": {
+    "water": 0,
+    "land": 7,
+    "house": 0,
+    "heating": 0,
+    "services": 15,
+    "family": 4,
+    "price": 7
+   },
+   "score": 33
   },
   {
    "id": "hemnet:21748809",
@@ -1114,8 +1101,8 @@
      3950000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 2100,
    "build_year": null,
    "transit_weak": false,
@@ -1166,8 +1153,8 @@
      6700000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1217,8 +1204,8 @@
      6750000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1267,8 +1254,8 @@
      3000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1316,8 +1303,8 @@
      3700000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 950,
    "build_year": null,
    "transit_weak": true,
@@ -1368,8 +1355,8 @@
      6000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1419,8 +1406,8 @@
      6500000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1469,8 +1456,8 @@
      4750000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1520,8 +1507,8 @@
      6495000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": true,
@@ -1570,8 +1557,8 @@
      11000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1620,8 +1607,8 @@
      2975000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1653,7 +1640,7 @@
    "lat": 57.85084738,
    "lon": 11.91978114,
    "published": null,
-   "days_text": "13 dagar på Booli",
+   "days_text": "14 dagar på Booli",
    "broker": "LF Fastighetsförmedling",
    "teaser": "",
    "upcoming": false,
@@ -1671,8 +1658,8 @@
      5995000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1704,7 +1691,7 @@
    "lat": 57.76877181,
    "lon": 12.35099414,
    "published": null,
-   "days_text": "16 dagar på Booli",
+   "days_text": "17 dagar på Booli",
    "broker": "LF Fastighetsförmedling",
    "teaser": "",
    "upcoming": false,
@@ -1725,8 +1712,8 @@
      7800000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -1775,8 +1762,8 @@
      4100000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1820,7 +1807,7 @@
     "booli:6234047"
    ],
    "alt_url": "https://www.booli.se/annons/6234047",
-   "days_text": "24 dagar på Booli",
+   "days_text": "25 dagar på Booli",
    "drive_h": 0.6,
    "price_per_ha": 186441,
    "key": "lilla edet|attlered|1100",
@@ -1831,8 +1818,8 @@
      11000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "water_m": 2900,
    "build_year": null,
    "transit_weak": false,
@@ -1884,8 +1871,8 @@
      3000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1934,8 +1921,8 @@
      5250000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1985,8 +1972,8 @@
      8750000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2034,8 +2021,8 @@
      3875000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2085,8 +2072,8 @@
      4560000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2135,8 +2122,8 @@
      5700000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2188,8 +2175,8 @@
      7100000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2220,7 +2207,7 @@
    "lat": 57.5135726,
    "lon": 12.16657417,
    "published": null,
-   "days_text": "20 dagar på Booli",
+   "days_text": "21 dagar på Booli",
    "broker": "Bjurfors",
    "teaser": "",
    "upcoming": true,
@@ -2238,8 +2225,8 @@
      7200000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2287,8 +2274,8 @@
      7500000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2337,8 +2324,8 @@
      3800000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2387,8 +2374,8 @@
      4750000
     ]
    ],
-   "days_tracked": 1,
-   "last_seen": "2026-10-04",
+   "days_tracked": 2,
+   "last_seen": "2026-10-05",
    "water_m": 1100,
    "build_year": null,
    "transit_weak": true,
@@ -2441,8 +2428,8 @@
      7000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2473,7 +2460,7 @@
    "lat": 57.55047,
    "lon": 11.987688,
    "published": null,
-   "days_text": "6 dagar på Booli",
+   "days_text": "7 dagar på Booli",
    "broker": "LF Fastighetsförmedling",
    "teaser": "",
    "upcoming": false,
@@ -2495,8 +2482,8 @@
      7795000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2546,8 +2533,8 @@
      8250000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2597,8 +2584,8 @@
      4295000
     ]
    ],
-   "days_tracked": 6,
-   "last_seen": "2026-10-04",
+   "days_tracked": 7,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2646,8 +2633,8 @@
      4550000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2697,8 +2684,8 @@
      5985000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2747,8 +2734,8 @@
      5195000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": true,
@@ -2802,8 +2789,8 @@
      7000000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2852,8 +2839,8 @@
      7300000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2903,8 +2890,8 @@
      7495000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2953,8 +2940,8 @@
      4100000
     ]
    ],
-   "days_tracked": 6,
-   "last_seen": "2026-10-04",
+   "days_tracked": 7,
+   "last_seen": "2026-10-05",
    "build_year": null,
    "transit_weak": true,
    "signals": [],
@@ -3003,8 +2990,8 @@
      4680000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": true,
@@ -3053,8 +3040,8 @@
      5200000
     ]
    ],
-   "days_tracked": 7,
-   "last_seen": "2026-10-04",
+   "days_tracked": 8,
+   "last_seen": "2026-10-05",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,

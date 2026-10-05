@@ -1,23 +1,22 @@
 {
-  "date": "2026-10-02",
-  "market_summary": "Listan är oförändrad: ett nytt objekt kom in, men det når inte topplistan. Radarn visar 57 träffar, två gårdar försvann (Magravägen 83 i Alingsås och Labol 221 i Stenungsund) och medianpriset ligger på 5 995 000 kr. Det nya är en souterrängvilla från 1973 på Tjörn för 3 775 000 kr med värmepump, öppen spis och fiber, men huset är bara 137 m² och kollektivtrafiken där är svag. Kareby i Kungälv är fortfarande starkast, så veckans steg är att boka visning där och ställa de öppna frågorna till mäklarna för de andra tre.",
+  "date": "2026-10-05",
+  "market_summary": "Inga nya gårdar i dag och inga har försvunnit, så radarn visar fortfarande 57 träffar med ett medianpris på 5 985 000 kr. Det enda som hänt är att Kareby kyrkväg 130 i Kungälv har sänkts från 3 595 000 till 3 400 000 kr, samtidigt som annonsen på Hemnet har tagits bort och gården nu bara ligger ute på Booli. Topplistan är i övrigt oförändrad. Veckans steg är att ringa mäklaren för Kareby i dag, både om visning och om varför Hemnet-annonsen togs bort, eftersom en prissänkning på en redan billig gård ofta betyder att säljaren vill göra affär.",
   "top": [
     {
-      "id": "hemnet:21786760",
+      "id": "booli:6162342",
       "title": "Kareby kyrkväg 130",
       "kommun": "Kungälv",
       "region": "Under 20 min",
-      "price": 3595000,
-      "land_ha": 4.0,
-      "url": "https://www.hemnet.se/bostad/gard-7rum-kareby-kungalvs-kommun-kareby-kyrkvag-130-21786760",
+      "price": 3400000,
+      "land_ha": 3.48,
+      "url": "https://www.booli.se/annons/6162342",
       "score": 57,
       "home_why": "Tvåplanshus på 183 m² från 1976 med två separata lägenheter, så Mina och Parviz kan bo på ett plan och ha den andra lägenheten för familj eller uthyrning. Kareby har skola, förskola och goda kommunikationer, och Kungälvs vård och handel ligger nära.",
-      "safehouse_why": "Fyra hektar med fruktträd, skog och plats för djur, och annonsen nämner vatten. Den andra lägenheten gör att fyra personer till kan bo här på riktigt, inte bara på ett gästrum.",
-      "invest_why": "Runt 900 000 kr per hektar, alltså exakt medianen, men med ett stort hus och bara 3 595 000 kr totalt. Kareby ligger en halvtimme från Göteborg och är lätt att sälja vidare; fyra hektar går att sköta för två personer.",
-      "rank_why": "Billigast av alla bostadsgårdar på listan, generationsboende från start och bevisad kollektivtrafik. Det som hindrar är ett hus från 70-talet som troligen behöver uppdateras.",
+      "safehouse_why": "Runt 3,5 hektar med fruktträd, skog och plats för djur, och annonsen nämnde vatten. Den andra lägenheten gör att fyra personer till kan bo här på riktigt, inte bara på ett gästrum.",
+      "invest_why": "Nu sänkt till 3 400 000 kr, vilket ger knappt 980 000 kr per hektar mot medianen 1 070 000 kr, och det för ett stort hus en halvtimme från Göteborg. Kareby är lätt att sälja vidare, och marken går att sköta för två personer.",
+      "rank_why": "Billigast av alla bostadsgårdar på listan, generationsboende från start och bevisad kollektivtrafik, och prissänkningen gör den ännu starkare. Det som hindrar är ett hus från 70-talet som troligen behöver uppdateras, och att Hemnet-annonsen plötsligt försvann.",
       "maintenance": "Byggår 1976: kontrollera tak, fönster, värmesystem och avlopp; entréplanet finns redan genom den nedre lägenheten.",
-      "recommendation": "Boka visning, eftersom priset är lågt för läget och huset redan är byggt för två hushåll.",
-      "unchanged": true
+      "recommendation": "Boka visning, eftersom priset nu sänkts på en gård som redan var billigast för läget; fråga samtidigt mäklaren varför Hemnet-annonsen togs bort och om arealen är 3,5 eller 4 hektar."
     },
     {
       "id": "hemnet:21786611",
@@ -71,17 +70,19 @@
       "unchanged": true
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {"id": "hemnet:21786760", "title": "Kareby kyrkväg 130 (Hemnet)", "why": "Hemnet-annonsen är borttagen; samma gård ligger kvar som etta via Booli-annonsen, nu sänkt till 3 400 000 kr"}
+  ],
   "criteria_changes": [],
   "watch": [
-    {"id": "hemnet:21797583", "title": "Fagerfjäll 80", "note": "ny: souterrängvilla från 1973 på 2,8 hektar på Tjörn för 3 775 000 kr, med värmepump, murad öppen spis, fiber och plats för odling, men bara 137 m² och svag kollektivtrafik; bara intressant om boarean visar sig större och det finns en hållplats inom fem minuter"},
-    {"id": "booli:6219688", "title": "Björnåsvägen 21", "note": "ny: villa på 180 m² och 4,1 hektar i Lerum för 8 750 000 kr, men bara fyra rum, ingen beskrivning och runt 2 130 000 kr per hektar; be mäklaren om husets skick, brunn, djurbyggnader och närmaste hållplats"},
+    {"id": "hemnet:21797583", "title": "Fagerfjäll 80", "note": "souterrängvilla från 1973 på 2,8 hektar på Tjörn för 3 775 000 kr, med värmepump, murad öppen spis, fiber och plats för odling, men bara 137 m² och svag kollektivtrafik; bara intressant om boarean visar sig större och det finns en hållplats inom fem minuter"},
+    {"id": "booli:6219688", "title": "Björnåsvägen 21", "note": "villa på 180 m² och 4,1 hektar i Lerum för 8 750 000 kr, men bara fyra rum, ingen beskrivning och runt 2 130 000 kr per hektar; be mäklaren om husets skick, brunn, djurbyggnader och närmaste hållplats"},
     {"id": "booli:6017516", "title": "Torredsvägen 168", "note": "sänkt från 8 295 000 till 7 795 000 kr för 7,3 hektar i Kungsbacka, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
     {"id": "booli:6177021", "title": "Kareby Kyrkväg 270", "note": "16 hektar i Kareby för 5 495 000 kr men annonsen saknar beskrivning; värd en titt när den finns"},
     {"id": "hemnet:21773562", "title": "Attlered", "note": "skogsgård i bra skick men vid vägs ände i Lilla Edet; värd en andra titt om kollektivtrafiken visar sig fungera och priset sjunker"},
     {"id": "booli:6273526", "title": "Brändeskogsvägen 15", "note": "173 m² på 3,5 hektar i Lerum, beskrivning saknas; värd en andra titt om priset sjunker"},
     {"id": "hemnet:21768667", "title": "Stenarsröd", "note": "tre renoverade bostäder och 38 hektar, men mäklaren anger en timme till Göteborg, över taket på 40 minuter"},
-    {"id": "booli:6218455", "title": "Östra Särövägen 286", "note": "ny gård i Kungsbacka, 2,85 hektar för 7 000 000 kr, men bara 155 m² och ingen beskrivning; be mäklaren om husets skick, brunn och närmaste hållplats"},
+    {"id": "booli:6218455", "title": "Östra Särövägen 286", "note": "gård i Kungsbacka, 2,85 hektar för 7 000 000 kr, men bara 155 m² och ingen beskrivning; be mäklaren om husets skick, brunn och närmaste hållplats"},
     {"id": "booli:6138428", "title": "Ekedalsvägen 75", "note": "9,2 hektar och sex rum i Kungsbacka för 6 750 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
     {"id": "booli:6146398", "title": "Fjällhultsvägen 10", "note": "nio rum på 4,2 hektar i Göteborg för 6 000 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},
     {"id": "booli:6177273", "title": "Gustavsberg 110", "note": "sju rum på 3,9 hektar i Kungälv för 7 500 000 kr, men bebyggelsen och boarean behöver bekräftas hos mäklaren"},

@@ -1,19 +1,5 @@
 {
  "_keyed": true,
- "kungälv|karebykyrkväg130|360": {
-  "first_seen": "2026-09-27",
-  "prices": [
-   3595000
-  ],
-  "price_dates": [
-   "2026-09-27"
-  ],
-  "title": "Kareby kyrkväg 130",
-  "kommun": "Kungälv",
-  "ids": [
-   "hemnet:21786760"
-  ]
- },
  "kungsbacka|andersmånsgård|598": {
   "first_seen": "2026-09-27",
   "prices": [
@@ -3475,6 +3461,22 @@
   "kommun": "Lilla Edet",
   "ids": [
    "hemnet:21889826"
+  ]
+ },
+ "kungälv|karebykyrkväg130|340": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   3595000,
+   3400000
+  ],
+  "price_dates": [
+   "2026-09-27",
+   "2026-10-05"
+  ],
+  "title": "Kareby Kyrkväg 130",
+  "kommun": "Kungälv",
+  "ids": [
+   "booli:6162342"
   ]
  }
 }
