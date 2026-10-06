@@ -1,16 +1,26 @@
 {
- "date": "2026-10-05",
- "new": [],
- "gone": [],
- "price_changes": [
+ "date": "2026-10-06",
+ "new": [
   {
-   "id": "booli:6162342",
-   "title": "Kareby Kyrkväg 130",
-   "kommun": "Kungälv",
-   "old": 3595000,
-   "new": 3400000,
-   "url": "https://www.booli.se/annons/6162342"
+   "id": "booli:6139501",
+   "title": "Hemsjö Dalenvägen 43A",
+   "kommun": "Alingsås",
+   "price": 6200000,
+   "land_ha": 9.0,
+   "score": 30,
+   "url": "https://www.booli.se/annons/6139501"
   }
  ],
+ "gone": [
+  {
+   "id": "booli:6123803",
+   "title": "Apelrödsvägen 166",
+   "kommun": "Kungsbacka",
+   "price": 7300000,
+   "url": "https://www.booli.se/bostad/1475343",
+   "days_tracked": 8
+  }
+ ],
+ "price_changes": [],
  "first_run": false
 }

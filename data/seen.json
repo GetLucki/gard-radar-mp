@@ -251,6 +251,7 @@
   "title": "Brändeskogsvägen 15",
   "kommun": "Lerum",
   "ids": [
+   "booli:6272096",
    "booli:6273526"
   ]
  },
@@ -552,7 +553,8 @@
   "kommun": "Kungsbacka",
   "ids": [
    "booli:6123803"
-  ]
+  ],
+  "gone": "2026-10-06"
  },
  "kungälv|bremnäs200|950": {
   "first_seen": "2026-09-27",
@@ -3477,6 +3479,20 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6162342"
+  ]
+ },
+ "alingsås|hemsjödalenvägen43a|620": {
+  "first_seen": "2026-10-06",
+  "prices": [
+   6200000
+  ],
+  "price_dates": [
+   "2026-10-06"
+  ],
+  "title": "Hemsjö Dalenvägen 43A",
+  "kommun": "Alingsås",
+  "ids": [
+   "booli:6139501"
   ]
  }
 }
