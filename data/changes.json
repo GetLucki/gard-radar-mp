@@ -1,24 +1,24 @@
 {
- "date": "2026-10-06",
+ "date": "2026-10-07",
  "new": [
   {
-   "id": "booli:6139501",
-   "title": "Hemsjö Dalenvägen 43A",
-   "kommun": "Alingsås",
-   "price": 6200000,
-   "land_ha": 9.0,
-   "score": 30,
-   "url": "https://www.booli.se/annons/6139501"
+   "id": "booli:6197068",
+   "title": "Brännekullen 34",
+   "kommun": "Lerum",
+   "price": 7700000,
+   "land_ha": 2.55,
+   "score": 22,
+   "url": "https://www.booli.se/annons/6197068"
   }
  ],
  "gone": [
   {
-   "id": "booli:6123803",
-   "title": "Apelrödsvägen 166",
-   "kommun": "Kungsbacka",
-   "price": 7300000,
-   "url": "https://www.booli.se/bostad/1475343",
-   "days_tracked": 8
+   "id": "booli:5714823",
+   "title": "Kareby Kyrkväg 230",
+   "kommun": "Kungälv",
+   "price": 6700000,
+   "url": "https://www.booli.se/bostad/1684259",
+   "days_tracked": 9
   }
  ],
  "price_changes": [],

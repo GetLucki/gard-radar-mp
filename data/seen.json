@@ -596,7 +596,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:5714823"
-  ]
+  ],
+  "gone": "2026-10-07"
  },
  "tjörn|tolleby31|650": {
   "first_seen": "2026-09-27",
@@ -3358,7 +3359,8 @@
   "title": "Tönneröd 172",
   "kommun": "Stenungsund",
   "ids": [
-   "booli:5803844"
+   "booli:5803844",
+   "hemnet:21592267"
   ]
  },
  "kungsbacka|torredsvägen168|780": {
@@ -3493,6 +3495,20 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:6139501"
+  ]
+ },
+ "lerum|brännekullen34|770": {
+  "first_seen": "2026-10-07",
+  "prices": [
+   7700000
+  ],
+  "price_dates": [
+   "2026-10-07"
+  ],
+  "title": "Brännekullen 34",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6197068"
   ]
  }
 }

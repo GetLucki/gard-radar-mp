@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-06",
-  "market_summary": "Radarn har 57 träffar och medianpriset ligger kvar på 5 985 000 kr. En gård har kommit in, Hemsjö Dalenvägen 43A i Alingsås för 6 200 000 kr, men huset är bara 135 m² och annonsen saknar beskrivning, så den hamnar under bevakning. En gård i Kungsbacka har försvunnit, och den fanns inte på listan. Topplistan är alltså oförändrad, och veckans viktigaste steg är fortfarande att ringa mäklaren för Kareby kyrkväg 130 och boka visning.",
+  "date": "2026-10-07",
+  "market_summary": "Radarn har 57 träffar och medianpriset ligger kvar på 5 985 000 kr. En gård har kommit in, Brännekullen 34 i Lerum för 7 700 000 kr, men annonsen saknar både beskrivning och boarea och priset per hektar är nästan tre gånger medianen, så den hamnar under bevakning. Kareby Kyrkväg 230 i Kungälv har försvunnit, och den fanns inte på listan. Topplistan är alltså oförändrad, och veckans viktigaste steg är fortfarande att ringa mäklaren för Kareby kyrkväg 130 och boka visning.",
   "top": [
     {
       "id": "booli:6162342",
@@ -10,7 +10,7 @@
       "price": 3400000,
       "land_ha": 3.48,
       "url": "https://www.booli.se/annons/6162342",
-      "score": 57,
+      "score": 33,
       "home_why": "Tvåplanshus på 183 m² från 1976 med två separata lägenheter, så Mina och Parviz kan bo på ett plan och ha den andra lägenheten för familj eller uthyrning. Kareby har skola, förskola och goda kommunikationer, och Kungälvs vård och handel ligger nära.",
       "safehouse_why": "Runt 3,5 hektar med fruktträd, skog och plats för djur, och annonsen nämnde vatten. Den andra lägenheten gör att fyra personer till kan bo här på riktigt, inte bara på ett gästrum.",
       "invest_why": "Nu sänkt till 3 400 000 kr, vilket ger knappt 980 000 kr per hektar mot medianen 1 070 000 kr, och det för ett stort hus en halvtimme från Göteborg. Kareby är lätt att sälja vidare, och marken går att sköta för två personer.",
@@ -27,7 +27,7 @@
       "price": 5975000,
       "land_ha": 4.0,
       "url": "https://www.hemnet.se/bostad/gard-hjalm-kungsbacka-kommun-anders-mansgard-21786611",
-      "score": 38,
+      "score": 41,
       "home_why": "Välskött mindre gård i Hjälm strax utanför Kungsbacka, med nära till stadens vård, handel och kommunikationer. Husets storlek och planlösning står inte i annonsen.",
       "safehouse_why": "Fyra hektar sammanhängande åker som passar för bete och odling, och en rymlig ladugård med dubbelgarage för djur, ved och maskiner. Brunn och vattenförsörjning nämns inte.",
       "invest_why": "Omkring 1 490 000 kr per hektar, över medianen, men åkermark nära Kungsbacka håller värdet bra. Marken kan arrenderas ut om skötseln blir för tung.",
@@ -74,6 +74,7 @@
   "dropped": [],
   "criteria_changes": [],
   "watch": [
+    {"id": "booli:6197068", "title": "Brännekullen 34", "note": "ny i dag: 2,55 hektar i Drängsered i Lerum för 7 700 000 kr, runt 3 020 000 kr per hektar, fem rum men ingen beskrivning och ingen boarea; bebyggelsen och boarean behöver bekräftas hos mäklaren"},
     {"id": "booli:6139501", "title": "Hemsjö Dalenvägen 43A", "note": "ny i dag: 9 hektar i Alingsås för 6 200 000 kr, knappt 690 000 kr per hektar, men bara 135 m² och tre rum och ingen beskrivning; under planens gräns på 150 m², så bara intressant om det finns en andra bostad eller om boarean visar sig större"},
     {"id": "hemnet:21797583", "title": "Fagerfjäll 80", "note": "souterrängvilla från 1973 på 2,8 hektar på Tjörn för 3 775 000 kr, med värmepump, murad öppen spis, fiber och plats för odling, men bara 137 m² och svag kollektivtrafik; bara intressant om boarean visar sig större och det finns en hållplats inom fem minuter"},
     {"id": "booli:6219688", "title": "Björnåsvägen 21", "note": "villa på 180 m² och 4,1 hektar i Lerum för 8 750 000 kr, men bara fyra rum, ingen beskrivning och runt 2 130 000 kr per hektar; be mäklaren om husets skick, brunn, djurbyggnader och närmaste hållplats"},
