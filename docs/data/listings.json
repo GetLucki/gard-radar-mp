@@ -1,18 +1,18 @@
 {
- "generated": "2026-10-07T07:51",
+ "generated": "2026-10-08T07:51",
  "config": {
   "price_min": 2500000,
   "price_max": 15000000,
   "land_min_ha": 2
  },
  "stats": {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "matched": 57,
   "new": 1,
   "gone": 1,
   "price_cuts": 0,
   "price_rises": 0,
-  "median_price": 5985000,
+  "median_price": 5995000,
   "median_price_per_ha": 1066059,
   "national_in_band": {
    "hemnet": {
@@ -21,20 +21,20 @@
    },
    "booli": {
     "gard": 881,
-    "hus": 522
+    "hus": 531
    }
   },
   "hemnet_ok": true,
   "by_region": {
    "30 till 40 min": {
-    "count": 22,
+    "count": 21,
     "new": 0,
-    "median_price": 4715000
+    "median_price": 4750000
    },
    "20 till 30 min": {
-    "count": 25,
+    "count": 26,
     "new": 1,
-    "median_price": 6750000
+    "median_price": 6875000
    },
    "Under 20 min": {
     "count": 10,
@@ -85,8 +85,8 @@
      3500000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 100,
    "build_year": 1975,
    "transit_weak": false,
@@ -148,8 +148,8 @@
      13500000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 1600,
    "build_year": 2000,
    "transit_weak": false,
@@ -211,8 +211,8 @@
      4975000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 200,
    "build_year": null,
    "transit_weak": false,
@@ -259,7 +259,7 @@
     "booli:6292297"
    ],
    "alt_url": "https://www.booli.se/bostad/4147315",
-   "days_text": "6 dagar på Booli",
+   "days_text": "7 dagar på Booli",
    "drive_h": 0.6,
    "price_per_ha": 1348214,
    "key": "tjörn|fagerfjäll80|378",
@@ -270,8 +270,8 @@
      3775000
     ]
    ],
-   "days_tracked": 5,
-   "last_seen": "2026-10-07",
+   "days_tracked": 6,
+   "last_seen": "2026-10-08",
    "build_year": 1973,
    "transit_weak": true,
    "signals": [
@@ -330,8 +330,8 @@
      14000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 200,
    "build_year": null,
    "transit_weak": false,
@@ -393,8 +393,8 @@
      13975000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 50,
    "build_year": 1914,
    "transit_weak": false,
@@ -453,8 +453,8 @@
      2950000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 3100,
    "build_year": null,
    "transit_weak": false,
@@ -483,7 +483,7 @@
    "location": "Sollebrunn Med Omnejd, Alingsås kommun",
    "kommun_raw": "Alingsås",
    "price": 2850000,
-   "land_ha": 2.26,
+   "land_ha": 2.3,
    "living_m2": 139,
    "rooms": "6 rum",
    "type": "Gård utan jordbruk",
@@ -504,9 +504,9 @@
     "booli:6280309"
    ],
    "alt_url": "https://www.booli.se/annons/6280309",
-   "days_text": "9 dagar på Booli",
+   "days_text": "10 dagar på Booli",
    "drive_h": 0.6,
-   "price_per_ha": 1261062,
+   "price_per_ha": 1239130,
    "key": "alingsås|stengatan7|285",
    "first_seen": "2026-09-27",
    "price_history": [
@@ -515,8 +515,8 @@
      2850000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 4900,
    "build_year": 1901,
    "transit_weak": false,
@@ -563,7 +563,7 @@
     "booli:6263838"
    ],
    "alt_url": "https://www.booli.se/annons/6263838",
-   "days_text": "26 dagar på Booli",
+   "days_text": "27 dagar på Booli",
    "drive_h": 0.5,
    "price_per_ha": 1493750,
    "key": "kungsbacka|andersmånsgård|598",
@@ -574,8 +574,8 @@
      5975000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 2200,
    "build_year": null,
    "transit_evidence": true,
@@ -630,8 +630,8 @@
      6050000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -679,8 +679,8 @@
      7500000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -727,8 +727,8 @@
      4500000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 900,
    "build_year": null,
    "transit_weak": false,
@@ -780,8 +780,8 @@
      5495000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -836,8 +836,8 @@
      11750000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 50,
    "build_year": null,
    "transit_weak": false,
@@ -895,8 +895,8 @@
      7850000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": 1975,
    "transit_evidence": true,
    "transit_weak": false,
@@ -951,8 +951,8 @@
      7100000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1001,8 +1001,8 @@
      9500000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1055,8 +1055,8 @@
      3400000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1104,8 +1104,8 @@
      3950000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 2100,
    "build_year": null,
    "transit_weak": false,
@@ -1157,8 +1157,8 @@
      6750000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1171,6 +1171,56 @@
     "services": 14,
     "family": 4,
     "price": 7
+   },
+   "score": 33
+  },
+  {
+   "id": "booli:5935726",
+   "source": "booli",
+   "title": "Åketorp 233",
+   "location": "Villa · Spekeröd · Stenungsund",
+   "kommun_raw": "Stenungsund",
+   "county": "Västra Götalands län",
+   "price": 8995000,
+   "land_ha": 8.32,
+   "living_m2": 170,
+   "rooms": "6 rum",
+   "type": "Villa",
+   "url": "https://www.booli.se/bostad/3450374",
+   "lat": 58.02659636,
+   "lon": 11.91667415,
+   "published": null,
+   "days_text": "Inkommet igår",
+   "broker": "Fastighetsbyrån",
+   "teaser": "",
+   "upcoming": false,
+   "labels": [],
+   "image": "https://bcdn.se/images/cache/50408765_1440x0.jpg",
+   "kommun": "Stenungsund",
+   "region": "20 till 30 min",
+   "drive_h": 0.5,
+   "price_per_ha": 1081130,
+   "key": "stenungsund|åketorp233|900",
+   "first_seen": "2026-10-08",
+   "price_history": [
+    [
+     "2026-10-08",
+     8995000
+    ]
+   ],
+   "days_tracked": 0,
+   "last_seen": "2026-10-08",
+   "build_year": null,
+   "transit_weak": false,
+   "signals": [],
+   "score_parts": {
+    "water": 0,
+    "land": 8,
+    "house": 4,
+    "heating": 0,
+    "services": 13,
+    "family": 4,
+    "price": 4
    },
    "score": 33
   },
@@ -1207,8 +1257,8 @@
      3000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1256,8 +1306,8 @@
      3700000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 950,
    "build_year": null,
    "transit_weak": true,
@@ -1308,8 +1358,8 @@
      6000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1359,8 +1409,8 @@
      6500000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1409,8 +1459,8 @@
      4750000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1460,8 +1510,8 @@
      6495000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": true,
@@ -1510,8 +1560,8 @@
      11000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1560,8 +1610,8 @@
      2975000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1584,7 +1634,7 @@
    "location": "Ucklum, Stenungsunds kommun",
    "kommun_raw": "Stenungsunds",
    "price": 4295000,
-   "land_ha": 2.11,
+   "land_ha": 2.1,
    "living_m2": 150,
    "rooms": "5 rum",
    "type": "Villa",
@@ -1608,7 +1658,7 @@
    "alt_url": "https://www.booli.se/bostad/1977602",
    "days_text": "1 år på Booli",
    "drive_h": 0.5,
-   "price_per_ha": 2035545,
+   "price_per_ha": 2045238,
    "key": "stenungsund|tönneröd172|430",
    "first_seen": "2026-09-28",
    "price_history": [
@@ -1617,8 +1667,8 @@
      4295000
     ]
    ],
-   "days_tracked": 9,
-   "last_seen": "2026-10-07",
+   "days_tracked": 10,
+   "last_seen": "2026-10-08",
    "water_m": 1000,
    "build_year": 1939,
    "transit_weak": false,
@@ -1650,7 +1700,7 @@
    "lat": 57.85084738,
    "lon": 11.91978114,
    "published": null,
-   "days_text": "16 dagar på Booli",
+   "days_text": "17 dagar på Booli",
    "broker": "LF Fastighetsförmedling",
    "teaser": "",
    "upcoming": false,
@@ -1668,8 +1718,8 @@
      5995000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1701,7 +1751,7 @@
    "lat": 57.83318046,
    "lon": 12.48631578,
    "published": null,
-   "days_text": "2 dagar på Booli",
+   "days_text": "3 dagar på Booli",
    "broker": "LF Fastighetsförmedling",
    "teaser": "",
    "upcoming": false,
@@ -1719,8 +1769,8 @@
      6200000
     ]
    ],
-   "days_tracked": 1,
-   "last_seen": "2026-10-07",
+   "days_tracked": 2,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -1751,7 +1801,7 @@
    "lat": 57.76877181,
    "lon": 12.35099414,
    "published": null,
-   "days_text": "20 dagar på Booli",
+   "days_text": "21 dagar på Booli",
    "broker": "LF Fastighetsförmedling",
    "teaser": "",
    "upcoming": false,
@@ -1769,8 +1819,8 @@
      7800000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -1819,8 +1869,8 @@
      4100000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1864,7 +1914,7 @@
     "booli:6234047"
    ],
    "alt_url": "https://www.booli.se/annons/6234047",
-   "days_text": "27 dagar på Booli",
+   "days_text": "28 dagar på Booli",
    "drive_h": 0.6,
    "price_per_ha": 186441,
    "key": "lilla edet|attlered|1100",
@@ -1875,8 +1925,8 @@
      11000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "water_m": 2900,
    "build_year": null,
    "transit_weak": false,
@@ -1928,8 +1978,8 @@
      3000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -1978,8 +2028,8 @@
      5250000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2029,8 +2079,8 @@
      8750000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2044,56 +2094,6 @@
     "price": 1
    },
    "score": 28
-  },
-  {
-   "id": "booli:5752737",
-   "source": "booli",
-   "title": "Västra Svedernavägen 3",
-   "location": "Gård · Gräfsnäs · Alingsås",
-   "kommun_raw": "Alingsås",
-   "county": "Västra Götalands län",
-   "price": 3875000,
-   "land_ha": 2.93,
-   "living_m2": null,
-   "rooms": "6 rum",
-   "type": "Gård",
-   "url": "https://www.booli.se/bostad/3210950",
-   "lat": 58.0671891,
-   "lon": 12.47748005,
-   "published": null,
-   "days_text": "2026-07-28",
-   "broker": null,
-   "teaser": "",
-   "upcoming": false,
-   "labels": [],
-   "kommun": "Alingsås",
-   "region": "30 till 40 min",
-   "drive_h": 0.6,
-   "price_per_ha": 1322526,
-   "key": "alingsås|västrasvedernavägen3|388",
-   "first_seen": "2026-09-27",
-   "price_history": [
-    [
-     "2026-09-27",
-     3875000
-    ]
-   ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
-   "house_unconfirmed": true,
-   "build_year": null,
-   "transit_weak": false,
-   "signals": [],
-   "score_parts": {
-    "water": 0,
-    "land": 7,
-    "house": 0,
-    "heating": 0,
-    "services": 12,
-    "family": 4,
-    "price": 4
-   },
-   "score": 27
   },
   {
    "id": "booli:6105110",
@@ -2129,8 +2129,8 @@
      4560000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2179,8 +2179,8 @@
      5700000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2232,8 +2232,8 @@
      7100000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2264,7 +2264,7 @@
    "lat": 57.5135726,
    "lon": 12.16657417,
    "published": null,
-   "days_text": "23 dagar på Booli",
+   "days_text": "24 dagar på Booli",
    "broker": "Bjurfors",
    "teaser": "",
    "upcoming": true,
@@ -2282,8 +2282,8 @@
      7200000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2331,8 +2331,8 @@
      7500000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2381,8 +2381,8 @@
      3800000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2404,7 +2404,7 @@
    "location": "Bollebygd, Bollebygds kommun",
    "kommun_raw": "Bollebygds",
    "price": 4750000,
-   "land_ha": 2.84,
+   "land_ha": 2.8,
    "living_m2": null,
    "rooms": null,
    "type": "Gård utan jordbruk",
@@ -2421,8 +2421,13 @@
    ],
    "kommun": "Bollebygd",
    "region": "30 till 40 min",
+   "alt_ids": [
+    "booli:6216703"
+   ],
+   "alt_url": "https://www.booli.se/annons/6216703",
+   "days_text": "Inkommet igår",
    "drive_h": 0.6,
-   "price_per_ha": 1672535,
+   "price_per_ha": 1696429,
    "key": "bollebygd|öregärde11|475",
    "first_seen": "2026-10-03",
    "price_history": [
@@ -2431,8 +2436,8 @@
      4750000
     ]
    ],
-   "days_tracked": 4,
-   "last_seen": "2026-10-07",
+   "days_tracked": 5,
+   "last_seen": "2026-10-08",
    "water_m": 1100,
    "build_year": null,
    "transit_weak": true,
@@ -2485,8 +2490,8 @@
      7000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": false,
    "signals": [],
@@ -2517,7 +2522,7 @@
    "lat": 57.55047,
    "lon": 11.987688,
    "published": null,
-   "days_text": "9 dagar på Booli",
+   "days_text": "10 dagar på Booli",
    "broker": "LF Fastighetsförmedling",
    "teaser": "",
    "upcoming": false,
@@ -2539,8 +2544,8 @@
      7795000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2590,8 +2595,8 @@
      8250000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2640,8 +2645,8 @@
      4550000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2691,8 +2696,8 @@
      5985000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2741,8 +2746,8 @@
      5195000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": true,
@@ -2796,8 +2801,8 @@
      7000000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2847,8 +2852,8 @@
      7495000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2897,8 +2902,8 @@
      7700000
     ]
    ],
-   "days_tracked": 0,
-   "last_seen": "2026-10-07",
+   "days_tracked": 1,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,
@@ -2947,8 +2952,8 @@
      4100000
     ]
    ],
-   "days_tracked": 9,
-   "last_seen": "2026-10-07",
+   "days_tracked": 10,
+   "last_seen": "2026-10-08",
    "build_year": null,
    "transit_weak": true,
    "signals": [],
@@ -2997,8 +3002,8 @@
      4680000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": true,
@@ -3047,8 +3052,8 @@
      5200000
     ]
    ],
-   "days_tracked": 10,
-   "last_seen": "2026-10-07",
+   "days_tracked": 11,
+   "last_seen": "2026-10-08",
    "house_unconfirmed": true,
    "build_year": null,
    "transit_weak": false,

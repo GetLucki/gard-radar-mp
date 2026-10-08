@@ -1,24 +1,24 @@
 {
- "date": "2026-10-07",
+ "date": "2026-10-08",
  "new": [
   {
-   "id": "booli:6197068",
-   "title": "Brännekullen 34",
-   "kommun": "Lerum",
-   "price": 7700000,
-   "land_ha": 2.55,
-   "score": 22,
-   "url": "https://www.booli.se/annons/6197068"
+   "id": "booli:5935726",
+   "title": "Åketorp 233",
+   "kommun": "Stenungsund",
+   "price": 8995000,
+   "land_ha": 8.32,
+   "score": 33,
+   "url": "https://www.booli.se/bostad/3450374"
   }
  ],
  "gone": [
   {
-   "id": "booli:5714823",
-   "title": "Kareby Kyrkväg 230",
-   "kommun": "Kungälv",
-   "price": 6700000,
-   "url": "https://www.booli.se/bostad/1684259",
-   "days_tracked": 9
+   "id": "booli:5752737",
+   "title": "Västra Svedernavägen 3",
+   "kommun": "Alingsås",
+   "price": 3875000,
+   "url": "https://www.booli.se/bostad/3210950",
+   "days_tracked": 10
   }
  ],
  "price_changes": [],

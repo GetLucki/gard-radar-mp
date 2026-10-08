@@ -582,7 +582,8 @@
   "kommun": "Alingsås",
   "ids": [
    "booli:5752737"
-  ]
+  ],
+  "gone": "2026-10-08"
  },
  "kungälv|karebykyrkväg230|670": {
   "first_seen": "2026-09-27",
@@ -3509,6 +3510,20 @@
   "kommun": "Lerum",
   "ids": [
    "booli:6197068"
+  ]
+ },
+ "stenungsund|åketorp233|900": {
+  "first_seen": "2026-10-08",
+  "prices": [
+   8995000
+  ],
+  "price_dates": [
+   "2026-10-08"
+  ],
+  "title": "Åketorp 233",
+  "kommun": "Stenungsund",
+  "ids": [
+   "booli:5935726"
   ]
  }
 }
