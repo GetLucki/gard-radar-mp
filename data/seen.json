@@ -40,7 +40,8 @@
   "kommun": "Bollebygd",
   "ids": [
    "hemnet:21784652"
-  ]
+  ],
+  "gone": "2026-10-09"
  },
  "kungsbacka|rörsjö|350": {
   "first_seen": "2026-09-27",
@@ -568,7 +569,8 @@
   "kommun": "Kungälv",
   "ids": [
    "booli:6093722"
-  ]
+  ],
+  "gone": "2026-10-09"
  },
  "alingsås|västrasvedernavägen3|388": {
   "first_seen": "2026-09-27",

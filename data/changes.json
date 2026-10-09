@@ -1,24 +1,22 @@
 {
- "date": "2026-10-08",
- "new": [
-  {
-   "id": "booli:5935726",
-   "title": "Åketorp 233",
-   "kommun": "Stenungsund",
-   "price": 8995000,
-   "land_ha": 8.32,
-   "score": 33,
-   "url": "https://www.booli.se/bostad/3450374"
-  }
- ],
+ "date": "2026-10-09",
+ "new": [],
  "gone": [
   {
-   "id": "booli:5752737",
-   "title": "Västra Svedernavägen 3",
-   "kommun": "Alingsås",
-   "price": 3875000,
-   "url": "https://www.booli.se/bostad/3210950",
-   "days_tracked": 10
+   "id": "booli:6093722",
+   "title": "Bremnäs 200",
+   "kommun": "Kungälv",
+   "price": 9500000,
+   "url": "https://www.booli.se/bostad/2697013",
+   "days_tracked": 11
+  },
+  {
+   "id": "hemnet:21784652",
+   "title": "Fagerhult",
+   "kommun": "Bollebygd",
+   "price": 3700000,
+   "url": "https://www.hemnet.se/bostad/gard-tollsjo-bollebygds-kommun-fagerhult-21784652",
+   "days_tracked": 11
   }
  ],
  "price_changes": [],
