@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-09",
-  "market_summary": "Radarn har 55 träffar och medianpriset ligger på 5 995 000 kr, ungefär 1 070 000 kr per hektar. Inget nytt har kommit in och inga priser har ändrats. Två gårdar har försvunnit, Bremnäs 200 i Kungälv och Fagerhult i Bollebygd, men ingen av dem fanns på listan. Topplistan är alltså oförändrad, och veckans viktigaste steg är fortfarande att ringa mäklaren för Kareby kyrkväg 130 och boka visning.",
+  "date": "2026-10-10",
+  "market_summary": "Radarn har 57 träffar och medianpriset ligger kvar på 5 995 000 kr, ungefär 1 066 000 kr per hektar. Två objekt är nya: Skogen i Kareby, ett hus på 268 m² på 5,6 hektar för 8 900 000 kr, som går in på femte plats, och Åsbräcka och Fråstad i Lilla Edet, som är skiften utan hus och därför inte räknas. Skogsmark Alsjön i Lerum har sänkts från 6 500 000 till 5 950 000 kr, men ser ut att vara ren skogsmark. Inget har försvunnit och de fyra gamla valen står kvar, så veckans viktigaste steg är fortfarande att boka visning på Kareby kyrkväg 130 och be mäklaren om beskrivningen för Skogen.",
   "top": [
     {
       "id": "booli:6162342",
@@ -69,13 +69,31 @@
       "maintenance": "Okänt: be om byggår, värmesystem, tak och avlopp innan något annat.",
       "recommendation": "Fråga mäklaren om beskrivning, byggår och närmaste hållplats med turtäthet på helgen först, eftersom annonsen är tom.",
       "unchanged": true
+    },
+    {
+      "id": "hemnet:21899083",
+      "title": "Skogen",
+      "kommun": "Kungälv",
+      "region": "Under 20 min",
+      "price": 8900000,
+      "land_ha": 5.65,
+      "url": "https://www.hemnet.se/bostad/villa-7rum-kareby-kungalvs-kommun-skogen-21899083",
+      "score": 38,
+      "home_why": "Stort hus på 268 m² med sju rum i Kareby, alltså väl över kravet på 170 m², men annonsen är än så länge en förhandsvisning utan beskrivning, så standard, plan och byggår är okända. Kungälvs vårdcentral, apotek och handel ligger en kvart bort, och närmaste hållplats behöver bekräftas.",
+      "safehouse_why": "Drygt 5,6 hektar ger plats för odling, bete och ved, och huset rymmer hela familjen på riktigt. Brunn, uthus och djurbyggnader framgår inte, och närmaste sjö eller vattendrag ligger 2,6 km bort.",
+      "invest_why": "Runt 1 575 000 kr per hektar, nästan hälften över medianen, så man betalar för huset och läget en halvtimme från Göteborg. Kareby säljer lätt vidare, men 268 m² är mycket hus att värma och sköta för två.",
+      "rank_why": "Bäst läge och störst bekräftat hus bland dagens nya, men utan beskrivning och med högt pris per hektar hamnar den under Gössby 224, som ger dubbelt så mycket mark för mindre pengar.",
+      "maintenance": "Okänt: be om byggår, tak, fönster, värmesystem, avlopp och om sovrum och badrum finns på entréplan.",
+      "recommendation": "Fråga mäklaren om beskrivning, byggår, brunn och närmaste hållplats med turtäthet på helgen först, eftersom annonsen bara är en förhandsvisning; boka visning direkt om svaren håller, för kommande gårdar i Kareby går fort.",
+      "is_new": true
     }
   ],
   "dropped": [],
   "criteria_changes": [
-    "Plandokumentet gick inte att läsa i dag eftersom kopplingen till Google Drive inte startade, så kriterierna i config.json är oförändrade."
+    "Plandokumentet lästes i dag. Prisram 2 500 000 till 15 000 000 kr, minst 2 hektar och de 13 kommunerna stämmer med config.json, så inget ändrades."
   ],
   "watch": [
+    {"id": "booli:6169486", "title": "Skogsmark Alsjön", "note": "sänkt från 6 500 000 till 5 950 000 kr för 64 hektar i Lerum, men namnet tyder på ren skogsmark; bebyggelsen och boarean behöver bekräftas hos mäklaren"},
     {"id": "booli:6197068", "title": "Brännekullen 34", "note": "2,55 hektar i Drängsered i Lerum för 7 700 000 kr, runt 3 020 000 kr per hektar, fem rum men ingen beskrivning och ingen boarea; bebyggelsen och boarean behöver bekräftas hos mäklaren"},
     {"id": "booli:6139501", "title": "Hemsjö Dalenvägen 43A", "note": "8 hektar i Alingsås för 6 200 000 kr, knappt 780 000 kr per hektar, men bara 135 m² och tre rum och ingen beskrivning; bara intressant om det finns en andra bostad eller om boarean visar sig större"},
     {"id": "hemnet:21797583", "title": "Fagerfjäll 80", "note": "souterrängvilla från 1973 på 2,8 hektar på Tjörn för 3 775 000 kr, med värmepump, murad öppen spis, fiber och plats för odling, men bara 137 m² och svag kollektivtrafik; bara intressant om boarean visar sig större och det finns en hållplats inom fem minuter"},

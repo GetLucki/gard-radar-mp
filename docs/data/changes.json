@@ -1,24 +1,35 @@
 {
- "date": "2026-10-09",
- "new": [],
- "gone": [
+ "date": "2026-10-10",
+ "new": [
   {
-   "id": "booli:6093722",
-   "title": "Bremnäs 200",
+   "id": "hemnet:21899083",
+   "title": "Skogen",
    "kommun": "Kungälv",
-   "price": 9500000,
-   "url": "https://www.booli.se/bostad/2697013",
-   "days_tracked": 11
+   "price": 8900000,
+   "land_ha": 5.65,
+   "score": 38,
+   "url": "https://www.hemnet.se/bostad/villa-7rum-kareby-kungalvs-kommun-skogen-21899083"
   },
   {
-   "id": "hemnet:21784652",
-   "title": "Fagerhult",
-   "kommun": "Bollebygd",
-   "price": 3700000,
-   "url": "https://www.hemnet.se/bostad/gard-tollsjo-bollebygds-kommun-fagerhult-21784652",
-   "days_tracked": 11
+   "id": "hemnet:21898878",
+   "title": "Åsbräcka och Fråstad",
+   "kommun": "Lilla Edet",
+   "price": 9700000,
+   "land_ha": 72.0,
+   "score": 35,
+   "url": "https://www.hemnet.se/bostad/gard-lilla-edets-kommun-asbracka-och-frastad-21898878"
   }
  ],
- "price_changes": [],
+ "gone": [],
+ "price_changes": [
+  {
+   "id": "booli:6169486",
+   "title": "Skogsmark Alsjön",
+   "kommun": "Lerum",
+   "old": 6500000,
+   "new": 5950000,
+   "url": "https://www.booli.se/annons/6169486"
+  }
+ ],
  "first_run": false
 }

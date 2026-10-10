@@ -456,20 +456,6 @@
    "hemnet:21774015"
   ]
  },
- "lerum|skogsmarkalsjön|650": {
-  "first_seen": "2026-09-27",
-  "prices": [
-   6500000
-  ],
-  "price_dates": [
-   "2026-09-27"
-  ],
-  "title": "Skogsmark Alsjön",
-  "kommun": "Lerum",
-  "ids": [
-   "booli:6169486"
-  ]
- },
  "lerum|blåbärsåsvägen62|825": {
   "first_seen": "2026-09-27",
   "prices": [
@@ -3526,6 +3512,50 @@
   "kommun": "Stenungsund",
   "ids": [
    "booli:5935726"
+  ]
+ },
+ "kungälv|skogen|890": {
+  "first_seen": "2026-10-10",
+  "prices": [
+   8900000
+  ],
+  "price_dates": [
+   "2026-10-10"
+  ],
+  "title": "Skogen",
+  "kommun": "Kungälv",
+  "ids": [
+   "hemnet:21899083"
+  ]
+ },
+ "lilla edet|åsbräckaochfråstad|970": {
+  "first_seen": "2026-10-10",
+  "prices": [
+   9700000
+  ],
+  "price_dates": [
+   "2026-10-10"
+  ],
+  "title": "Åsbräcka och Fråstad",
+  "kommun": "Lilla Edet",
+  "ids": [
+   "hemnet:21898878"
+  ]
+ },
+ "lerum|skogsmarkalsjön|595": {
+  "first_seen": "2026-09-27",
+  "prices": [
+   6500000,
+   5950000
+  ],
+  "price_dates": [
+   "2026-09-27",
+   "2026-10-10"
+  ],
+  "title": "Skogsmark Alsjön",
+  "kommun": "Lerum",
+  "ids": [
+   "booli:6169486"
   ]
  }
 }
